@@ -1,1 +1,1 @@
-# Rocket Academy Coding Bootcamp: Base CSS
+# Rocket Academy Coding Bootcamp: Personal Page
