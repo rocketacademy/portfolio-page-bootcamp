@@ -1,3 +1,97 @@
 body {
-  background-color: white;
+  background-color: rgb(57, 53, 54);
+}
+
+#name {
+  display: flex;
+  color: rgb(181, 206, 18);
+  justify-content: center;
+  font-size: x-large;
+}
+
+h2 {
+  color: aqua;
+  text-decoration: underline;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects {
+  margin-top: 50px;
+  display: flex;
+  overflow: auto;
+  flex-direction: row;
+}
+
+@media (max-width: 800px) {
+  .projects {
+    flex-direction: column;
+  }
+}
+
+.contact {
+  display: flex;
+  color: rgb(181, 206, 18);
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  margin: 2px 2px;
+}
+
+.contacticons {
+  display: flex;
+  border-radius: 30%;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.projecticons {
+  max-width: 500px;
+  max-height: 500px;
+  border-radius: 5%;
+  padding: 2px;
+}
+
+.hobbies {
+  display: flex;
+  border-radius: 30%;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+  padding: 5px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-linkedin {
+  background: #3b5998;
+  color: white;
+  padding: 5px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 20%;
+}
+
+.fa-github {
+  background: #000000;
+  color: white;
+  padding: 5px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
 }
