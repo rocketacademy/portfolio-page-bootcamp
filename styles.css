@@ -7,13 +7,12 @@ body {
 }
 
 #profile-picture {
-  height: 240px;
-  width: 240px;
+  height: 160px;
+  width: 160px;
 }
 
 a {
-  font-size: 20px;
-  color: magenta;
+  color: rgb(80, 152, 78);
 }
 
 #ig-icon {
