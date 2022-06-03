@@ -161,7 +161,7 @@ html {
   background-color: #f44336;
 } /* Red */
 .javascript {
-  width: 0%;
+  width: 10%;
   background-color: #808080;
 } /* Dark Grey */
 
@@ -187,6 +187,9 @@ h2 {
   font-family: "Segoe Print", Raleway, sans-serif;
 }
 
+p {
+  font-family: "Segoe Print", Raleway, sans-serif;
+}
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 700px) {
   .row {
