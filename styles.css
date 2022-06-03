@@ -129,11 +129,41 @@ html {
   color: white;
 }
 
-.current-goal {
+.current-skills {
   padding: 50px 50px;
   text-align: center;
   background-color: gold;
 }
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.chinese {
+  width: 100%;
+  background-color: #04aa6d;
+} /* Green */
+.japanese {
+  width: 50%;
+  background-color: #2196f3;
+} /* Blue */
+.indonesia {
+  width: 50%;
+  background-color: #f44336;
+} /* Red */
+.javascript {
+  width: 0%;
+  background-color: #808080;
+} /* Dark Grey */
 
 .my-project {
   margin-top: 5px;
