@@ -2,42 +2,115 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link href="styles.css" rel="stylesheet" />
     <title>Darren's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" />
+
   </head>
   <body>
     <div class="flex-container-header">
-          <h1>Welcome to Darren's Portfolio</h1>
+          <h1>DARREN'S PORTFOLIO</h1>
       </div>
-    <div class="flex-container-navbar">
-      <div class="navbar-items">
-          <h3>About Me</h3></div>
-                    <div class="navbar-items"><h3>Main Page</h3></div>
-                              <div class="navbar-items"><h3>Contact Me</h3></div>
+    <div class="flex-container-navbar" id="navbar">
+      <h4 class="navtext"><a href="#about-me">ABOUT ME</a></h4>
+                   <h4 class="navtext"><a href="#portfolio-header">PORTFOLIO</a></h4>
+                              <h4 class="navtext"><a href="#contact-me">CONTACT</a></h4>
       </div>
-<div class="flex-container-main"><br><br></div>
+
+<div class="about-me" id="about-me">
+  <p>
+    <span id="about-me-header">About Me:</span><br><br>
+    <span style=color:violet>if</span> (<span style=color:rgb(43,161,201)>currentSoftwareDevelopmentKnowledge</span> &lt <span style=color:rgb(43,161,201)>knowledgeRequired</span>) <br>{ <span style=color:rgb(43,161,201)>outputValue</span> = <span style=color:rgb(145,56,49)>`I am an aspiring software engineer`</span>;<br> <span style=color:rgb(172,172,37)>studyHardFunction (darren, time, effort)</span> }<br>
+<br><span style=color:violet>else if</span> (<span style=color:rgb(43,161,201)>currentSoftwareDevelopmentKnowledge</span> >= <span style=color:rgb(43,161,201)>knowledgeRequired</span>) <br>{ <span style=color:rgb(43,161,201)>outputValue</span> = <span style=color:rgb(145,56,49)>`I am a software engineer`</span>; <br><span style=color:rgb(172,172,37)>continueImprovingFunction (darren, time, effort)</span> }
+<br><br>
+
+return <span style=color:rgb(43,161,201)>outputValue</span></p>
+</div>
+
 <div class="flex-container-main">
-  <div class="flex-container-item"><a href="https://dartan11.github.io/basics-blackjack/"target="_blank">
-    <img src="images/blackjack-image.png" alt ="blackjack" style=height:300px></a>
-    <br>
-    <div class="descriptions">
-    <p class="project-title"><a href="https://dartan11.github.io/basics-blackjack/"target="_blank">Blackjack</a></p>
-        <p class="write-up">A fun game of blackjack!</p>
+  <br><br>
+  <div class="flex-container-main">
+  <p id="portfolio-header">MY PORTFOLIO</p>
+  </div>
+
+  <div class="card display" style="width: 24rem;">
+  <a href="https://dartan11.github.io/basics-blackjack/" target="_blank"><img src="images/blackjack-image.png" class="card-img-top" alt="Blackjack Game"></a>
+  <div class="card-body">
+    <h5 class="card-title"><a href="https://dartan11.github.io/basics-blackjack/" target="_blank">Blackjack</a></h5>
+    <p class="card-text">A simple game of "Blackjack" created during Rocket Academy's basics course.</p>
+    <a href="https://dartan11.github.io/basics-blackjack/" class="btn btn-primary" id="button" target="_blank">Play Blackjack!</a>
   </div>
 </div>
 
-  <div class="flex-container-item">
-    <a href="https://dartan11.github.io/basics-beat-that/"target="_blank"></a><img src="images/beatthat-image.png" alt ="Beat That" style=height:300px></a>
-    <br>
-    <div class="descriptions">
-    <p class="project-title"><a href="https://dartan11.github.io/basics-beat-that/" target="_blank">Beat That</a></p>
-        <p class="write-up">A fun game of Beat That!</p>
-  </div>
-  </div>
 
 
-     <div class="flex-container-item"><img src="images/placeholder-image.jpg" alt ="placeholder" style=height:300px><br><div class="descriptions"><p class="project-title">Coming Soon</p></div></div>
-     <div class="flex-container-item"><img src="images/placeholder-image.jpg" alt ="placeholder" style=height:300px><br><div class="descriptions"><p class="project-title">Coming Soon</p></div></div>
-     <div class="flex-container-item"><img src="images/placeholder-image.jpg" alt ="placeholder" style=height:300px><br><div class="descriptions"><p class="project-title">Coming Soon</p></div></div>
-  </body>
+  <div class="card display" style="width: 24rem;">
+  <a href="https://dartan11.github.io/basics-beat-that/" target="_blank"><img src="images/beatthat-image.png" class="card-img-top" id="resize-image" alt="Beatthat Game"></a>
+  <div class="card-body">
+    <h5 class="card-title"><a href="https://dartan11.github.io/basics-beat-that/" target="_blank">Beat That</a></h5>
+    <p class="card-text">A simple game of "Beat That" created during Rocket Academy's basics course.</p>
+    <a href="https://dartan11.github.io/basics-beat-that/" class="btn btn-primary" id="button" target="_blank">Play Beat That!</a>
+  </div>
+</div>
+
+
+<div class="card display" style="width: 24rem;">
+  <img src="images/placeholder-image.jpg" class="card-img-top" alt="placeholder">
+  <div class="card-body">
+    <h5 class="card-title">Coming Soon!</h5>
+    <p class="card-text">Coming Soon!</p>
+    <a href="#" class="btn btn-primary" id="button">Coming Soon!</a>
+  </div>
+</div>
+
+<div class="card display" style="width: 24rem;">
+  <img src="images/placeholder-image.jpg" class="card-img-top" alt="placeholder">
+  <div class="card-body">
+    <h5 class="card-title">Coming Soon!</h5>
+    <p class="card-text">Coming Soon!</p>
+    <a href="#" class="btn btn-primary" id="button">Coming Soon!</a>
+  </div>
+</div>
+
+<div class="card display" style="width: 24rem;">
+  <img src="images/placeholder-image.jpg" class="card-img-top" alt="placeholder">
+  <div class="card-body">
+    <h5 class="card-title">Coming Soon!</h5>
+    <p class="card-text">Coming Soon!</p>
+    <a href="#" class="btn btn-primary" id="button">Coming Soon!</a>
+  </div>
+</div>
+
+<div class="card display" style="width: 24rem;">
+  <img src="images/placeholder-image.jpg" class="card-img-top" alt="placeholder">
+  <div class="card-body">
+    <h5 class="card-title">Coming Soon!</h5>
+    <p class="card-text">Coming Soon!</p>
+    <a href="#" class="btn btn-primary" id="button">Coming Soon!</a>
+  </div>
+</div>
+
+<div class="card display" style="width: 24rem;">
+  <img src="images/placeholder-image.jpg" class="card-img-top" alt="placeholder">
+  <div class="card-body">
+    <h5 class="card-title">Coming Soon!</h5>
+    <p class="card-text">Coming Soon!</p>
+    <a href="#" class="btn btn-primary" id="button">Coming Soon!</a>
+  </div>
+</div>
+</div>
+
+<div class="contact-me-container" id="contact-me">CONTACT ME!</div>
+<div class="contact-info-container">
+  <div class="contact-info-item"><a href="mailto:darrentantsukai@gmail.com" target="_blank"><img src="images/email-icon.png" class="contact-icon"/></a><p class="contact-info-detail">Email</p></div>
+  <div class="contact-info-item"><a href="https://www.linkedin.com/in/darren-tan11/" target="_blank"><img src="images/linkedin-icon.png" class="contact-icon"/></a><p class="contact-info-detail">LinkedIn</p></div>
+  <div class="contact-info-item"><a href="https://github.com/dartan11/" target="_blank"><img src="images/github-icon.png" class="contact-icon"/></a><p class="contact-info-detail">Github</p></div>
+</div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    </body>
 </html>
+
+

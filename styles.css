@@ -5,30 +5,60 @@
 
 .flex-container-header{
   display:flex;
-  height: 100px;
+  height: 150px;
   width: 100%;
   justify-content: center;
-  background-color: rgb(17, 82, 112);
+  background-color: rgb(3, 25, 36);
   text-align: center;
   align-items: center;
   color:rgb(205, 219, 231);
     flex-flow: row wrap;
+    padding: 50px 0px 50px;
 }
 
 .flex-container-navbar{
   display:flex;
+  flex-flow: row wrap;
   width: 100%; 
   justify-content: center;
-  background-color: rgb(235, 115, 60);
-  height:50px;
-  align-items: center;
+  gap: 400px;
+  align-content: center;
+  background-color: rgba(15, 138, 138, 0.774);
+  height:70px;
+    color:rgb(255, 255, 255);
+      position: sticky;
+  top: 0px;
+   z-index: 1;
 }
 
-.navbar-items{
+.flex-container-navbar a{
+  color:rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.flex-container-navbar a:hover{
+  color:rgba(160, 59, 59, 0.61);
+}
+
+.about-me{
+  background-image: url('images/about-me.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 10vh;
+  word-spacing: 5px;
   display:flex;
-  flex-flow: row wrap;
-  margin:60px;
-  color:rgb(255, 255, 255)
+  justify-content: center;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color:rgba(255, 255, 255, 0.76);
+}
+
+#portfolio-header{
+  padding: 40px 0 20px 0;
+  font-family:system-ui;
+  font-size: 35px;
+  color:rgb(255, 255, 255);
 }
 
 .flex-container-main{
@@ -36,40 +66,103 @@ width:100%;
 display:flex;
 flex-flow: row wrap;
 justify-content: space-around;
-background-color: rgb(245, 245, 245);
+background-color: rgba(85, 28, 28, 0.61);
 }
 
-.flex-container-item{
-display:flex;
-flex-flow: column wrap;
-margin: 60px;
-justify-content: center;
-align-items: center;
+.display{
+  margin:40px;
 }
 
-.project-title{
-  color:rgb(17, 82, 112);
-  font-family:Arial, Helvetica, sans-serif;
-  font-weight: 600;
-  font-size:x-large;
-  margin: 0.5em;
-  padding: 5px;
+#resize-image{
+height: 70%;
+margin: 30px 0px 140px 0px
 }
 
-.write-up{
-  color:rgb(192, 89, 42);
-  padding: 10px 10px 50px;
+#button{
+  background-color:darkred;
+  border-style: none;
 }
 
-.descriptions{
+#button:hover{
+  background-color: darkgreen;
+}
+
+.navtext{
+  font-size: 25px;
+  margin:0;
+}
+
+.navtext:hover{
+  color:rgb(245, 212, 212);
+}
+
+#contact-me-container{
   display:flex;
-  flex-flow: column wrap;
-  width:100%;
+  background-color: black;
+  justify-content: center;
+padding: 20px;
+  height: 100px;
+}
+
+#contact-me{
+  display:flex;
+  align-items: center;
+  padding:50px 0 0 ;
+  font-family:system-ui;
+  color:rgb(255, 255, 255);
+  margin:0;
+  font-size: 35px;
+}
+
+.contact-me-container{
+  display:flex;
+  background-color: black;
   justify-content: center;
   align-items: center;
-  border-color:black;
-  border: 1px;
-  border-style: solid;
-  border-radius: 15px;
-  height: auto;
+  height: 90px;
+  color:white;
+  font-size: 30px;
+  font-family:system-ui;
+}
+
+
+.contact-info-container{
+  height:300px;
+  display:flex;
+  flex-flow:row wrap;
+  justify-content: space-evenly;
+  background-color: black;
+}
+.contact-info-item{
+display:flex;
+flex-flow:column wrap;
+justify-content: center;
+}
+
+.contact-info-detail{
+display:flex;
+flex-flow:row wrap;
+justify-content: center;
+margin: 5px;
+}
+
+.contact-icon{
+  height: 100px;
+  margin:20px;
+}
+
+.contact-icon:hover{
+  height: 150px;
+}
+
+.contact-info-detail{
+  color:white;
+}
+
+
+a:link { text-decoration: none; }
+
+#about-me-header{
+  font-size: 40px;
+  color:bisque
 }
