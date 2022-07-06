@@ -1,3 +1,120 @@
-body {
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+}
+
+.background-image {
+  max-width: 100vw;
+  height: auto;
+  z-index: -1;
+}
+
+#aboutme {
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+  justify-content: space-around;
+}
+
+.aboutmetext {
+  display: flex;
+  flex-flow: column wrap;
+  position: absolute;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  z-index: 1;
+}
+
+p#storytext {
+  margin: 0px 100px;
+  color: lightgrey;
+  min-width: 400px;
+}
+
+#catchline {
+  margin: 300px;
+  font-weight: bold;
+  background: -webkit-linear-gradient(45deg, black, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#background-sub-text {
+  font-style: italic;
+  font-size: medium;
+  margin: 10px, 50px;
+}
+
+#myworks {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#featured-projects {
+  margin: 0px 0px 100px;
+  font-weight: bold;
+  text-align: center;
+  color: lightgrey;
+}
+
+.card {
+  display: flex;
+  flex-flow: row wrap;
+  word-wrap: break-word;
+  opacity: 0.6;
+  transition: 0.3s;
+  text-align: center;
   background-color: white;
+  padding: 10px 10px 0px;
+}
+
+.card:hover {
+  opacity: 1;
+}
+
+.buffer {
+  width: 100%;
+  height: 200px;
+}
+
+#bodymyworks {
+  background: linear-gradient(black, #6a6c6e);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.card-img-top {
+  height: 275px;
+  width: 275px;
+}
+
+#bodymycontact {
+  background: linear-gradient(#6a6c6e, white);
+}
+
+#contact-me {
+  margin: 0px 0px 100px;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+}
+
+#buttons-for-contact {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.buttons-contact {
+  width: auto;
+  height: 100px;
 }
