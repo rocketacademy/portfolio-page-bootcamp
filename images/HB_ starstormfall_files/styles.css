@@ -5,7 +5,6 @@ body {
   height: 100%;
   overflow: hidden;
 }
-
 h1,
 h2 {
   font-family: "Arvo", serif;
@@ -17,7 +16,6 @@ a:hover,
 a:visited,
 a:active {
   text-decoration: none;
-  color: #ffdee9;
 }
 
 /* .container {
@@ -35,11 +33,6 @@ a:active {
   background-image: linear-gradient(to right, #15112b, #393358);
   min-width: 600px;
   position: fixed;
-  z-index: 1;
-}
-
-#logo {
-  height: inherit;
 }
 
 .navbar ul {
@@ -73,7 +66,6 @@ a:active {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  justify-content: center;
   /* min-width: 600px; */
 }
 
@@ -96,6 +88,7 @@ a:active {
 
 .works {
   background-color: #fd7aa3;
+  justify-content: center;
 }
 
 .row {
