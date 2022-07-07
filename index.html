@@ -2,12 +2,91 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Oswald"
+    />
 
-    <link href="styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/d73497a19b.js" crossorigin="anonymous"></script>
 
-    <title>Rocket Academy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+    <title>Portfolio Page</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div>
+      <nav class="navbar navbar-light bg-dark">
+  <div class="container-fluid" >
+    <a class="navbar-brand" href="#">
+      <img src="./image/rocket.png" alt="rocket" width="30" height="24" class="d-inline-block align-text-top"></a>
+      <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#section-one">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section-two">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section-three">Contact Me</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+    
+    <header>
+      <div id="section-one">
+        <h1>Hi! I am Ming Sheng.</h1>
+        <h4>Software Engineer</h4>
+        <h6>View my past projects below.</h6>
+        <!-- <a href="mailto:email@example.com" _target="_blank"> -->
+          <button type="button" class="btn">
+          <!-- </a> -->
+            <strong>Get In Touch</strong>
+          </button>
+      </div>
+    </header>
+    <main>
+      <div id="section-two">
+        <div class="sectiontwoheader">
+          <h2>Projects</h2>
+        </div>
+        <div class="showproject">
+          <div class="image">
+            <a href="" target="_blank"><p>Scissors Paper Stone</p></a>
+          </div>
+          <div class="image2">
+            <a href="" target="_blank"><p>BlackJack</p></a>
+          </div>
+        </div>
+      </div>
+      <div id="section-three">
+        <div class="endsectionheader">Contact Me<Menu></Menu></div>
+        <div class="contactlinks">
+          <a href="https://github.com/WorkOutWorkIn" target="_blank"
+            ><i class="fa-brands fa-github-square"></i></a
+          >
+          <a href="https://www.instagram.com/" target="_blank"
+            ><i class="fa-brands fa-instagram-square"></i></a
+          >
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i class="fa-brands fa-facebook-f"></i></a
+          >
+          <a href="" target="_blank"><i class="fa-solid fa-at"></i></a>
+      </div>
+      </div>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
