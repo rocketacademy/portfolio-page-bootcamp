@@ -1,3 +1,113 @@
-body {
-  background-color: white;
+.navbar{
+  background-image:linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url("https://a.rgbimg.com/users/x/xy/xymonau/600/onqrgXe.jpg");
+background-repeat: repeat;
+  position:fixed;
+top:0;
+height:6.5vh;
+width:100%;
+display: flex;
+  padding: 8px;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  z-index: 1;
+ 
 }
+
+button{
+ color:white;
+  font: bold 84% 'trebuchet ms',helvetica,sans-serif; 
+  background-color:palevioletred; 
+  border:1px solid white;
+  height:5vh; 
+  
+}
+
+body {
+background-image:linear-gradient(to right, pink, white);
+/* background-image:
+radial-gradient(white, rgba(255,255,255,.2) 3px, transparent 40px),
+radial-gradient(white, rgba(255,255,255,.15) 2px, transparent 30px),
+radial-gradient(white, rgba(255,255,255,.1) 4px, transparent 40px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px; */
+}
+
+.home-page{
+  font-family: 'Courier New', Courier, monospace;
+  display: flex;
+top: 6vh;
+height:100vh;
+width:100%;
+position:relative;
+font-size: 6vh;
+justify-content: center;
+align-items: center;
+}
+
+.projects-header{
+  background-color: pink;
+height:6.5vh;
+width:100%;
+top:30vh;
+display: flex;
+justify-content: center;
+align-content: center;
+
+}
+.projects-page{
+  display: flex;
+height:100vh;
+width:100%;
+position:relative;
+font-size: 2vh;
+justify-content: center;
+align-items: center;
+column-gap:10vh;
+margin-bottom: 5vh;
+}
+
+.contact-header{
+background-color: pink;
+height:6.5vh;
+width:100%;
+display: flex;
+justify-content: center;
+align-content: center;
+}
+
+.contact-page{
+  padding-top: 5vh;
+display:flex;
+justify-content: center;
+align-content: center;
+ text-align: center;
+ flex-basis: 100%;
+ column-gap:5vh;
+}
+.contact-page img{
+  border: 1vh solid #ddd; /* Gray border */
+  border-radius: 50%;  /* Rounded border */
+  padding: 3vh; /* Some padding */
+  width: 15vh; /* Set a small width */
+ height: 100%;
+}
+
+.contact-page img:hover {
+  box-shadow: 0 0 2px 1px rgb(224, 134, 187);
+}
+
+#home-btn:hover {
+  box-shadow: 0 0 2px 1px rgb(224, 134, 187);
+}
+
+#projects-btn:hover {
+  box-shadow: 0 0 2px 1px rgb(224, 134, 187);
+}
+
+#contact-btn:hover {
+  box-shadow: 0 0 2px 1px rgb(224, 134, 187);
+}
+
+
