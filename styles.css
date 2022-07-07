@@ -5,70 +5,125 @@
 }
 
 .nav {
-  background-color: rgba(15, 14, 14, 0.791);
   justify-content: end;
-}
-
-h1 {
-  width: 400px;
-  margin: 0 150px;
-  padding: 10px;
-}
-
-h4,
-h6 {
-  width: 400px;
-  margin: -5px 150px;
-  padding: 15px;
 }
 
 #section-one {
   background-color: lightgray;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
-  margin-left: 170px;
-  margin-top: 10px;
   padding: 10px;
   background-color: black;
   color: antiquewhite;
 }
 
 #section-two {
-  background-color: ghostwhite;
+  background-color: blanchedalmond;
+  width: 100%;
 }
 
-.h2header {
+.sectiontwoheader {
   text-align: center;
-  /* width: 200px;
-  margin: 0 auto; */
+  border-top: 1px;
+  font-size: 2rem;
 }
 
 .showproject {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 20px;
+  justify-content: space-evenly;
+  margin-bottom: 1px;
 }
 
-.projectphoto {
-  width: 400px;
+.image {
+  width: 35%;
   height: 400px;
-  border: solid 1px black;
+  border: solid black 1px;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./image/sps.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.image p {
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.8s;
+  font-size: 2rem;
+  color: white;
 }
 
-.projectphoto:hover {
-  background-color: white;
-  opacity: 20%;
+.image:hover {
+  box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.9) inset;
 }
 
-#section-three {
-  background-color: lightslategray;
+.image:hover p {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.image2 {
+  width: 35%;
+  height: 400px;
+  border: solid black 1px;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./image/blackjack.jpeg);
+  background-position: center;
+  background-size: cover;
+}
+.image2 p {
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.8s;
+  font-size: 2rem;
+  color: white;
+}
+
+.image2:hover {
+  box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.9) inset;
+}
+
+.image2:hover p {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .endsectionheader {
+  background-color: black;
   text-align: center;
+  padding: 10px;
+  font-size: 2rem;
+  color: aliceblue;
 }
 .contactlinks {
-  text-align: center;
+  background-color: black;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1rem;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: darkslategray;
 }
