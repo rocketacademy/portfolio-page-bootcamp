@@ -4,47 +4,79 @@
   overflow-x: hidden;
 }
 
-.background-image {
-  max-width: 100vw;
-  height: auto;
-  z-index: -1;
-}
-
-#aboutme {
+.homecontainer {
   display: flex;
   flex-flow: column wrap;
-  position: relative;
+  justify-content: center;
+  background-color: black;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+}
+
+.sub-text {
+  font-style: italic;
+  font-size: medium;
+}
+
+.backgroundimage {
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+}
+
+.aboutmecontainer {
+  display: flex;
+  flex-flow: column wrap;
   justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 .aboutmetext {
-  display: flex;
-  flex-flow: column wrap;
   position: absolute;
-  align-items: center;
-  justify-content: space-around;
   color: white;
   z-index: 1;
-}
-
-p#storytext {
-  margin: 0px 100px;
-  color: lightgrey;
-  min-width: 400px;
+  height: 100vh;
+  justify-content: center;
 }
 
 #catchline {
-  margin: 300px;
-  font-weight: bold;
-  background: -webkit-linear-gradient(45deg, black, white);
+  justify-content: center;
+  margin: 50vh 0 10vh;
+  font-size: 4vw;
+  background: -webkit-linear-gradient(left, black, white);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-#background-sub-text {
-  font-style: italic;
-  font-size: medium;
-  margin: 10px, 50px;
+p#storytext {
+  color: white;
+  font-size: 18px;
+  margin: 0 5vh;
+}
+
+.marginedItems {
+  margin: 0rem 0rem 10rem;
+}
+
+.centered {
+  text-align: center;
+}
+
+#myworkscontainer {
+  background: linear-gradient(black, #6a6c6e);
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+#featured-projects {
+  margin: 15vh 0vh 10vh;
+  text-align: center;
+  color: lightgrey;
 }
 
 #myworks {
@@ -54,55 +86,57 @@ p#storytext {
   justify-content: space-evenly;
 }
 
-#featured-projects {
-  margin: 0px 0px 100px;
+h5 {
   font-weight: bold;
-  text-align: center;
-  color: lightgrey;
 }
 
 .card {
-  display: flex;
-  flex-flow: row wrap;
   word-wrap: break-word;
   opacity: 0.6;
   transition: 0.3s;
-  text-align: center;
+  text-align: justify;
   background-color: white;
-  padding: 10px 10px 0px;
+  padding: 2vh 2vh 0vh;
+  margin: 0vh 0vh 0vh;
+  height: 60vh;
+  width: 20vw;
 }
 
 .card:hover {
   opacity: 1;
 }
 
-.buffer {
-  width: 100%;
-  height: 200px;
+.card-img-top {
+  height: 17vw;
+  width: 18vw;
+  vertical-align: middle;
+  left: auto;
+  right: auto;
 }
 
-#bodymyworks {
-  background: linear-gradient(black, #6a6c6e);
+.a-card {
+  height: 17vw;
+  width: 18vw;
+}
+
+.card-body {
+  width: 18vw;
 }
 
 .navbar {
   position: fixed;
-  top: 0;
   width: 100%;
 }
 
-.card-img-top {
-  height: 275px;
-  width: 275px;
-}
-
-#bodymycontact {
+#mycontactcontainer {
   background: linear-gradient(#6a6c6e, white);
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 #contact-me {
-  margin: 0px 0px 100px;
-  font-weight: bold;
+  margin: 30vh 0 15vh;
   text-align: center;
   color: black;
 }
@@ -116,5 +150,72 @@ p#storytext {
 
 .buttons-contact {
   width: auto;
-  height: 100px;
+  height: 15vh;
+}
+
+@media (min-width: 1200px) {
+  #catchline {
+    font-size: 48px;
+    margin: 50vh 0 10vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  #catchline {
+    justify-content: center;
+  }
+  p#storytext {
+    font-size: 14px;
+  }
+  .card {
+    width: 30vw;
+    height: 58vh;
+  }
+  .card-img-top,
+  .a-card {
+    height: 27vw;
+    width: 27vw;
+  }
+  .card-body {
+    width: 27vw;
+    height: 18vh;
+  }
+  .card-text:last-child {
+    font-size: 2vh;
+  }
+  h5 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 550px) {
+  #catchline {
+    justify-content: center;
+    margin: 48vh 0 4vh;
+    font-size: 15px;
+  }
+  p#storytext {
+    font-size: 10px;
+  }
+  .card {
+    height: 230px;
+    width: 250px;
+    margin: 0vh 1vw 2vh;
+  }
+  .card-img-top,
+  .a-card {
+    height: 50px;
+    width: 50px;
+  }
+  .card-body {
+    width: 220px;
+    height: 150px;
+  }
+  .buttons-contact {
+    width: 20vw;
+    height: auto;
+  }
+  #contact-me {
+    margin: 40vh 0 10vh;
+  }
 }
