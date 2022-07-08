@@ -4,6 +4,15 @@
   overflow-x: hidden;
 }
 
+.container-fluid.align-right {
+  justify-content: right;
+}
+
+#navbarText > ul {
+  align-items: flex-end;
+  padding: 0 15px;
+}
+
 .homecontainer {
   display: flex;
   flex-flow: column wrap;
