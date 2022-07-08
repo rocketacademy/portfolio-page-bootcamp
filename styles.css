@@ -1,3 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: white;
+  /* background-image: url("./assets/nail-gilfanov-TuyneoFacJg-unsplash.jpg"); */
+  background-size: auto;
+  color: #ff5f1f;
+  /* opacity: 0.8;
+  text-shadow: 0 0 7px #ff5f1f, 0 0 10px #ff5f1f, 0 0 21px #ff5f1f,
+    0 0 42px #ff5f1f, 0 0 82px #ff5f1f, 0 0 92px #ff5f1f, 0 0 102px #ff5f1f,
+    0 0 151px #ff5f1f; */
+}
+.title {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
+.col {
+  align-items: center;
+  text-align: center;
+}
+.underline-hover-effect > a {
+  display: inline-block;
+  position: relative;
+}
+.underline-hover-effect {
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  position: relative;
+}
+.underline-hover-effect ::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 1px;
+  background-color: #ff5f1f;
+  transition: width 0.25s ease-out;
+}
+.underline-hover-effect :hover::before {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #ff5f1f;
+}
+a:hover {
+  text-decoration: none;
+  color: #ff5f1f;
+  cursor: pointer;
+}
+#profileimg {
+  background-color: rgba(255, 255, 255, 0.464);
+  width: 100%;
+  height: 40vh;
+  padding: 3vw 3vw 0vw 0vw;
+}
+.about-me-img {
+  background-color: rgba(255, 255, 255, 0.464);
+  height: 45vh;
+  width: 100%;
+}
+.col-4 p {
+  justify-content: end;
+  padding-bottom: 0;
+  margin: 0;
+}
+
+.col-8 div {
+  align-items: center;
+}
+
+.container-xxl {
+  padding-top: 50px;
+}
+#about {
+  background-image: url("./assets/nail-gilfanov-TuyneoFacJg-unsplash.jpg");
+  height: 100vh;
+  padding: 1vw 1vw;
+}
+#services {
+  background-image: url("./assets/jeremy-bishop-G9i_plbfDgk-unsplash.jpg");
+  width: 100vw;
+  height: 100vh;
+  padding: 1vw 1vw;
+}
+#work {
+  background-image: url("./assets/taylor-weir-BOAgt1WWLgQ-unsplash.jpg");
+  width: 100vw;
+  height: 100vh;
+  padding: 1vw 1vw;
+}
+
+#contact {
+  background-image: url("./assets/pawel-czerwinski-OY3slACa3ec-unsplash.jpg");
+  width: 100vw;
+  height: 100vh;
+  padding: 1vw 1vw;
+}
+
+.list-group-item {
+  background: none;
+  color: inherit;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.464);
+}
+.projectcard {
+  padding: 0.5vw 0.5vw;
+  margin-bottom: 3vh;
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.464);
 }
