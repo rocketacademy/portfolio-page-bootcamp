@@ -5,6 +5,7 @@ body {
   height: 100%;
   overflow: hidden;
 }
+
 h1,
 h2 {
   font-family: "Arvo", serif;
@@ -16,12 +17,26 @@ a:hover,
 a:visited,
 a:active {
   text-decoration: none;
+  color: #ffdee9;
 }
 
 /* .container {
   display: flex;
   flex-direction: column;
 } */
+
+/* .navlist > li > a.navlink {
+  height: 44px;
+  color: aliceblue;
+  background-color: aqua;
+  margin: 0;
+  padding: 0;
+} */
+
+.test {
+  height: inherit;
+  color: aliceblue;
+}
 
 .navbar {
   display: flex;
@@ -33,6 +48,12 @@ a:active {
   background-image: linear-gradient(to right, #15112b, #393358);
   min-width: 600px;
   position: fixed;
+  z-index: 1;
+  box-shadow: 0px 0px 4px #000000;
+}
+
+#logo {
+  height: inherit;
 }
 
 .navbar ul {
@@ -50,11 +71,19 @@ a:active {
   text-align: center;
   padding: 12px 16px;
   text-decoration: none;
+  height: inherit;
+}
+
+li a {
+  display: block;
 }
 
 .navbar li:hover {
   background-color: #06050c;
 }
+/* .active {
+  background-color: #fd7aa3;
+} */
 
 .banner,
 .works,
@@ -63,13 +92,17 @@ a:active {
 .contact,
 .intro {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
   align-items: center;
   height: 100vh;
+  justify-content: center;
   /* min-width: 600px; */
 }
 
 .banner {
+  display: flex;
+  flex-direction: column;
   background-color: #fd7aa3;
   background-size: cover;
   justify-content: center;
@@ -82,13 +115,28 @@ a:active {
 .intro {
   background-color: #ffdee9;
   opacity: 75%;
-  padding: 2em;
-  max-height: 50%;
+  padding: 1em;
+  max-height: 25%;
+  max-width: 50%;
+  width: 50%;
+}
+
+.cut-out {
+  font-size: 10vw;
+  font-weight: bold;
+  background-color: #e6e6e6;
+  color: black;
+  margin: 20px auto;
+  padding: 10px;
+  mix-blend-mode: screen;
+}
+
+#excerpt {
+  margin: 20px;
 }
 
 .works {
   background-color: #fd7aa3;
-  justify-content: center;
 }
 
 .row {
