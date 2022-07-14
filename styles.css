@@ -19,3 +19,28 @@ a {
   height: 60px;
   width: 60px;
 }
+
+#past-projects {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-around;
+  width: 60vw;
+  height: auto;
+  column-gap: 10px;
+}
+
+#blackjack-basics {
+  width: 70%;
+  height: 70%;
+}
+
+#guess-the-word {
+  width: 70%;
+  height: 70%;
+}
+
+#fuel-consumption-tracker {
+  width: 70%;
+  height: 70%;
+}
