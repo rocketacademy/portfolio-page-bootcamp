@@ -1,3 +1,131 @@
+/* Base Margins */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  word-spacing: 2px;
+}
+
 body {
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  border-radius: 10%;
+}
+
+.navbar {
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+
+.nav-list {
+  display: flex;
+  margin-right: 2rem;
+}
+
+.nav-list a {
+  display: block;
+  padding: 2rem;
+}
+
+.nav-list a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-list a:hover, a:active {
+  color: red;
+}
+
+.header {
+  display: block;
+  color: white;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 2%;
+}
+
+.sub-header {
+  display: block;
+  color: ghostwhite;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-header {
+  display: block;
+  color: red;
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 2%;
+}
+
+.base-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.base-container:before {
+  content: "";
+  background-image: url("main-background-img.jpg");
+  position: absolute;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+.container {
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: left;
+  margin-left: 10%;
+}
+
+#main-img {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: space-around;
+  opacity: 0.8;
+  margin-right: 50px;
+}
+
+#highlight {
+  color: red;
+}
+
+#social {
+  padding-top: 20px;
+}
+
+#about-me {
+  background-color: white;
+}
+
+#my-works {
+  background-color: black;
+}
+
+#contact-me {
   background-color: white;
 }
