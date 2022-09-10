@@ -556,4 +556,17 @@ button:hover {
     margin-right: 0;
     margin-bottom: 20px;
   }
+
+  .text-div.longer-width {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #contact-form {
+    width: 90%;
+  }
+
+  .input-div-holder {
+    flex-direction: column;
+  }
 }
