@@ -6,15 +6,16 @@
     <link href="styles.css" rel="stylesheet" />
 
     <title>James' Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
   </head>
-  <body>
+  <body id="top">
     <header>
       <div id="top-navbar">
-        <div id="logo">
-          <!-- <img src="james-logo.jpg" alt="logo" /> -->
-        </div>
+        <a href="#top" id="logo">
+          <text>queky<span class="font-highlight">portfolio</span></text>
+        </a>
         <nav id="top-nav-items">
-          <a href="#about-1" class="nav-link active"
+          <a href="#about" class="nav-link active"
             ><span class="font-highlight">01.</span> About</a
           >
           <a href="#projects" class="nav-link"
@@ -28,7 +29,7 @@
     </header>
 
     <main>
-      <section id="about-1">
+      <section id="about">
         <div class="container">
           <div class="text-div">
             <h1>
@@ -42,69 +43,189 @@
               <span class="font-highlight">interactive</span>, digital
               experiences on the web.
             </p>
+
+            <button id="about-cta-btn">Let's get in touch!</button>
           </div>
 
-          <button id="about-cta-btn">Let's get in touch!</button>
+          <figure class="key-visuals">
+            <img
+              class="animate"
+              src="images/qp-hero-image.png"
+              alt="qp-hero-image"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section id="scroll-arrow-section">
+        <div class="scroll-arrow-prompt">
+          <text>scroll down</text>
+          <img
+            class="animate"
+            id="arrow-prompt"
+            src="images/qp-arrow-prompt.png"
+          />
         </div>
       </section>
 
       <section id="about-2">
         <div class="container">
-          <h2><span class="font-highlight">Skills</span> and tools</h2>
+          <div class="text-div">
+            <h2><span class="font-highlight">Skills</span> and tools</h2>
 
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
-            rerum temporibus beatae consequuntur ipsam non ratione accusamus
-            necessitatibus quaerat maxime minus nostrum veritatis, magnam
-            blanditiis.
-          </p>
-          <figure>
-            <img src="" alt="" />
+            <p>
+              For a more <span class="font-highlight">detailed</span> overview.
+              please feel free to check the tools that were used on a
+              <span class="font-underline">per-project basis</span>.
+            </p>
+          </div>
+
+          <figure class="key-visuals">
+            <img
+              src="images/qp-skills-tools-image.png"
+              alt="qp-skills-tools-image"
+            />
           </figure>
         </div>
       </section>
 
       <section id="about-3">
-        <div class="container">
-          <h3>Hi, I am James, A Bootcamp Student</h3>
-          <p>
-            Currently residing in Singapore. I love building interactive,
-            digital experiences on the web.
-          </p>
+        <figure class="skills-n-tools">
+          <img src="images/qp-laptop-skills.png" alt="qp-laptop-skills" />
+        </figure>
+        <div class="container longer-width">
+          <div class="text-div longer-width">
+            <div class="text-w-img-div">
+              <figure class="icons">
+                <img src="images/qp-pricing.png" alt="qp-pricing" />
+              </figure>
 
-          <h3>Hi, I am James, A Bootcamp Student</h3>
-          <p>
-            Currently residing in Singapore. I love building interactive,
-            digital experiences on the web.
-          </p>
+              <div class="inner-text-div">
+                <h3>Reasonable and flexible prices for clients</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Asperiores esse eius quis!eb.
+                </p>
+              </div>
+            </div>
 
-          <h3>Hi, I am James, A Bootcamp Student</h3>
-          <p>
-            Currently residing in Singapore. I love building interactive,
-            digital experiences on the web.
-          </p>
+            <div class="text-w-img-div">
+              <figure class="icons">
+                <img
+                  src="images/qp-ideas-discussion.png"
+                  alt="qp-ideas-discussion"
+                />
+              </figure>
+
+              <div class="inner-text-div">
+                <h3>Reasonable and flexible prices for clients</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Asperiores esse eius quis!eb.
+                </p>
+              </div>
+            </div>
+
+            <div class="text-w-img-div">
+              <figure class="icons">
+                <img src="images/qp-cog-services.png" alt="qp-cog-services" />
+              </figure>
+
+              <div class="inner-text-div">
+                <h3>Reasonable and flexible prices for clients</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Asperiores esse eius quis!eb.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
       <section id="projects">
         <div class="container">
-          <h2>Featured Projects</h2>
-          <p>
-            To find out more details about a specific project, please click on
-            it.
-          </p>
+          <div class="text-div">
+            <h2>Featured <span class="font-highlight">projects</span></h2>
+
+            <p>
+              Created as part of the learning process, the goal was to build
+              modern, responsive and useful web applications.
+              <br />
+              <br />
+              To find out more details about a specific project,
+              <span class="font-highlight">please click on it</span>.
+            </p>
+          </div>
+
+          <figure class="lightbox-wrapper">
+  <div class="column">
+    <img src="project-01.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+          </figure>
         </div>
       </section>
 
       <section id="contact">
-        <div class="container">
-          <h2>Let's get in touch!</h2>
-          <p>either by email or through my social media.</p>
+        <div class="container reverse">
+          <div class="text-div contact">
+            <h2>Let's get in touch!</h2>
+            <p>
+              Either by <span class="font-highlight">email</span> or through my
+              <span class="font-highlight">social media</span>.
+            </p>
+
+            <div class="social-icons">
+              <a class="social-link" href="https://github.com/jqzy91"
+                ><img
+                  class="social-img"
+                  src="images/qp-social-github.png"
+                  alt="qp-social-github"
+              /></a>
+              <a
+                class="social-link"
+                href="https://join.skype.com/invite/wnppLON2hfd1"
+                ><img
+                  class="social-img"
+                  src="images/qp-social-skype.png"
+                  alt="qp-social-skype"
+              /></a>
+              <a
+                class="social-link"
+                href="https://discord.com/users/475325613331447808"
+                ><img
+                  class="social-img"
+                  src="images/qp-social-discord.png"
+                  alt="qp-social-discord"
+              /></a>
+            </div>
+          </div>
+
+          <div id="contact-form">
+            <div class="input-div-holder">
+              <div class="form-div">
+                <label for="form-name">Name</label>
+                <input type="text" id="form-name" class="field" />
+              </div>
+
+              <div class="form-div">
+                <label for="form-email">Email</label>
+                <input type="email" id="form-email" class="field" />
+              </div>
+            </div>
+
+            <label for="form-textarea">Message</label>
+            <textarea id="form-textarea" name="Message"></textarea>
+            <button id="form-btn">Message me!</button>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer></footer>
+    <!-- <video autoplay muted loop id="video-bg">
+      <source src="videos/qp-section-vbg.mp4" type="video/mp4" />
+    </video> -->
+
+    <footer>© 2022 - All rights reserved.</footer>
 
     <script src="interactions.js"></script>
   </body>
