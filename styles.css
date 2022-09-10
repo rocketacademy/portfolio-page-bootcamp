@@ -13,10 +13,19 @@ body {
 
 ul {
   list-style: none;
+  padding-top: 20px;
+}
+
+ul li {
+  padding-top: 20px;
 }
 
 img {
-  border-radius: 10%;
+  border-radius: 5%;
+}
+
+h3 {
+  padding-bottom: 20px;
 }
 
 .navbar {
@@ -37,13 +46,32 @@ img {
   padding: 2rem;
 }
 
-.nav-list a:link, a:visited {
+.nav-list a:link,
+a:visited {
   color: white;
   text-decoration: none;
 }
 
-.nav-list a:hover, a:active {
+.nav-list a:hover,
+a:active {
   color: red;
+}
+
+.email-add {
+  display: block;
+  color: ghostwhite;
+  font-size: 20px;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.email-add:hover {
+  color: red;
+}
+
+.graphics:hover {
+  color: white;
+  opacity: 0.5;
 }
 
 .header {
@@ -71,11 +99,19 @@ img {
 
 .base-container {
   height: 100vh;
-  width: 100vw;
+  max-width: 100vw;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
+}
+
+.base-container-normal {
+  height: 150vh;
+  max-width: 100vw;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px;
 }
 
 .base-container:before {
@@ -101,13 +137,35 @@ img {
   margin-left: 10%;
 }
 
+.container-row {
+  height: 50vh;
+  max-width: 100vw;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.anno-width {
+  max-width: 200px;
+  text-align: center;
+}
+
 #main-img {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: space-around;
-  opacity: 0.8;
-  margin-right: 50px;
+  margin-right: 100px;
+}
+
+#img {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: space-around;
+  margin-right: 100px;
 }
 
 #highlight {
@@ -119,13 +177,18 @@ img {
 }
 
 #about-me {
-  background-color: white;
-}
-
-#my-works {
   background-color: black;
 }
 
-#contact-me {
+#my-works {
   background-color: white;
+}
+
+#contact-me {
+  background-color: black;
+}
+
+#sub-header {
+  color: white;
+  padding-top: 10px;
 }
