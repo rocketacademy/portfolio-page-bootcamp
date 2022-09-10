@@ -9,50 +9,103 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div id="top-navbar">
+        <div id="logo">
+          <!-- <img src="james-logo.jpg" alt="logo" /> -->
+        </div>
+        <nav id="top-nav-items">
+          <a href="#about-1" class="nav-link active"
+            ><span class="font-highlight">01.</span> About</a
+          >
+          <a href="#projects" class="nav-link"
+            ><span class="font-highlight">02.</span> Projects</a
+          >
+          <a href="#contact" class="nav-link"
+            ><span class="font-highlight">03.</span> Contact</a
+          >
+        </nav>
+      </div>
     </header>
 
     <main>
-      <section id="about">
+      <section id="about-1">
         <div class="container">
-          <h1>Hi, I am James, A Bootcamp Student</h1>
+          <div class="text-div">
+            <h1>
+              Hey there,<br />I am
+              <span class="font-highlight">James</span>,<br />
+              Bootcamp Student
+            </h1>
 
+            <p>
+              Currently residing in Singapore. I love building
+              <span class="font-highlight">interactive</span>, digital
+              experiences on the web.
+            </p>
+          </div>
+
+          <button id="about-cta-btn">Let's get in touch!</button>
+        </div>
+      </section>
+
+      <section id="about-2">
+        <div class="container">
+          <h2><span class="font-highlight">Skills</span> and tools</h2>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam,
+            rerum temporibus beatae consequuntur ipsam non ratione accusamus
+            necessitatibus quaerat maxime minus nostrum veritatis, magnam
+            blanditiis.
+          </p>
+          <figure>
+            <img src="" alt="" />
+          </figure>
+        </div>
+      </section>
+
+      <section id="about-3">
+        <div class="container">
+          <h3>Hi, I am James, A Bootcamp Student</h3>
           <p>
             Currently residing in Singapore. I love building interactive,
             digital experiences on the web.
           </p>
 
-          <button>Get in touch with me</button>
+          <h3>Hi, I am James, A Bootcamp Student</h3>
+          <p>
+            Currently residing in Singapore. I love building interactive,
+            digital experiences on the web.
+          </p>
+
+          <h3>Hi, I am James, A Bootcamp Student</h3>
+          <p>
+            Currently residing in Singapore. I love building interactive,
+            digital experiences on the web.
+          </p>
         </div>
       </section>
 
       <section id="projects">
         <div class="container">
-          <h1>Hi, I am James, A Bootcamp Student</h1>
+          <h2>Featured Projects</h2>
           <p>
-            Currently residing in Singapore. I love building interactive,
-            digital experiences on the web.
+            To find out more details about a specific project, please click on
+            it.
           </p>
         </div>
       </section>
 
       <section id="contact">
         <div class="container">
-          <h1>Hi, I am James, A Bootcamp Student</h1>
-          <p>
-            Currently residing in Singapore. I love building interactive,
-            digital experiences on the web.
-          </p>
+          <h2>Let's get in touch!</h2>
+          <p>either by email or through my social media.</p>
         </div>
       </section>
     </main>
 
     <footer></footer>
 
-    <script src="script.js"></script>
+    <script src="interactions.js"></script>
   </body>
 </html>

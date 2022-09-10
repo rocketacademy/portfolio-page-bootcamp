@@ -1,3 +1,112 @@
+* {
+  box-sizing: border-box;
+  font-family: Helvetica;
+}
+
+/* top navigation bar */
+
+header {
+  display: flex;
+  justify-content: center;
+  background: rgb(18, 15, 34);
+}
+
+#top-navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1280px;
+  margin: 15px auto;
+}
+
+#top-nav-items {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+/* sections and container settings */
+
 body {
-  background-color: white;
+  margin: 0;
+  background: rgb(18, 15, 34);
+  color: azure;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  max-width: 1280px;
+  margin: 20px auto;
+}
+
+/* combo settings */
+
+#about-1 .container {
+  flex-direction: column;
+}
+
+/* other settings */
+
+button {
+  width: fit-content;
+  padding: 15px 30px;
+  margin: 30px 0 0 0;
+  background: rgba(0, 0, 0, 0);
+  color: azure;
+  border: 2px solid rgb(49, 219, 162);
+  border-radius: 4px;
+
+  scale: 1;
+  transition: 0.5s;
+}
+
+a {
+  color: azure;
+  text-decoration: none;
+}
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+/* type settings */
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  margin: 30px 0 0 0;
+}
+
+p {
+  font-weight: lighter;
+  margin: 30px 0 0 0;
+}
+
+.font-highlight {
+  color: rgb(49, 219, 162);
+}
+
+/* interactions */
+
+button:hover {
+  background: rgb(49, 219, 162);
+  scale: 1.05;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.active {
+  text-decoration: underline solid rgb(49, 219, 162);
+  text-decoration-thickness: 4px;
+  text-underline-offset: 15px;
 }
