@@ -158,10 +158,33 @@
             </p>
           </div>
 
-          <figure class="lightbox-wrapper">
-  <div class="column">
-    <img src="project-01.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
-          </figure>
+          <div class="slides-wrapper">
+            <div class="slider-container">
+              <div class="slides transition">
+                <img src="images/qp-slider-img01.jpg" width="50%" />
+                <div class="caption">Project One</div>
+              </div>
+
+              <div class="slides transition">
+                <img src="images/qp-slider-img01.jpg" width="50%" />
+                <div class="caption">Project Two</div>
+              </div>
+
+              <div class="slides transition">
+                <img src="images/qp-slider-img01.jpg" width="50%" />
+                <div class="caption">Project Three</div>
+              </div>
+
+              <a class="slider-back" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="slider-next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <div class="slider-dots-div">
+              <span class="slider-dots" onclick="currentSlide(1)"></span>
+              <span class="slider-dots" onclick="currentSlide(2)"></span>
+              <span class="slider-dots" onclick="currentSlide(3)"></span>
+            </div>
+          </div>
         </div>
       </section>
 
