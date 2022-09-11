@@ -1,0 +1,73 @@
+body {
+  font-family: Georgia;
+  background-color: white;
+  color: black;
+}
+
+.navbar {
+  overflow: hidden;
+  float: right;
+}
+
+.navbar a {
+  float: left;
+  color: dimgray;
+  text-align: right;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.navbar a:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  color: black;
+}
+
+#contact {
+  margin: 0px auto;
+  padding: 0px 1.56rem;
+  max-width: 70rem;
+  width: 100%;
+}
+
+.contact-info {
+  text-align: left;
+  margin: auto;
+}
+
+.contact-info h1 {
+  font-size: 80px;
+}
+
+.contact-info h3 {
+  font-size: 40px;
+}
+
+.contact-info p {
+  font-size: 30px;
+  margin: 20px 0px;
+}

@@ -1,3 +1,148 @@
 body {
+  font-family: Georgia;
   background-color: white;
+  color: black;
+}
+
+.navbar {
+  overflow: hidden;
+  margin-bottom: 10px;
+  float: right;
+}
+
+.navbar a {
+  float: left;
+  color: dimgray;
+  text-align: right;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.navbar a:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  color: black;
+}
+
+/* Class for short intro section */
+.intro {
+  display: grid;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  width: 80%;
+  color: #303030;
+}
+
+.intro h1 {
+  font-size: 60px;
+  margin-bottom: 5px;
+}
+
+#projects {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.project-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-rows: auto;
+  grid-column-gap: 30px;
+  row-gap: 50px;
+  padding: 24px 24px;
+}
+
+.project-wrapper p {
+  font-size: 20px;
+}
+
+.project-tile img {
+  width: 100%;
+}
+
+#skillset {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#skillset h2 {
+  font-size: 30px;
+  color: #303030;
+  font-weight: 2;
+}
+
+.skill-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
+  border-bottom-color: #303030;
+  margin: 0px;
+}
+
+.skill-wrapper-text {
+  border-top: 1px solid #303030;
+}
+
+.skill-wrapper-text h4 {
+  margin: 20px 0px;
+  font-size: 40px;
+  color: #303030;
+}
+
+.bottom-landing {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 10px;
+  margin: 0px;
+  background-color: #303030;
+  color: aliceblue;
+  width: 100%;
+}
+
+.bottom-landing h2 {
+  font-size: 30px;
+  margin: 50px;
+}
+
+.bottom-landing p {
+  font-size: 20px;
+  margin: 50px;
+  text-align: right;
+  text-decoration: none;
+  color: white;
+}
+
+.bottom-landing a {
+  padding-left: 10px;
+  text-align: right;
+  text-decoration: underline;
+  color: white;
 }

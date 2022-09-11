@@ -1,0 +1,62 @@
+body {
+  font-family: Georgia;
+  background-color: white;
+  color: black;
+}
+
+.navbar {
+  overflow: hidden;
+  margin-bottom: 10px;
+  float: right;
+}
+
+.navbar a {
+  float: left;
+  color: dimgray;
+  text-align: right;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  display: inline-block;
+  position: relative;
+  color: black;
+}
+
+.navbar a:after {
+  content: "";
+  position: absolute;
+  width: 80%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.navbar a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  color: black;
+}
+
+/* Class for short intro section */
+.intro {
+  display: grid;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  width: 80%;
+  color: #303030;
+}
+
+.portrait img {
+  max-width: 50%;
+}
