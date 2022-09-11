@@ -2,12 +2,189 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-
     <link href="styles.css" rel="stylesheet" />
-
-    <title>Rocket Academy</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css"
+    />
+    <title>JJ's Portfolio</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Introduction homepage -->
+    <div class="home">
+      <div class="grid">
+        <div id="home-image">
+          <img src="images/Pang-Jin-Jia.webp" alt="" />
+        </div>
+
+        <div id="home-intro">
+          <h1>Hi there! I am JJ</h1>
+          <h1><i>A budding</i> <code>[ SOFTWARE_ENGINEER ]</code> :)</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About me -->
+    <div id="aboutme">
+      <div class="grid">
+        <div>
+          <dl>
+            <dt><i class="fa fa-user" aria-hidden="true"></i> Profile:</dt>
+            <br />
+            <dd>Name: Pang Jin Jia</dd>
+            <dd>Age: 32</dd>
+            <dd>Race: Chinese</dd>
+            <dd>Nationality: Singaporean</dd>
+            <br /><br />
+            <dt><i class="fa fa-cutlery" aria-hidden="true"></i> Food:</dt>
+            <br />
+            <dd>ANY fast food!!!</dd>
+            <dd>
+              Black coffee is LOVE
+              <i class="fa fa-heartbeat" aria-hidden="true"></i>
+            </dd>
+            <br /><br />
+            <dt><i class="fa fa-bicycle" aria-hidden="true"></i> Hobbies:</dt>
+            <br />
+            <dd>Netflix K-dramas, movies</dd>
+            <dd>Computer (steam) RTS games</dd>
+            <dd>Jogging, cycling</dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt><i class="fa-solid fa-code"></i> Programming skills:</dt>
+            <br />
+            <dd class="text-info">- HTML</dd>
+            <dd class="text-info">- CSS</dd>
+            <dd class="text-info">- Javascript</dd>
+            <dd class="text-info">- Python</dd>
+            <dd class="text-info">- C++ (Arduino)</dd>
+            <br />
+            <dt>
+              <i class="fa-solid fa-screwdriver-wrench"></i> Frameworks / Tools:
+            </dt>
+            <br />
+            <dd class="text-info">- jQuery</dd>
+            <dd class="text-info">- Bootstrap</dd>
+            <dd class="text-info">- React / React Native</dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt><i class="fa-solid fa-graduation-cap"></i> Education:</dt>
+            <br />
+            <dd>National University of Singapore</dd>
+            <br />
+            <dd class="text-info">- Bachelor of Science (Nursing)</dd>
+            <br /><br />
+            <dd>Singapore Polytechnic PACE</dd>
+            <br />
+            <dd class="text-info">- Diploma (Conversion) Web & Programming</dd>
+            <dd class="text-info">- Full Stack Web Development</dd>
+            <br /><br />
+            <dd>Institute of Adult Learning</dd>
+            <br />
+            <dd class="text-info">
+              - Advanced Certificate in Learning & Performance
+            </dd>
+          </dl>
+        </div>
+        <div>
+          <dl>
+            <dt><i class="fa-solid fa-calendar-days"></i> Employment:</dt>
+            <br />
+            <dt>2014 - 2015</dt>
+            <br />
+            <dd>National University Hospital</dd>
+            <br />
+            <dd class="text-info">- Staff Nurse (Cardiology)</dd>
+            <br /><br />
+            <dt>2015 - 2022</dt>
+            <br />
+            <dd>Nullspace Robotics</dd>
+            <br />
+            <dd class="text-info">- Part-time / Full-time Trainer</dd>
+            <dd class="text-info">- Senior Trainer</dd>
+            <dd class="text-info">- Senior Manager, Training & Curriculum</dd>
+            <dd class="text-info">- Head of Technology</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <h1>My Projects</h1>
+      <div class="portfolio-grid">
+        <div class="portfolio-card">
+          <a href="http://tcpc.org.sg/"
+            ><img src="images/church.jpeg" alt="church photo"
+          /></a>
+          <br />
+          <hr />
+          <br />
+          <p>
+            My Church's website. My first live project. Design started since
+            2021, using beginner skills learnt from part-time Singapore
+            Polytechnic PACE academy Front-end & Full stack courses.
+          </p>
+        </div>
+        <div class="portfolio-card">
+          <a href="https://longpaladin.github.io/recipe-site-bootcamp/"
+            ><img src="images/chef-recipe.png" alt="recipe photo"
+          /></a>
+          <br />
+          <hr />
+          <br />
+          <p>
+            First HTML assignment from Rocket Academy's Software Engineering
+            course.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact">
+      <h1><i class="fa-solid fa-mug-hot"></i> Cuppa Coffee? Contact me :)</h1>
+      <br />
+      <p>
+        <a href="https://www.facebook.com/pang.j.jia"
+          ><i class="fa-brands fa-square-facebook fa-2xl" aria-hidden="true"></i
+        ></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a
+          href="https://www.linkedin.com/in/jin-jia-pang-970675148/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin fa-2xl" aria-hidden="true"></i
+        ></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/longpaladin">
+          <i class="fa-brands fa-github fa-2xl" aria-hidden="true"></i>
+        </a>
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <p>
+        **This is a portfolio with <i><b>semi-real</b></i> info** 2022 &copy;
+        All rights reserved.
+      </p>
+    </div>
   </body>
 </html>
