@@ -1,3 +1,103 @@
 body {
   background-color: white;
+  margin: 0;
+}
+
+.nav-bar {
+  background-color: #333333;
+  margin: 0;
+}
+
+.nav-button-wrapper {
+  margin: 0;
+  background-color: #333333;
+  list-style-type: none;
+  align-items: center;
+  gap: 32px;
+  height: 100%;
+  display: flex;
+}
+
+.nav-button-wrapper a {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  padding: 16px;
+  display: block;
+}
+
+.nav-button-wrapper a:hover {
+  background-color: #111111;
+}
+
+.section-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  margin: 0;
+  padding: 0px 50px;
+  background-color: orange;
+  color: whitesmoke;
+}
+
+div.background-alt {
+  background-color: navy;
+}
+
+.experience-card {
+  margin: 0px 24px;
+}
+
+.education-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.education-card {
+  margin: 0px 24px;
+}
+.education-bottom-border {
+  border-bottom: 1px solid navy;
+}
+
+.project-card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-column-gap: 24px;
+  padding: 0 24px;
+}
+
+.project-card img {
+  width: 100%;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input,
+select {
+  width: 300px;
+  padding: 0px;
+  margin: 10px;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 300px;
+  padding: 0px;
+  margin: 10px;
+  box-sizing: border-box;
+  height: 50px;
+}
+
+button {
+  width: 100px;
+  margin: 10px;
+  box-sizing: border-box;
 }

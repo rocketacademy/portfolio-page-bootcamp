@@ -2,12 +2,314 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+      rel="stylesheet"
+    />
 
-    <link href="styles.css" rel="stylesheet" />
-
-    <title>Rocket Academy</title>
+    <link href="./styles.css" rel="stylesheet" />
   </head>
+
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+      <div class="nav-bar">
+        <ul class="nav-button-wrapper">
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#experience">Experience</a>
+          </li>
+          <li>
+            <a href="#education">Education</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="section-wrapper">
+      <div id="lead" class="section">
+        <div id="lead-content">
+          <h1>Eugene Ng</h1>
+          <h2>Software Engineer</h2>
+          <a href="#" class="btn-rounded-white">Download Resume</a>
+        </div>
+        <!-- End #lead-content -->
+
+        <div id="lead-down">
+          <span>
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+          </span>
+        </div>
+        <!-- End #lead-down -->
+      </div>
+      <!-- End #lead -->
+
+      <div id="about" class="section background">
+        <div class="col-md-4">
+          <h2 class="heading">About Me</h2>
+        </div>
+        <div class="col-md-8">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec
+            nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur
+            libero. Morbi dapibus porta quam laoreet placerat. Donec eu vehicula
+            neque. Donec viverra lorem nunc, tempus euismod eros sollicitudin
+            ut. Quisque et tincidunt libero. Donec id pharetra justo. Proin
+            euismod lacinia dolor, eu scelerisque justo tempus pharetra. Vivamus
+            nunc justo, finibus ut nisl sed, euismod rhoncus nulla. Proin sed
+            magna egestas, egestas ante et, congue eros. In consequat, mauris
+            dapibus tincidunt suscipit, ex libero aliquet diam, at maximus risus
+            enim non leo.
+          </p>
+        </div>
+      </div>
+      <!-- End #about -->
+
+      <div id="experience" class="section background-alt">
+        <h2 class="heading">Experience</h2>
+        <div class="experience-card-wrapper">
+          <div class="experience-card">
+            <h3>DBS</h3>
+            <h4>Software Engineer</h4>
+            <span class="experience-date">Mar 2022 - Present</span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec
+              nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur
+              libero. Morbi dapibus porta quam laoreet placerat.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- End #experience -->
+
+      <div id="education" class="section">
+        <h2 class="heading">Education</h2>
+        <div class="education-card-wrapper">
+          <div class="education-card education-bottom-border">
+            <h3>Rocket Academy</h3>
+            <span class="education-date">Sep 2021 - Apr 2023</span>
+            <h4>Part-time bootcamp</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec
+              nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur
+              libero. Morbi dapibus porta quam laoreet placerat.
+            </p>
+          </div>
+          <!-- End .education-card -->
+
+          <div class="education-card education-bottom-border">
+            <h3>NUS-ISS</h3>
+            <span class="education-date">Dec 2021 - Mar 2022</span>
+            <h4>Graduate Diploma in Software Development</h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec
+              nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur
+              libero. Morbi dapibus porta quam laoreet placerat.
+            </p>
+          </div>
+          <!-- End .education-card -->
+          <div class="education-card">
+            <h3>University College London</h3>
+            <span class="education-date">Sept 2016 - Sept 2019</span>
+            <h4>
+              Bachelor of Engineering in Mechanical Engineering with Business
+              Finance
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+              in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec
+              nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur
+              libero. Morbi dapibus porta quam laoreet placerat.
+            </p>
+          </div>
+          <!-- End .education-card -->
+        </div>
+      </div>
+      <!-- End #education -->
+
+      <div id="projects" class="section background-alt">
+        <div class="project-header">
+          <h2 class="heading">Projects</h2>
+        </div>
+
+        <div class="project-card-wrapper">
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./images/calculator.jpg" class="project-image" />
+            </div>
+            <!-- End .project-image -->
+            <div class="project-info">
+              <h3>Project Name Here</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut
+                tortor nec nulla commodo malesuada sit amet vel lacus. Fusce
+                eget efficitur libero. Morbi dapibus porta quam laoreet
+                placerat.
+              </p>
+              <a href="#">View Project</a>
+            </div>
+            <!-- End .project-info -->
+
+            <!-- End .project -->
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./images/library.jpg" class="project-image" />
+            </div>
+            <!-- End .project-image -->
+            <div class="project-info">
+              <h3>Project Name Here</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut
+                tortor nec nulla commodo malesuada sit amet vel lacus. Fusce
+                eget efficitur libero. Morbi dapibus porta quam laoreet
+                placerat.
+              </p>
+              <a href="#">View Project</a>
+            </div>
+            <!-- End .project-info -->
+
+            <!-- End .project -->
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img src="./images/snake.jpg" class="project-image" />
+            </div>
+            <!-- End .project-image -->
+            <div class="project-info">
+              <h3>Project Name Here</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut
+                tortor nec nulla commodo malesuada sit amet vel lacus. Fusce
+                eget efficitur libero. Morbi dapibus porta quam laoreet
+                placerat.
+              </p>
+              <a href="#">View Project</a>
+            </div>
+            <!-- End .project-info -->
+
+            <!-- End .project -->
+          </div>
+        </div>
+      </div>
+
+      <!-- End #projects -->
+
+      <div id="skills" class="section">
+        <h2 class="heading">Skills</h2>
+        <ul>
+          <li>JavaScript</li>
+          <li>Node.js</li>
+          <li>AngularJs</li>
+          <li>React</li>
+          <li>Java Spring</li>
+        </ul>
+      </div>
+      <!-- End #skills -->
+
+      <div id="contact" class="section background-alt">
+        <h2>Get in Touch</h2>
+        <div id="contact-form">
+          <form
+            method="POST"
+            action="https://formspree.io/email@email.com"
+            class="form-container"
+          >
+            <input
+              class="form-item"
+              type="hidden"
+              name="_subject"
+              value="Contact request from personal website"
+            />
+            <input
+              class="form-item"
+              type="email"
+              name="_replyto"
+              placeholder="Your email"
+              required
+            />
+            <textarea
+              class="form-item"
+              name="message"
+              placeholder="Your message"
+              required
+            ></textarea>
+            <button class="form-item" type="submit">Send</button>
+          </form>
+        </div>
+        <!-- End #contact-form -->
+      </div>
+      <!-- End #contact -->
+    </div>
+
+    <!-- <footer>
+      <div class="col-sm-5 copyright">
+        <p>Copyright &copy; <span id="current-year">2022</span> YOUR NAME</p>
+      </div>
+      <div class="col-sm-2 top">
+        <span id="to-top">
+          <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        </span>
+      </div>
+      <div class="col-sm-5 social">
+        <ul>
+          <li>
+            <a href="https://github.com/" target="_blank"
+              ><i class="fa fa-github" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://stackoverflow.com/" target="_blank"
+              ><i class="fa fa-stack-overflow" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/" target="_blank"
+              ><i class="fa fa-linkedin" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><i class="fa fa-facebook" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/" target="_blank"
+              ><i class="fa fa-twitter" aria-hidden="true"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://plus.google.com/" target="_blank"
+              ><i class="fa fa-google-plus" aria-hidden="true"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    End footer -->
   </body>
 </html>
