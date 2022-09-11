@@ -1,3 +1,230 @@
+html,
 body {
-  background-color: white;
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+/* Navbar */
+nav {
+  background-color: black;
+  min-height: 8vh;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 3vh 3vw;
+}
+
+li:hover {
+  background-color: rgba(200, 200, 200, 0.5);
+  font-weight: bold;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 1.5vw;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+nav a:hover {
+  color: gold;
+  text-decoration: underline;
+}
+
+/* Main content */
+
+/* Generic shared CSS */
+#aboutme,
+#portfolio {
+  min-height: 100vh;
+  min-width: 98vw;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-rows: auto;
+}
+
+#aboutme,
+#contact {
+  background-color: rgba(200, 200, 200, 0.5);
+}
+
+/* Intro homepage */
+.home {
+  min-height: 91vh;
+  min-width: 98vw;
+}
+#home-image {
+  padding: 2vw;
+}
+
+#home-image > img {
+  height: 80vh;
+  object-fit: contain;
+  width: 100%;
+  border-radius: 50%;
+}
+
+#home-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.1vw;
+  min-height: 91vh;
+}
+/* About me */
+
+dl {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.8vw;
+  min-height: 100vh;
+}
+
+dt {
+  font-size: 2vw;
+  font-weight: bold;
+}
+
+dd {
+  font-size: 1.8vw;
+  font-style: italic;
+}
+
+dd.text-info {
+  font-size: 1.4vw;
+}
+
+/* Portfolio */
+#portfolio > h1 {
+  text-align: center;
+  padding: 10vh 5vh 2vh 5vh;
+  font-size: 3vw;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-rows: auto;
+  gap: 40px;
+  padding: 0 40px;
+}
+
+.portfolio-card {
+  width: 90%;
+  margin: auto;
+}
+
+.portfolio-card > a > img {
+  height: 30vh;
+  object-fit: contain;
+  width: 100%;
+}
+
+.portfolio-card p {
+  text-align: center;
+  font-size: 1.4vw;
+  width: 80%;
+  margin: auto;
+}
+
+/* Contact */
+#contact {
+  width: 100%;
+  min-height: 60vh;
+  text-align: center;
+  padding-top: 40vh;
+  padding-bottom: 0;
+}
+
+#contact h1 {
+  font-size: 3vw;
+  transition: transform 1s;
+}
+
+#contact h1:hover {
+  transform: scale(1.2);
+}
+
+#contact a:hover {
+  animation: rainbow 1.5s;
+}
+
+#contact a {
+  color: black;
+}
+
+#contact p {
+  font-size: xx-large;
+}
+
+@keyframes rainbow {
+  0% {
+    color: red;
+  }
+  17% {
+    color: orange;
+  }
+  34% {
+    color: yellow;
+  }
+  50% {
+    color: green;
+  }
+  66% {
+    color: blue;
+  }
+  83% {
+    color: indigo;
+  }
+  100% {
+    color: violet;
+  }
+}
+
+/* Footer */
+#footer > p {
+  text-align: center;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 1200px) {
+  nav a {
+    font-size: 2vw;
+  }
+
+  #home-intro {
+    font-size: 1.8vw;
+  }
+
+  #aboutme dt {
+    font-size: 2.8vw;
+  }
+
+  #aboutme dd {
+    font-size: 2.6vw;
+  }
+
+  #portfolio > h1 {
+    padding: 5vh;
+  }
+
+  #contact h1 {
+    font-size: 4vw;
+  }
 }
