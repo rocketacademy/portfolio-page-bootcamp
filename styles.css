@@ -1,5 +1,5 @@
 body {
-  background-image: url("space.jpg");
+  background-image: url("./images/space.jpg");
   background-size: cover;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 #main-display{
-  background-image: url("techBG.png");
+  background-image: url("./images/techBG.png");
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -76,7 +76,7 @@ p{
 }
 
 #skillset{
-  background-image: url("neonlight.jpg");
+  background-image: url("./images/neonlight.jpg");
   background-size: cover;
   display: flex;
   align-items: center;
@@ -163,6 +163,9 @@ p{
 
 span{
   font-size: 24px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
 }
 
 #education{
@@ -191,6 +194,7 @@ span{
 .educationDescription{
   font-size: 22px;
   text-align: left;
+  color: black;
 }
 
 .projectList{
@@ -204,4 +208,30 @@ span{
   font-size: 32px;
   font-weight: bold;
   color: black;
+}
+
+.shrink{
+  width: 300px;
+  height: 200px;
+}
+
+.projectShowcase{
+  border-radius: 8%;
+  background-color: #b23cfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30vw;
+  height: 88vh;
+  margin: 10px 10px;
+}
+
+.projectShowcase p{
+  margin: 8px;
+  text-align: center;
+}
+
+.projectShowcase ul{
+  margin: 5px
 }
