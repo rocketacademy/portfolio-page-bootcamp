@@ -3,11 +3,70 @@
   <head>
     <meta charset="utf-8" />
 
-    <link href="styles.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"/>
 
-    <title>Rocket Academy</title>
+    <title>Portfolio</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <nav class="navigation-bar">
+    <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+    <section id="content-container" class="content-container">
+      <div class="typing">
+      <h1>oh hi there!</h1></div>
+</section>
+
+      <section id="about">
+        <div class="hero-grid">
+        <h1>hello!👋 i'm valerie.</h1>
+        </div>
+        </section>
+
+    <section id="projects" class="projects">
+      <h1>Projects</h1>
+      <div class="project-card-wrapper">
+      <div class="project-card">
+        <img src="\images\project1.jpg">
+      <h2>project1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget condimentum sem. Praesent justo nulla, dignissim eget sem non, condimentum dignissim lorem. Cras eu tincidunt quam. Vestibulum tincidunt laoreet elit, a consequat nisi. Nam non efficitur justo. Aliquam bibendum orci a nunc lobortis faucibus. Nulla quis turpis non augue porttitor.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="\images\project2.jpg">
+      <h2>project2</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget condimentum sem. Praesent justo nulla, dignissim eget sem non, condimentum dignissim lorem. Cras eu tincidunt quam. Vestibulum tincidunt laoreet elit, a consequat nisi. Nam non efficitur justo. Aliquam bibendum orci a nunc lobortis faucibus. Nulla quis turpis non augue porttitor.</p>
+      </div>
+
+      <div class="project-card">
+        <img src="\images\project3.jpg">
+      <h2>project3</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eget condimentum sem. Praesent justo nulla, dignissim eget sem non, condimentum dignissim lorem. Cras eu tincidunt quam. Vestibulum tincidunt laoreet elit, a consequat nisi. Nam non efficitur justo. Aliquam bibendum orci a nunc lobortis faucibus. Nulla quis turpis non augue porttitor.</p>
+      </div>
+</div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h1>Contact</h1>
+      <div class="contact-wrapper">
+      <form class="form-control">
+        <div>
+          <input type="text"  id="name" placeholder="your name" name="name" value="" required>
+        </div>
+
+      <div>
+          <input type="email" id="email" placeholder="your email" name="email" value="" required>
+      </div>
+
+      <div>
+          <textarea placeholder="your message" name="message" required></textarea>
+      </div>
+
+      <button class="send-button" id="submit" type="submit" value="SEND">SEND</button>
+</form>
+    </section>
   </body>
 </html>

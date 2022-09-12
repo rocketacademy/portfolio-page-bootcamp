@@ -1,3 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+
 body {
-  background-color: white;
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background-image: linear-gradient(90deg, #fcecfe, #fbf6e7, #e6fcf5);
+}
+
+.content-container {
+  margin: 0 auto;
+}
+.header {
+  text-align: center;
+  color: black;
+  font-style: italic;
+}
+.navigation-bar {
+  position: fixed;
+  width: 100%;
+}
+
+.navigation-bar ul {
+  margin: 0;
+  background-color: #e6fcf5;
+  padding: 0 16px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  display: flex;
+  gap: 32px;
+  justify-content: flex-end;
+  min-height: 60px;
+  align-items: center;
+}
+
+.navigation-bar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navigation-bar a:hover {
+  text-decoration: underline;
+}
+
+.content-container {
+  display: flex;
+  place-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.typing {
+  width: 20ch;
+  animation: typing 2s steps(20), blink 0.5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid;
+  font-family: monospace;
+  font-size: 1em;
+  margin: 0 auto;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+#about {
+  background-color: #fcecfe;
+}
+
+.hero-grid {
+  display: grid;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+  height: auto;
+  font-family: "Courier New", Courier, monospace;
+}
+
+#projects {
+  background-color: #fbf6e7;
+}
+
+.projects h1 {
+  text-align: center;
+}
+
+.project-card-wrapper {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-column-gap: 24px;
+  row-gap: 24px;
+  padding: 0 24px;
+}
+
+.project-card img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.project-card img:hover {
+  transform: scale(1.03);
+}
+
+#contact {
+  background-color: #e6fcf5;
+}
+
+.contact {
+  display: grid;
+  padding: 0;
+  margin: 0 auto;
+  padding-bottom: 25px;
+  text-align: center;
+}
+
+.contact-wrapper {
+  display: grid;
+  text-align: center;
+}
+
+.form-control textarea {
+  max-width: 400px;
+  background-color: #e6fcf5;
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.send-button {
+  margin-top: 15px;
+  height: 34px;
+  width: 400px;
+  overflow: hidden;
+  transition: all 0.2s ease-in-out;
 }
