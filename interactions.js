@@ -1,7 +1,3 @@
-// test alert
-
-// alert("working");
-
 // active state of anchor links
 
 let topNavItems = document.getElementById("top-nav-items");
@@ -16,10 +12,6 @@ for (let i = 0; i < navLink.length; i++) {
     this.className += " active";
   });
 }
-
-// video playback speed
-
-// document.querySelector("video").playbackRate = 0.5;
 
 // slider
 
