@@ -2,12 +2,189 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
     <link href="styles.css" rel="stylesheet" />
 
     <title>Rocket Academy</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class = "centerDiv">
+      <div id = "main-display">
+          <div class = "displayPhoto">
+            <img id = "facephoto" src = "./images/facePhoto.png" width = "150" height = "150">
+          </div>
+        <div id = "briefIntro">
+          <p class = "name">Loy Chai Ee</p>
+          <p>
+            Undergraduate student from NTU Electrical and Electronics Engineering<br>
+            Avid Gamer and volunteer in my spare time. Loves technology. Loves to push boundaries and be better
+          </p>
+          <button id = "resumeDownload">DOWNLOAD RESUME</button>
+        </div>
+      </div>
+    </div>
+    <div class = "centerDiv">
+      <div id = "skillset">
+        <div>
+          <h1>Professional Skillset</h1>
+        </div>
+        <h2>Technical Skillset</h2>
+        <div class = "rows">
+          <div class = "column">
+            <div class = 'skills'>
+              <span>Making bad and cringy jokes</span>
+              <div class = "progressBar">
+                <div class = "expert">Expert</div>
+              </div>
+            </div>
+            <div class = 'skills'>
+              <span>HTML/CSS</span>
+              <div class = "progressBar">
+                <div class = "advanced">Advanced</div>
+              </div>
+            </div>
+            <div class = 'skills'>
+              <span>C/C++/C#</span>
+              <div class = "progressBar">
+                <div class = "intermediate">Intermediate</div>
+              </div>
+            </div>
+            <div class = 'skills'>
+              <span>Python (Data Analysis and AI)</span>
+              <div class = "progressBar">
+                <div class = "basics">Basics</div>
+              </div>
+            </div>
+          </div>
+          <div class = "column" style = "margin-left: 20px;">
+            <div class = 'skills'>
+              <span>Visual Studio Code</span>
+              <div class = "progressBar">
+                <div class = "expert">Expert</div>
+              </div>
+            </div>
+            <div class = 'skills'>
+              <span>Javascript</span>
+              <div class = "progressBar">
+                <div class = "advanced">Advanced</div>
+              </div>
+            </div>
+            <div class = 'skills'>
+              <span>Git/Github</span>
+              <div class = "progressBar">
+                <div class = "intermediate">Intermediate</div>
+              </div>
+            </div>
+            <div class = 'skills'>
+              <span>Arduino</span>
+              <div class = "progressBar">
+                <div class = "basics">Basics</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class = "centerDiv">
+      <div id = "education">
+        <h1 id = "bigHeader">📖Education📖</h1>
+        <ul id = "educationList">
+          <li>
+            <h2 class = "EducationHeader">Bachelor of Electronic and Electrical Engineering with Honours <span>@ Nanyang Technogical University</span></h2>
+            <span>From August 2021 to May 2025</span>
+            <p class = "educationDescription">
+              Final Year Project: AI Virtual Assistant - Assisted in creating an application using various frameworks that assists programmers and software engineers in some areas of software development. The features include automatically generating comments for codes, generating commit messages, generating release notes, code refactoring, and a voice bot assistant.
+            </p>
+          </li>
+          <li>
+            <h2 class = "EducationHeader">Rocket Academy: Basics</h2>
+            <span>June 2022</span>
+            <p class = "educationDescription">
+              Have basic-intermediate understanding of Javascript, HTML and CSS <br>
+              Completed 3 projects:<br>
+              <ul class = "projectList">
+                <li>Project 1: Scissors Paper Stone</li>
+                <li>Project 2: Beat That</li>
+                <li>Project 3: Blackjack</li>
+              </ul>
+            </p>
+          </li>
+          <li>
+            <h2 class = "EducationHeader">Rockey Academy: Software Engineering Bootcamp</h2>
+            <span>From Sept 2022 to Apr 2023</span>
+            <p class = "educationDescription">
+              Advanced understanding of HTML, CSS, Javascript, Typescript and SQL<br>
+              Experienced in Javascript Frameworks: React, nodeJS, Express.js
+              Experienced in Firebase, Sequalize, Auth0
+              Completed 4 projects:
+              <ul class = "projectList">
+                <li>Project 1 (Frontend): Build a Frontend App</li>
+                <li>Project 2 (Full-stack): Build a Full-stack App (Firebase)</li>
+                <li>Project 3 (Backend): Build a Full-stack app (Express)</li>
+                <li>Project 4: Capstone Project</li>
+              </ul>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class = "centerDiv">
+      <div id = "Projects">
+        <h1 id = "bigHeader">Projects</h1>
+        <div class = "rows">
+          <div class = "projectShowcase">
+            <h1 style="text-align: center;">RA Basics Project 1: <br>Rock, Paper, Scissors</h1>
+            <img class = "shrink" src = "./images/RPS.png">
+            <p>
+              Simple Rock Paper Scissor Game with AI<br>
+              <span>Features:</span><br>
+              <ul style = "font-size: 20px;">
+                <li>Normal Mode</li>
+                <li>Reverse Mode</li>
+                <li>Muk-jji-ppa</li>
+                <li>AI vs AI</li>
+                <li>Recorded Stats</li>
+                <li>Mode control: Choose your mode</li>
+              </ul>
+              <a href="">Link to Github Repo</a>
+            </p>
+          </div>
+          <div class = "projectShowcase">
+            <h1 style="text-align: center;">RA Basics Project 2: <br>Beat That!</h1>
+            <img class = "shrink" src = "./images/diceroll.jfif">
+            <p>
+              Multiplayer Random Dice Game.<br>
+              Player with the highest-combined number wins.<br>
+              <span>Features:</span><br>
+              <ul style = "font-size: 20px;">
+                <li>Scoring</li>
+                <li>Leaderboard</li>
+                <li>Lowest-Combined Mode</li>
+                <li>Highest-Combined Mode</li>
+                <li>Auto-generated combination</li>
+                <li>Varied number of players and dice</li>
+              </ul>
+              <a href="https://github.com/LoyChaiEe/coding-basics/tree/main/Project2/beat-that">Link to Github Repo</a>
+            </p>
+          </div>
+          <div class = "projectShowcase">
+            <h1 style="text-align: center;">RA Basics Project 3: <br>BlackJack</h1>
+            <img class = "shrink" src = "./images/blackjack.png">
+            <p>
+              Multiplayer BlackJack <br>
+              <span>Features:</span><br>
+              <ul style = "font-size: 20px;">
+                <li>Betting</li>
+                <li>Card Display</li>
+                <li>1-6 players</li>
+                <li>Blackjack rules: Bust, Stand, Hit</li>
+                <li>Auto-track players' balance</li>
+              </ul>
+              <a href="https://github.com/LoyChaiEe/basics-blackjack-chaiee">Link to Github Repo</a>
+              <a href="https://loychaiee.github.io/basics-blackjack-chaiee/">Link to deployment</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

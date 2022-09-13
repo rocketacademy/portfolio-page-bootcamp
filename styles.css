@@ -1,3 +1,237 @@
 body {
+  background-image: url("./images/space.jpg");
+  background-size: cover;
+}
+
+.centerDiv{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 30px
+}
+
+.name{
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+#main-display{
+  background-image: url("./images/techBG.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 3px;
+  border-color: blue;
+  width: 70vw;
+  height: 55vh;
+}
+
+.displayPhoto{
+  border: solid;
+  border-color: white;
+  border-radius: 5px;
+  border-width: 5px;
+}
+
+#facephoto{
+  display: block;
+}
+
+#briefIntro{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+p{
+  font-family: 'Roboto';
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+#resumeDownload{
+  height: 50px;
+  width: 200px;
+  border: solid;
+  border-radius: 5px;
+  border-color: white;
+  border-width: 3px;
+  background-color: transparent;
+  color: white;
+  font-size: medium;
+  font-family: 'Roboto';
+}
+
+#resumeDownload:hover{
   background-color: white;
+  color: black;
+}
+
+#skillset{
+  background-image: url("./images/neonlight.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 75vh;
+  width: 70vw;
+  color: beige;
+  font-family: 'Roboto';
+  font-weight: 300;
+  border: solid;
+  border-width: 5px;
+  border-radius: 25px;
+  border-color: #B026FF;
+}
+
+.rows{
+  display: flex;
+  flex-direction: row;
+}
+
+.skills{
+  margin-bottom: 10px;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+.expert{
+  width: 90%;
+  height:100%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+.advanced{
+  width: 66%;
+  height:100%;
+  background-color: #b23cfd;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+.intermediate{
+  width: 50%;
+  height:100%;
+  background-color: #39c0ed;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+.basics{
+  width: 33%;
+  height:100%;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  border-radius: 25px;
+}
+
+.progressBar{
+  margin-top: 10px;
+  height: 30px;
+  width: 500px;
+  background-color: lightgrey;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;
+}
+
+span{
+  font-size: 24px;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+#education{
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  height: 150vh;
+  border: solid;
+  border-radius: 5%;
+  border-color: #b23cfd;
+  border-width: 10px;
+}
+
+#bigHeader{
+  text-align: center; 
+  font-size: 60px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:black;
+}
+
+#educationList{
+  color: black;
+}
+
+.educationDescription{
+  font-size: 22px;
+  text-align: left;
+  color: black;
+}
+
+.projectList{
+  font-family: 'Roboto';
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.EducationHeader{
+  font-family: 'Roboto';
+  font-size: 32px;
+  font-weight: bold;
+  color: black;
+}
+
+.shrink{
+  width: 300px;
+  height: 200px;
+}
+
+.projectShowcase{
+  border-radius: 8%;
+  background-color: #b23cfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 30vw;
+  height: 88vh;
+  margin: 10px 10px;
+}
+
+.projectShowcase p{
+  margin: 8px;
+  text-align: center;
+}
+
+.projectShowcase ul{
+  margin: 5px
 }
