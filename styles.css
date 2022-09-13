@@ -1,3 +1,10 @@
 body {
-  background-color: white;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: black;
+  color: white;
+  padding-top: 50px;
+}
+
+.section {
+  padding-top: 50px;
 }

@@ -1,13 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-
-    <link href="styles.css" rel="stylesheet" />
-
-    <title>Rocket Academy</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YY's Portfolio</title>
+    <link rel="icon" href="images/panda favicon.png" />
+    <link rel="stylesheet" href="nav-bar.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="about-yy.css" />
+    <link rel="stylesheet" href="projects.css" />
+    <link rel="stylesheet" href="contact-me.css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;400;500;700;800;900&family=Roboto:wght@400;500;700&display=swap');
+      body{
+        font-family: Arima Madurai;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="nav-bar">
+      <div class="center-header">YY's personal portfolio page</div>
+      <div class="nav-buttons">
+        <a href="#about-yy">About</a>
+        <a href="#projects">Projects</a>
+        <a class="contact" href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <section id="about-yy">
+      <div class="avatar">
+        <img class="avatar-display" src="images/avatar.jpg" alt="YY's avatar" />
+        <div class="description">
+          <div class="description-header"><p>About Me</p></div>
+          <div class="write-up">
+            <p class="short-intro" data-text="flicker">Hello! I'm <span class="yy">YY</span>, an aspiring software engineer! </p>
+          </div>
+      </div>
+    </section>
+
+    <section id="projects">
+
+      <div class = "project-item">
+        <div class="item-bg" style="background-image: url(https://media.istockphoto.com/photos/cute-panda-bear-climbing-in-tree-picture-id523761634?k=20&m=523761634&s=612x612&w=0&h=fycQb31QlRoNLdJWWddooJ94a-54YLYQ3ggTLPkhvmk=)"></div>
+        <div class="project-number"><p>Project 1</p></div>
+        <div class="project-content">
+          <h1>Lorem ipsum dolor sit</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+        </div>
+      </div>
+
+      <div class = "project-item">
+        <div class="item-bg" style="background-image: url(https://www.harlingenveterinaryclinic.com/sites/default/files/styles/large/public/golden-retriever-dog-breed-info.jpg?itok=cdghqKxv)"></div>
+        <div class="project-number"><p>Project 2</p></div>
+        <div class="project-content">
+          <h1>Vestibulum laoreet lorem</h1>
+          <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.</p>
+        </div>
+      </div>
+
+      <div class = "project-item">
+        <div class="item-bg" style="background-image: url(https://www.history.com/.image/ar_16:9%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTg0NTEzNzgyNTMyNDE2OTk5/black-cat-gettyimages-901574784.jpg)"></div>
+        <div class="project-number"><p>Project 3</p></div>
+        <div class="project-content">
+          <h1>Phasellus mauris elit</h1>
+          <p>Mauris cursus magna at libero lobortis tempor. Suspendisse potenti. Aliquam interdum vulputate neque sit amet varius. Maecenas ac pulvinar nisi. Fusce vitae nunc ultrices, tristique dolor at, porttitor dolor. Etiam id cursus arcu, in dapibus nibh. Pellentesque non porta leo. Nulla eros odio, egestas quis efficitur vel, pretium sed.</p>
+        </div>
+      </div>   
+  
+
+      
+    </section>
+    <section id="contact">
+      <dv>
+        <p>Connect With Me!</p>
+      </div>
+
+      <div class="icon-row">
+        <div class="ig-div">
+          <a href="https://www.instagram.com/hangingwithyy/"><img class="ig-icon" src="images/instagram-icon.png" alt="instagram-link"></a>
+          </div>
+        <div class="gh-div">
+          <a href="https://github.com/0mgABear"><img class="github-icon" src="images/github-icon.png" alt="github-link"></a>
+          
+          
+        </div>
+        <div class="discord-giv">
+          <a href="https://www.discordapp.com/users/IcedMilo#8704"><img class="discord-icon" src="images/discord logo.png" alt=""></a>
+        </div>
+        
+        
+
+      </div>
+    </section>
   </body>
 </html>
