@@ -4,10 +4,68 @@
     <meta charset="utf-8" />
 
     <link href="styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
 
-    <title>Rocket Academy</title>
+    <title>Gary's Portfolio Page</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <!--Start Navigation-->
+    <div class="nav-container">
+      <nav id="navbar" class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="index.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!--End Navigation-->
+
+    <!--Start About Section-->
+    <section class="about-section">
+      <h1>Hello, I am Gary</h1>
+      <p>I am a student of Rocket Academy!</p>
+      <a href="#down"><button class="about-button">My Projects</button></a>
+    </section>
+    <!--End About Section-->
+
+    <!--Start Project Section-->
+    <section id="projects" class="projects-section">
+      <div class="typewriter">
+        <h2 class="projects-section-header" id="down">
+          Here Are Some Of My Projects
+        </h2>
+      </div>
+      <div class="project-flex">
+        <div class="project-one">
+          <img class="blackjack-image" src="images/blackjack.jpg" />
+          <div class="button-center">
+            <button class="blackjack-button">Blackjack</button>
+          </div>
+        </div>
+
+        <div class="project-two">
+          <img class="dog-image" src="images/dog.jpg" />
+          <div class="button-center">
+            <button class="beatthat-button">Beat That</button>
+          </div>
+        </div>
+
+        <div class="project-three">
+          <img class="sps-image" src="images/sps.jpg" />
+          <div class="button-center">
+            <button class="sps-button">Scissors Paper Stone</button>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
