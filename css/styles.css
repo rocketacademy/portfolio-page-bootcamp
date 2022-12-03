@@ -11,12 +11,19 @@ body {
   color: white;
   background-color: black;
 }
+.underline {
+  text-decoration-color: #12b886;
+  text-decoration-line: underline;
+}
 /* navbar */
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
+}
+.nav-heading {
+  font-size: 2.5rem;
 }
 .icons {
   display: flex;
@@ -24,4 +31,52 @@ body {
 }
 .icon {
   font-size: 2.4rem;
+}
+/* introduction */
+.introduction {
+  margin-top: 2rem;
+  display: flex;
+  padding-left: 2rem;
+  justify-content: space-between;
+  width: 55%;
+}
+.introduction-header {
+  font-size: 7rem;
+  line-height: 1;
+}
+.name {
+  text-underline-offset: 1.5rem;
+}
+.me {
+  /* width: 100vw; */
+  width: 40vw;
+  aspect-ratio: 1/1.5;
+}
+.img-background {
+  /* background-image: url("../img/myphoto.png"); */
+  background-color: rgb(36, 36, 36);
+  position: absolute;
+  left: 60%;
+  top: 0;
+  z-index: -1;
+  filter: grayscale(65%);
+}
+.introduction-description {
+  color: #ced4da;
+  margin-top: 4rem;
+  font-size: 1.8rem;
+}
+
+.contact-me {
+  margin-top: 7.5rem;
+  font-size: 1.8rem;
+  text-underline-offset: 3px;
+  letter-spacing: 2px;
+}
+.line {
+  margin: auto;
+  background-color: white;
+  border: 0.7px solid white;
+  margin-top: 2rem;
+  width: 90%;
 }
