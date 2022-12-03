@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "roboto" sans-serif;
+  color: white;
+  background-color: black;
+}
+/* navbar */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.icons {
+  display: flex;
+  gap: 4rem;
+}
+.icon {
+  font-size: 2.4rem;
+}
