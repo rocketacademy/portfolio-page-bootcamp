@@ -52,15 +52,16 @@ img {
 }
 
 p {
-  text-align: center;
   width: 100%;
 }
 
 .text-container {
+  display: flex;
   width: 85%;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   text-align: center;
+  /* align-items: center; */
 }
 
 @media screen and (max-width: 1200px) {
