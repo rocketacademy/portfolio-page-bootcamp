@@ -141,3 +141,29 @@ h2 {
   color: var(--orange-color);
   padding: 0.625rem 0;
 }
+
+form,
+input,
+textarea {
+  width: 100%;
+  font-family: var(--content-font);
+  font-size: var(--content-font-size);
+}
+
+input,
+textarea {
+  padding: 1em;
+  margin-bottom: 15px;
+  background-color: var(--grey-color);
+  border: 0;
+  border-radius: 8px;
+}
+
+textarea {
+  margin-bottom: 40px;
+}
+
+.submit-btn {
+  background-color: var(--orange-color);
+  color: #ffffff;
+}
