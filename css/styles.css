@@ -22,6 +22,7 @@ nav {
   top: 0;
   font-family: var(--content-font);
   font-size: 0.875rem;
+  background-color: #ffffff;
 }
 
 .nav-content {
@@ -87,7 +88,7 @@ section:nth-child(even) {
 h1 {
   font-family: var(--header-font);
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 32px;
 }
 
@@ -107,14 +108,36 @@ h1 {
   margin-right: 15px;
 }
 
-.fa-brands {
+.fa-brands,
+.fa-solid {
   color: #000000;
 }
 
-.fa-brands:hover {
+.fa-brands:hover,
+.fa-solid:hover {
   color: var(--orange-color);
 }
 
 .intro-pic {
   display: none;
+}
+
+.project-main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-flow: column wrap;
+  gap: 50px;
+}
+
+.project-indi {
+  width: 100%;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 1.35rem;
+  font-family: var(--header-font);
+  color: var(--orange-color);
+  padding: 0.625rem 0;
 }
