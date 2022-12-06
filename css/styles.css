@@ -189,3 +189,51 @@ footer .social-media {
   text-decoration: none;
   color: var(--dark-grey);
 }
+
+/* Media Queries */
+@media only screen and (min-width: 768px) {
+  .section-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  #intro .section-content {
+    justify-content: space-between;
+    gap: 50px;
+  }
+
+  .intro-text {
+    width: 60%;
+  }
+
+  .intro-pic {
+    display: block;
+    width: 20%;
+    text-align: center;
+  }
+
+  .intro-pic img {
+    max-width: 200px;
+    margin-top: 12px;
+  }
+
+  .project-main {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 5px;
+  }
+
+  .project-indi {
+    width: 45%;
+    margin-bottom: 50px;
+  }
+
+  #contact {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-form {
+    max-width: 500px;
+  }
+}
