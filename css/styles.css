@@ -135,6 +135,10 @@ h1 {
   width: 100%;
 }
 
+.project-indi img {
+  max-width: 100%;
+}
+
 h2 {
   font-weight: 700;
   font-size: 1.35rem;
@@ -196,7 +200,6 @@ footer .social-media {
   .nav-content,
   .section-content {
     max-width: 1000px;
-    margin: 0 auto;
   }
 
   #intro .section-content {
@@ -210,7 +213,7 @@ footer .social-media {
 
   .intro-pic {
     display: block;
-    width: 20%;
+    max-width: 26%;
     text-align: center;
   }
 
@@ -237,5 +240,12 @@ footer .social-media {
 
   .contact-form {
     max-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .nav-content,
+  .section-content {
+    margin: 0 auto;
   }
 }
