@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: bisque;
+}
+
+
+/* Nav */
+nav {
+  /* background-color: lightcoral; */
+  background-image: linear-gradient(to bottom, rgba(67,79,79,1), rgba(255,0,0,0));
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 80px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+nav ul {
+  /* background-color: aqua; */
+  display: flex;
+  margin-right: 80px;
+  list-style-type: none;
+}
+
+nav ul li {
+  /* background-color:aliceblue; */
+  padding-left: 70px;
+  font-size: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Hero */
+.hero-container {
+  background-color: burlywood;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+  /* top: -80px; */
+  background-image: url(./images/unsplah-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hero-container h1{
+  font-size: 70px;
+  font-weight: 600;
+  color: white;
+} 
+
+.hero-container h2 {
+  font-size: 25px;
+  font-weight: 300;
+  font-style: italic;
+  color: lightgrey;
+}
+
+/* Works */
+.works-container {
+  background-color: lightgreen;
+}
