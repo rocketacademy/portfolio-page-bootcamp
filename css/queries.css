@@ -35,6 +35,8 @@
   .skills-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    border-bottom: none;
+    margin: 4%;
   }
 
   .header {
@@ -56,13 +58,20 @@
   .icon {
     width: 2.5rem;
   }
+  .btn {
+    font-size: clamp(1.5rem, 1.5rem + 0.5vw, 3rem);
+  }
 }
 @media (min-width: 1200px) {
   .projects-section {
-    padding: 4% 4% 8% 4%;
+    padding: 0% 4% 8%;
   }
   .contact__section__description {
     text-align: left;
+    width: 60%;
+  }
+  .contact-subheader {
+    width: 60%;
   }
   .contact__section__description .contact-description {
     text-align: left;
@@ -80,5 +89,8 @@
     justify-content: space-between;
     width: 100%;
     padding: 5% 0;
+  }
+  .skills-section {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
