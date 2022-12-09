@@ -197,3 +197,12 @@ p {
   border: none;
   border-bottom: 1px solid var(--green);
 }
+/* footer */
+.footer {
+  margin: 10% 4% 0;
+
+  border-top: 1px solid var(--white);
+}
+.header {
+  padding: 15% 0;
+}
