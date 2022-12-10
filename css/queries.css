@@ -7,7 +7,9 @@
   .introduction-description {
     width: 60%;
   }
-
+  p {
+    text-align: left;
+  }
   .section-1 {
     position: relative;
   }
@@ -34,9 +36,11 @@
   }
   .skills-section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     border-bottom: none;
     margin: 4%;
+    row-gap: 5rem;
+    text-align: left;
   }
 
   .header {
@@ -65,9 +69,20 @@
 @media (min-width: 1200px) {
   .hero {
     margin-top: 7%;
+    min-block-size: 15rem;
+    gap: 4rem;
+  }
+  .introduction-header {
+    font-size: clamp(4rem, 4rem + 1vw, 7rem);
+  }
+  p {
+    font-size: clamp(2rem, 2rem + 0.5vw, 3.5rem);
   }
   .projects-section {
     padding: 0% 4% 8%;
+  }
+  .projects {
+    gap: 4rem;
   }
   .contact-subheader {
     width: 60%;
@@ -90,7 +105,17 @@
     width: 100%;
     padding: 5% 0;
   }
-  .skills-section {
-    grid-template-columns: repeat(3, 1fr);
+
+  .form-input {
+    height: 100%;
+  }
+  .portfolio-subheader {
+    font-size: clamp(2rem, 2rem + 0.5vw, 4rem);
+  }
+  .skill {
+    font-size: clamp(1rem, 1rem + 0.5vw, 2rem);
+  }
+  .link {
+    font-size: clamp(1rem, 1rem + 0.5vw, 2rem);
   }
 }
