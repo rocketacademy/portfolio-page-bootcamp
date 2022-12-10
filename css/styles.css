@@ -211,6 +211,7 @@ p {
 #contact-form {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .form-input {
   color: var(--light-grey);

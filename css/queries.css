@@ -63,15 +63,15 @@
   }
 }
 @media (min-width: 1200px) {
+  .hero {
+    margin-top: 7%;
+  }
   .projects-section {
     padding: 0% 4% 8%;
   }
-  .contact__section__description {
-    text-align: left;
-    width: 60%;
-  }
   .contact-subheader {
     width: 60%;
+    text-align: left;
   }
   .contact__section__description .contact-description {
     text-align: left;
