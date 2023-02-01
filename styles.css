@@ -99,3 +99,26 @@ p {
   max-width: 40vw;
   text-align: justify;
 }
+
+h2 {
+  margin: 80px 40px 10px;
+  font-size: 36pt;
+  font-weight: 900;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #e84a5f;
+  text-decoration-color: #e84a5f;
+  -webkit-text-decoration-style: wavy;
+  text-decoration-style: wavy;
+}
+
+#projects {
+  color: #ffffff;
+}
+
+#experience {
+  color: #fecea8;
+}
+
+#contact {
+  color: #45171d;
+}
