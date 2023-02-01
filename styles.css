@@ -1,3 +1,46 @@
-body {
-  background-color: white;
+* {
+  background: #292725;
+  /* font-family: "Dosis", sans-serif; */
+  font-family: "Roboto", sans-serif;
+}
+
+p {
+  color: #fecea8;
+}
+
+h1 {
+  color: #e84a5f;
+}
+
+img {
+  max-height: 80vh;
+  max-width: 30vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  height: 100vh;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-tab {
+  background-color: #e84a5f;
+  color: #f5f5f5;
+}
+
+#nav-page {
+  display: flex;
+  flex-direction: column;
+}
+
+#intro-box {
+  flex-direction: row;
 }
