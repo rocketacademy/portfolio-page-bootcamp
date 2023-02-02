@@ -26,19 +26,6 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  color: #e84a5f;
-  font-size: 48pt;
-  font-weight: 900;
-  margin: 40px 0;
-}
-
-p {
-  color: #f5f5f5;
-  font-size: 16pt;
-  line-height: 30px;
-}
-
 .container {
   display: flex;
   flex-direction: column;
@@ -122,6 +109,21 @@ p {
 #intro-content {
   max-width: 30vw;
   text-align: justify;
+  animation: bounceInDown;
+  animation-duration: 1.5s;
+}
+
+h1 {
+  color: #e84a5f;
+  font-size: 48pt;
+  font-weight: 900;
+  margin: 40px 0;
+}
+
+p {
+  color: #f5f5f5;
+  font-size: 16pt;
+  line-height: 40px;
 }
 
 h2 {
@@ -140,7 +142,7 @@ h2 {
   text-decoration-color: #45171d;
 }
 
-.cards-container {
+#cards-container {
   position: relative;
   margin: auto;
   width: 80%;
@@ -151,22 +153,22 @@ h2 {
   flex-flow: row wrap;
 }
 
-.cards-container .card {
+#cards-container .card {
   position: relative;
   width: 250px;
   height: 250px;
   margin: 0 50px;
 }
 
-.cards-container .card:hover img {
+#cards-container .card:hover img {
   transform: translate(-3rem, -3rem);
 }
 
-.cards-container .card:hover .card-caption {
+#cards-container .card:hover .card-caption {
   transform: translate(3rem, 3rem);
 }
 
-.cards-container img {
+#cards-container img {
   position: absolute;
   border-style: solid;
   border-color: #fecea8;
@@ -223,4 +225,50 @@ h2 {
   color: #45171d;
   -webkit-text-decoration-color: #fecea8;
   text-decoration-color: #fecea8;
+}
+
+#experience-container {
+  display: flex;
+  width: 60vw;
+  margin: 20px auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#experience-container .experience {
+  border: #ffeee0 solid;
+  border-width: 0 2px 2px 0;
+  margin: 10px;
+  padding: 10px;
+  width: 70vw;
+}
+
+#experience-container .experience:hover {
+  background-color: #ffeee0;
+}
+
+.experience .header {
+  color: #ffffff;
+  font-size: 14pt;
+  font-weight: 600;
+  line-height: 30px;
+  padding: 0 20px;
+}
+.experience:hover .header {
+  color: #e84a5f;
+  text-decoration: underline;
+  text-decoration-color: #45171d;
+}
+
+.experience .text {
+  color: #ffeee0;
+  font-size: 12pt;
+  font-weight: 300;
+  line-height: 30px;
+  padding: 0 20px;
+}
+
+.experience:hover .text {
+  color: #292725;
 }
