@@ -40,7 +40,7 @@ a {
     height: 250vh;
   }
   #experience-page {
-    height: 200vh;
+    height: 160vh;
   }
   #hi {
     font-size: 40pt;
@@ -60,7 +60,7 @@ a {
     height: 300vh;
   }
   #experience-page {
-    height: 250vh;
+    height: 200vh;
   }
   #contact-page {
     height: 122vh;
@@ -191,6 +191,12 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
+}
+
+@media only screen and (max-width: 800px) {
+  #cards-container {
+    width: 100%;
+  }
 }
 
 #cards-container .card {
