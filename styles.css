@@ -31,7 +31,11 @@ body {
 
 #welcome-section {
   text-align: center;
-  margin-bottom: 3em;
+  margin: 3em 0 2em 0;
+}
+
+#footer {
+  margin: 6em 3em 3em 3em;
 }
 
 .project-tile {
