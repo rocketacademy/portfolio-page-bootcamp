@@ -33,9 +33,15 @@ a {
 
 h1,
 h3,
-p {
+p,
+#logo {
   font-family: "Gambarino-Regular", serif;
   font-weight: 400;
+}
+
+#logo {
+  font-size: 25px;
+  letter-spacing: -0.5px;
 }
 
 p {
@@ -54,19 +60,19 @@ h3 {
   top: 0;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 5px 20px;
   border-bottom: 1px solid black;
   background-color: rgb(232, 232, 232);
   z-index: 2;
 }
 
-#nav a,
+#secondary-nav a,
 #header h4,
 .photo .overlay p,
 #footer {
   /* text-transform: uppercase;
   letter-spacing: 3px; */
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 500;
   letter-spacing: 0;
 }
@@ -78,7 +84,7 @@ h3 {
 #header {
   display: block;
   position: sticky;
-  top: 70px;
+  top: 80px;
   margin-top: 28px;
   font-size: 8.5vw;
   letter-spacing: -0.5vw;
@@ -109,6 +115,10 @@ h3 {
 .photo,
 .description {
   margin: 50px;
+}
+
+.photo img {
+  object-fit: cover;
 }
 
 .photo .overlay {
@@ -145,6 +155,7 @@ h3 {
   background-color: rgb(232, 232, 232);
   text-align: center;
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 20px;
 }
