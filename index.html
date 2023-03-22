@@ -28,13 +28,86 @@
     </header>
     <main>
       <section id="home">
-        <h1>Hello, world!</h1>
+        <div class="content">
+          <div class="intro">
+            <div class="intro-item">
+              <h1>Hi, my name is Daniel</h1>
+              <h3>I am a Software Engineer. <br />Humble, enthusiastic and creative are some of the words my friends and colleagues described me.</h3>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="skills">
-         
+         <div class="content">
+          <h1 class="page-title">Skills</h1>
+          <div class="flex-container">
+            <div class="flex-item">  
+              <h2>Frontend</h2>
+              <ul >
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>React JS</li>
+                <li>Bootstrap</li>
+              </ul> 
+            </div>
+            <div class="flex-item">
+              <h2>Backend</h2>
+              <ul>
+                <li>Node</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>Sequelize</li>
+                <li>API/AJAX/JSON</li>
+              </ul>
+            </div>
+          </div>
+         </div>
       </section>
-      <section id="projects"></section>
-      <section id="contact"></section>
+
+      <section id="projects">
+        <div class="content">
+          <h1 class="page-title">Projects</h1>
+          <div class="grid-container">
+            <div class="item item--1">
+              <h4>React App (WIP not ready yet)</h4>
+              <p>This is a SPA using React JS</p>
+              <a href="#" class="btn btn-primary">Go Somewhere</a>
+            </div>
+            <div class="item item--2">
+              <h4>Color-Guessing Game with JS</h4>
+              <p>This is a vanilla hard-coded Javascript app.</p>
+              <a href="projects/color-guessing-game/colorGame.html" class="btn btn-primary">Go Somewhere</a>
+            </div>
+            <div class="item item--3">
+              <h4>To-Do App with JS</h4>
+              <p>This is a vanilla hard-coded Javascript app.</p>
+              <a href="projects/to-do-app/index.html" class="btn btn-primary">Go Somewhere</a>
+            </div>
+            <div class="item item--4">
+              <h4>Phrasal Verb Game with JS</h4>
+              <p>A pet project created for students.</p>
+              <a href="projects/quiz/quiz.html" class="btn btn-primary">Go Somewhere</a>
+            </div>
+			    </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="content">
+          <h1 class="page-title">Contact</h1>
+          
+          <form class="contact-form">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname"><br>
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"><br>
+            <button class="submit-btn" type="submit">Submit</button>
+          </form>
+        </div>  
+       
+      </section>
     </main>
     
   </body>
