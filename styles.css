@@ -64,6 +64,7 @@ h3 {
   display: block;
   position: sticky;
   top: 70px;
+  margin-top: 28px;
   font-size: 9vw;
   letter-spacing: -0.5vw;
   text-align: center;
