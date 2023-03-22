@@ -49,6 +49,7 @@ h3 {
   padding: 10px;
   border-bottom: 1px solid black;
   background-color: rgb(232, 232, 232);
+  z-index: 2;
 }
 
 #nav a,
