@@ -1,3 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+:root {
+    --primary-color: rgb(243, 240, 227);
+    --secondary-color: rgb(97, 113, 67);
+    --accent-color1: rgb(148, 175, 159);
+    --accent-color2: rgb(219, 228, 198);
+    --font-color1: rgb(71, 66, 66);
+}
+
+*,
+h1,
+h2,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px red solid; */
+}
+
 body {
-  background-color: white;
+    font-family: "Lato", sans-serif;
+    background-color: var(--primary-color);
+    color: var(--font-color1);
+}
+
+ul {
+    list-style-type: none;
+}
+
+.fl-row {
+    display: flex;
+}
+
+.fl-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.fl-centered {
+    align-items: center;
+    justify-content: center;
+}
+
+.main-header {
+    background-color: var(--accent-color1);
+    padding: 1rem;
+
+    box-shadow: 8px -5px 83px -13px rgba(0, 0, 0, 0.53);
+    -webkit-box-shadow: 8px -5px 83px -13px rgba(0, 0, 0, 0.53);
+    -moz-box-shadow: 8px -5px 83px -13px rgba(0, 0, 0, 0.53);
+}
+
+.main-header__wrapper {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo > h1 {
+    font-weight: 900;
+}
+
+.main-nav__list {
+    gap: 1rem;
 }
