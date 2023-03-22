@@ -133,6 +133,7 @@ h3 {
   position: fixed;
   bottom: 0;
   width: 100%;
+  max-width: 1200px;
   justify-content: center;
   align-items: center;
   padding: 10px;
