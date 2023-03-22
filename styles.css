@@ -1,22 +1,30 @@
 body {
-  background-color: #f2f2f2;
-}
-
-.wrapper {
-  padding: 1em 1em;
+  background-color: #e6e6e6;
+  color: #222222;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #projects {
   display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
 }
 
 .project-tile {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.2em 0.4em 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+  flex: 0 0 25%;
+  background-color: #f2f2f2;
 }
 
 /* On mouse-over, add a deeper shadow */
 .project-tile:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.2em 0.4em 0 rgba(0, 0, 0, 0.1);
+  transform: scale(1.1);
+}
+
+.project-tile {
+  padding: 1em 1em;
+  text-align: center;
 }
