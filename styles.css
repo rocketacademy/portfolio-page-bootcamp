@@ -1,13 +1,14 @@
 body {
   background-color: #e6e6e6;
-  color: #222222
+  color: #222222;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin: 0;
 }
 
 #navbar {
-  display: block;
-  background-color: #557a95;;
+  display: flex;
+  background-color: #557a95;
+  gap: 1em;
   padding: 1em 1em;
 }
 
@@ -16,11 +17,21 @@ body {
   width: 2em;
 }
 
+#navbar h2 {
+  margin: 0;
+  color: #e6e6e6;
+}
+
 #projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 1em;
+}
+
+#welcome-section {
+  text-align: center;
+  margin-bottom: 3em;
 }
 
 .project-tile {
@@ -41,5 +52,3 @@ body {
   padding: 1em 1em;
   text-align: center;
 }
-
-
