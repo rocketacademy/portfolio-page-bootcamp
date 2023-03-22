@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 @font-face {
@@ -31,9 +32,16 @@ a {
 }
 
 h1,
-h3 {
+h3,
+p {
   font-family: "Gambarino-Regular", serif;
   font-weight: 400;
+}
+
+p {
+  font-size: 25px;
+  line-height: 1.1;
+  letter-spacing: -1px;
 }
 
 h3 {
@@ -53,12 +61,14 @@ h3 {
 }
 
 #nav a,
+#header h4,
 .photo .overlay p,
 #footer {
   /* text-transform: uppercase;
   letter-spacing: 3px; */
   font-size: 12px;
   font-weight: 500;
+  letter-spacing: 0;
 }
 
 #secondary-nav a {
@@ -70,33 +80,34 @@ h3 {
   position: sticky;
   top: 70px;
   margin-top: 28px;
-  font-size: 9vw;
+  font-size: 8.5vw;
   letter-spacing: -0.5vw;
   text-align: center;
-  line-height: 0.98;
+  line-height: 0.9;
   z-index: -1;
 }
 
 @media (min-width: 1200px) {
   #header {
-    font-size: 108px;
+    font-size: 102px;
   }
 }
 
 @media (max-width: 380px) {
   #header {
-    font-size: 34px;
+    font-size: 32px;
   }
 }
 
 #photo-wall {
-  margin: 40px 0;
+  margin: 20px 0 40px;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.photo {
+.photo,
+.description {
   margin: 50px;
 }
 
@@ -116,12 +127,29 @@ h3 {
   opacity: 1;
 }
 
+.horizontal,
 .horizontal img,
 .horizontal .overlay {
   width: 500px;
   height: 400px;
 }
 
+.full-width img {
+  height: auto;
+  width: 100%;
+  max-width: 935px;
+}
+
+.description {
+  border: 1px solid black;
+  background-color: rgb(232, 232, 232);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+}
+
+.vertical,
 .vertical img,
 .vertical .overlay {
   width: 250px;
