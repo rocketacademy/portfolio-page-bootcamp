@@ -15,78 +15,52 @@
     <title>Gurpreet Kaur</title>
   </head>
   <body>
-    <header>
-      <!--- navigation -->
-      <nav class="global-nav">
-        <a class="name-nav" href="#home">Gurpreet Kaur</a>
-        <ul class="nav-links">
-          <li><a href="./about.html">ABOUT</a></li>
-          <li><a href="./portfolio.html">PORTFOLIO</a></li>
-          <li>
-            <a href="https://github.com/prettykaur" target="_blank">GITHUB</a>
-          </li>
-          <li><a href="./contact.html">CONTACT</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section>
-      <!--home-->
-      <div id="home" class="section">
-        <!--about me-->
-        <div class="container">
-          <h1 class="home-header">
-            <span>Hello, I'm</span>
-            <br />
-            <span class="accent">Gurpreet Kaur</span>
-          </h1>
-          <div class="section-text">
-            I'm a software engineer based in Singapore.
-            <br />
-            Check out some of my projects.
-          </div>
+    <!--navbar-->
+    <nav class="navbar">
+      <!--home link on the left-->
+      <a class="nav-home nav-links" href="index.html">HOME</a>
+      <!--rest of links on the right-->
+      <ul>
+        <li><a class="nav-links" href="./about.html">ABOUT</a></li>
+        <li><a class="nav-links" href="./portfolio.html">PORTFOLIO</a></li>
+        <li>
+          <a
+            class="nav-links"
+            href="https://github.com/prettykaur"
+            target="_blank"
+            >GITHUB</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!--main section-->
+    <main>
+      <!--header, text, button on the left-->
+      <div class="intro-container">
+        <!--header-->
+        <header class="heading intro-heading">
+          <span>Hello, I'm</span>
+          <br />
+          <span class="accent">Gurpreet Kaur</span>.
+        </header>
+        <!--text about me-->
+        <div class="intro-text">
+          <p>I'm a software engineer based in Singapore.</p>
+          <p>
+            Check out some of my projects
+            <a class="nav-links" href="./portfolio.html">here</a>.
+          </p>
+        </div>
+        <!--contact button-->
+        <div class="contact-container">
+          <a href="mailto:pkaur.dev@gmail.com">
+            <button type="button" class="contact-button">Get In Touch</button>
+          </a>
         </div>
       </div>
-      <!--projects-->
-      <div id="projects" class="section projects-container">
-        <h2 class="section-header">Featured Projects</h2>
-        <div class="row">
-          <div class="column">
-            <div class="content">
-              <div class="middle">
-                <a href=""><h3 class="project-title">Project 1</h3></a>
-                <div class="text">Description of my project.</div>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <a href=""
-                ><a href=""><h3 class="project-title">Project 2</h3></a></a
-              >
-              <div class="middle">
-                <div class="text">Description of my project.</div>
-              </div>
-            </div>
-          </div>
-          <div class="column">
-            <div class="content">
-              <a href=""
-                ><a href=""><h3 class="project-title">Project 3</h3></a></a
-              >
-              <div class="middle">
-                <div class="text">Description of my project.</div>
-              </div>
-            </div>
-          </div>
-          <!--see more button-->
-          <a class="button" href="">See More</a>
-        </div>
-      </div>
-      <!--contact me-->
-      <section id="contact" class="section contact-me">
-        <button class="contact-button">Get In Touch</button>
-      </section>
-    </section>
+    </main>
+
     <!--footer-->
     <footer>
       <p>Copyright © Gurpreet Kaur 2023</p>
