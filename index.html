@@ -21,16 +21,22 @@
                 </div>
                 <nav class="main-nav">
                     <ul class="main-nav__list fl-row">
-                        <li class="main-nav__item">About</li>
-                        <li class="main-nav__item">Projects</li>
-                        <li class="main-nav__item">Contact</li>
+                        <li class="main-nav__item">
+                            <a href="#about-me"> About </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#projects"> Projects </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#footer"> Contact </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </header>
 
         <main class="fl-col fl-centered">
-            <section class="about fl-row fl-centered">
+            <section id="about-me" class="about fl-row fl-centered">
                 <div class="about__left fl-col">
                     <h1 class="about__title">Hey there! 👋</h1>
                     <h1 class="about__subtitle">
@@ -72,7 +78,7 @@
                 </div>
             </section>
 
-            <section class="projects fl-col fl-centered">
+            <section id="projects" class="projects fl-col fl-centered">
                 <h1 class="projects__header">Projects!🧩</h1>
                 <article class="projects__card fl-row fl-centered">
                     <figure class="projects__card__figure">
@@ -83,12 +89,19 @@
                         <p>Experience e-commerce shopping.</p>
                         <ul class="projects__card__list fl-row fl-centered">
                             <li>
-                                <p class="projects__card__link">
+                                <button class="projects__card__link">
                                     Source Code 👨‍💻
-                                </p>
+                                </button>
                             </li>
                             <li>
-                                <p class="projects__card__link">Live Demo ▶</p>
+                                <a
+                                    href="https://syfq-isml.github.io/odin-shopping-cart/"
+                                    target="_blank"
+                                >
+                                    <button class="projects__card__link">
+                                        Live Demo ▶
+                                    </button>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -100,12 +113,19 @@
                         <p>Sink ships.</p>
                         <ul class="projects__card__list fl-row fl-centered">
                             <li>
-                                <p class="projects__card__link">
+                                <button class="projects__card__link">
                                     Source Code 👨‍💻
-                                </p>
+                                </button>
                             </li>
                             <li>
-                                <p class="projects__card__link">Live Demo ▶</p>
+                                <a
+                                    href="https://syfq-isml.github.io/odin-battleship/"
+                                    target="_blank"
+                                >
+                                    <button class="projects__card__link">
+                                        Live Demo ▶
+                                    </button>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -123,12 +143,19 @@
                         <p>No rain today.</p>
                         <ul class="projects__card__list fl-row fl-centered">
                             <li>
-                                <a class="projects__card__link">
+                                <button class="projects__card__link">
                                     Source Code 👨‍💻
-                                </a>
+                                </button>
                             </li>
                             <li>
-                                <p class="projects__card__link">Live Demo ▶</p>
+                                <a
+                                    href="https://syfq-isml.github.io/odin-weather/"
+                                    target="_blank"
+                                >
+                                    <button class="projects__card__link">
+                                        Live Demo ▶
+                                    </button>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -136,6 +163,12 @@
             </section>
         </main>
 
-        <footer>Created by syfq-isml</footer>
+        <footer id="footer" class="fl-row fl-centered">
+            Created by
+            <img class="footer__icon" src="./img/github.png" alt="" />
+            <a class="footer__link" href="https://github.com/syfq-isml">
+                syfq-isml
+            </a>
+        </footer>
     </body>
 </html>

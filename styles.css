@@ -34,6 +34,12 @@ ul {
     list-style-type: none;
 }
 
+a,
+a:visited {
+    text-decoration: none;
+    color: var(--font-color1);
+}
+
 .fl-row {
     display: flex;
 }
@@ -65,10 +71,16 @@ ul {
     align-items: center;
 }
 
+#logo {
+    transition: transform 150ms ease-in-out;
+}
+
 #logo > h1 {
     font-weight: 900;
     font-family: var(--font-serif);
     letter-spacing: 3px;
+
+    cursor: pointer;
 }
 
 main {
@@ -79,6 +91,12 @@ main {
 
 .main-nav__list {
     gap: 1rem;
+}
+
+.main-nav__item {
+    transition: transform 150ms ease-in-out;
+
+    cursor: pointer;
 }
 
 .about {
@@ -161,9 +179,27 @@ main {
     box-shadow: var(--button-shadow);
     padding: 1rem;
     border-color: transparent;
+
+    cursor: pointer;
 }
 
 .projects__card__link:hover {
     transform: translateY(5px);
     box-shadow: var(--button-shadow_pressed);
+}
+
+footer {
+    background-color: var(--accent-color1);
+    padding: 1rem;
+}
+
+.footer__icon {
+    aspect-ratio: 1/1;
+    width: 1rem;
+    margin: 0 0.2rem 0 0.5rem;
+}
+
+#logo:hover,
+.main-nav__item:hover {
+    transform: translateY(-5px);
 }
