@@ -1,3 +1,25 @@
-body {
-  background-color: white;
+#welcome-greeting {
+  font-size: 50px;
+  font-weight: 100;
+  font-family: Arial;
+  text-align: center;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  font-family: "Arial";
+}
+
+#project1 {
+  font-family: "Courier New";
+}
+
+#project2 {
+  font-family: "Courier New";
+}
+img {
+  height: 40%;
+  max-width: 30%;
 }
