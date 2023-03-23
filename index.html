@@ -1,13 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="shortcut icon"
+            href="https://em-content.zobj.net/source/skype/289/laptop_1f4bb.png"
+            type="image/x-icon"
+        />
+        <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Syafiq's Portfolio</title>
+    </head>
+    <body>
+        <header class="fl-row fl-centered main-header">
+            <div class="fl-row main-header__wrapper">
+                <div id="logo">
+                    <h1>syfq-isml</h1>
+                </div>
+                <nav class="main-nav">
+                    <ul class="main-nav__list fl-row">
+                        <li class="main-nav__item">
+                            <a href="#about-me"> About </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#projects"> Projects </a>
+                        </li>
+                        <li class="main-nav__item">
+                            <a href="#footer"> Contact </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <link href="styles.css" rel="stylesheet" />
+        <main class="fl-col fl-centered">
+            <section id="about-me" class="about fl-row fl-centered">
+                <div class="about__left fl-col">
+                    <h1 class="about__title">Hey there! 👋</h1>
+                    <h1 class="about__subtitle">
+                        Welcome to my portfolio page!
+                    </h1>
+                    <p>Yup, I'm passionate about programming and stuff.</p>
 
-    <title>Rocket Academy</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-  </body>
+                    <div class="about__icons fl-row">
+                        <img
+                            class="about__icons__images"
+                            src="./img/html.PNG"
+                            alt=""
+                        />
+                        <img
+                            class="about__icons__images"
+                            src="./img/css.png"
+                            alt=""
+                        />
+                        <img
+                            class="about__icons__images"
+                            src="./img/js.png"
+                            alt=""
+                        />
+                        <img
+                            class="about__icons__images"
+                            src="./img/react.png"
+                            alt=""
+                        />
+                    </div>
+                </div>
+                <div class="about__right">
+                    <figure class="about__hero-wrapper">
+                        <img
+                            class="about__hero-image"
+                            src="./img/profile-pic.jpg"
+                            alt=""
+                        />
+                    </figure>
+                </div>
+            </section>
+
+            <section id="projects" class="projects fl-col fl-centered">
+                <h1 class="projects__header">Projects!🧩</h1>
+                <article class="projects__card fl-row fl-centered">
+                    <figure class="projects__card__figure">
+                        <img src="https://unsplash.it/200" alt="" />
+                    </figure>
+                    <div class="projects__card__body fl-col fl-centered">
+                        <h1 class="projects__card__title">Shopping Cart 🛒</h1>
+                        <p>Experience e-commerce shopping.</p>
+                        <ul class="projects__card__list fl-row fl-centered">
+                            <li>
+                                <button class="projects__card__link">
+                                    Source Code 👨‍💻
+                                </button>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://syfq-isml.github.io/odin-shopping-cart/"
+                                    target="_blank"
+                                >
+                                    <button class="projects__card__link">
+                                        Live Demo ▶
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <article class="projects__card fl-row fl-centered">
+                    <div class="projects__card__body fl-col fl-centered">
+                        <h1 class="projects__card__title">Battleships ⚓</h1>
+                        <p>Sink ships.</p>
+                        <ul class="projects__card__list fl-row fl-centered">
+                            <li>
+                                <button class="projects__card__link">
+                                    Source Code 👨‍💻
+                                </button>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://syfq-isml.github.io/odin-battleship/"
+                                    target="_blank"
+                                >
+                                    <button class="projects__card__link">
+                                        Live Demo ▶
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <figure class="projects__card__figure">
+                        <img src="https://unsplash.it/202" alt="" />
+                    </figure>
+                </article>
+
+                <article class="projects__card fl-row fl-centered">
+                    <figure class="projects__card__figure">
+                        <img src="https://unsplash.it/201" alt="" />
+                    </figure>
+                    <div class="projects__card__body fl-col fl-centered">
+                        <h1 class="projects__card__title">Weather App 🌞</h1>
+                        <p>No rain today.</p>
+                        <ul class="projects__card__list fl-row fl-centered">
+                            <li>
+                                <button class="projects__card__link">
+                                    Source Code 👨‍💻
+                                </button>
+                            </li>
+                            <li>
+                                <a
+                                    href="https://syfq-isml.github.io/odin-weather/"
+                                    target="_blank"
+                                >
+                                    <button class="projects__card__link">
+                                        Live Demo ▶
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <footer id="footer" class="fl-row fl-centered">
+            Created by
+            <img class="footer__icon" src="./img/github.png" alt="" />
+            <a class="footer__link" href="https://github.com/syfq-isml">
+                syfq-isml
+            </a>
+        </footer>
+    </body>
 </html>
