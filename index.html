@@ -5,9 +5,91 @@
 
     <link href="styles.css" rel="stylesheet" />
 
-    <title>Rocket Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Gurpreet Kaur</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+      <!--- navigation -->
+      <nav class="global-nav">
+        <a class="name-nav" href="#home">Gurpreet Kaur</a>
+        <ul class="nav-links">
+          <li><a href="./about.html">ABOUT</a></li>
+          <li><a href="./portfolio.html">PORTFOLIO</a></li>
+          <li>
+            <a href="https://github.com/prettykaur" target="_blank">GITHUB</a>
+          </li>
+          <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <!--home-->
+      <div id="home" class="section">
+        <!--about me-->
+        <div class="container">
+          <h1 class="home-header">
+            <span>Hello, I'm</span>
+            <br />
+            <span class="accent">Gurpreet Kaur</span>
+          </h1>
+          <div class="section-text">
+            I'm a software engineer based in Singapore.
+            <br />
+            Check out some of my projects.
+          </div>
+        </div>
+      </div>
+      <!--projects-->
+      <div id="projects" class="section projects-container">
+        <h2 class="section-header">Featured Projects</h2>
+        <div class="row">
+          <div class="column">
+            <div class="content">
+              <div class="middle">
+                <a href=""><h3 class="project-title">Project 1</h3></a>
+                <div class="text">Description of my project.</div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <a href=""
+                ><a href=""><h3 class="project-title">Project 2</h3></a></a
+              >
+              <div class="middle">
+                <div class="text">Description of my project.</div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="content">
+              <a href=""
+                ><a href=""><h3 class="project-title">Project 3</h3></a></a
+              >
+              <div class="middle">
+                <div class="text">Description of my project.</div>
+              </div>
+            </div>
+          </div>
+          <!--see more button-->
+          <a class="button" href="">See More</a>
+        </div>
+      </div>
+      <!--contact me-->
+      <section id="contact" class="section contact-me">
+        <button class="contact-button">Get In Touch</button>
+      </section>
+    </section>
+    <!--footer-->
+    <footer>
+      <p>Copyright © Gurpreet Kaur 2023</p>
+    </footer>
   </body>
 </html>

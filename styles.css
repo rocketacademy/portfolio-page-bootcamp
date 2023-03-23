@@ -1,3 +1,164 @@
 body {
-  background-color: white;
+  background-color: #f2f1ee;
+  font-family: "Quicksand", sans-serif;
+  color: #4b4239;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+  min-height: 100vh;
+}
+
+.global-nav {
+  background-color: #bb5943;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 54px;
+  overflow: hidden;
+}
+
+main {
+  padding: 16px;
+}
+
+.name-nav {
+  font-size: 24px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 18px;
+}
+
+a {
+  font-size: 18px;
+  color: #f2f1ee;
+  text-decoration: none;
+  padding: 5px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#home {
+  display: flex;
+  justify-content: center;
+}
+
+.home-header {
+  font-size: 70px;
+  font-weight: 500;
+}
+
+.accent {
+  text-align: center;
+  color: #bb5943;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+.section {
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: center;
+}
+
+.section-text {
+  font-size: 36px;
+  text-align: center;
+}
+
+.projects-container {
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  margin-left: 30px;
+  padding: 8px;
+}
+
+.row > .column {
+  padding: 20px;
+}
+
+.column {
+  float: left;
+  width: 30%;
+  height: auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.content {
+  background-color: #f2f1ee;
+  padding: 10px;
+  border: 1px solid gray;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 850px) {
+  .column {
+    width: 50%;
+  }
+}
+
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-button {
+  width: 300px;
+  height: 80px;
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #bb5943;
+  outline: none;
+  border: none;
+  font-size: 40px;
+  color: #f2f1ee;
+  font-family: "Quicksand", sans-serif;
+}
+
+footer {
+  background-color: #bb5943;
+  font-size: 18px;
+  color: #f2f1ee;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 54px;
 }
