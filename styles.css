@@ -31,7 +31,8 @@ ul {
 
 .nav-links:hover {
   cursor: pointer;
-  text-decoration: underline;
+  box-shadow: 5px 5px #2b571f;
+  transition: 0.3s;
 }
 
 .nav-links:active {
@@ -42,7 +43,7 @@ ul {
   color: #e490ce;
 }
 
-main {
+#home-main {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -74,16 +75,15 @@ main {
 }
 
 .contact-button:hover {
-  color: #fdfdf2;
-  background-color: #e490ce;
   cursor: pointer;
   transition: 0.3s;
+  box-shadow: 10px 10px;
 }
 
 .contact-button:active {
   background-color: transparent;
-  color: #2b571f;
-  border: 1px solid #2b571f;
+  color: #e490ce;
+  border: 1px solid #e490ce;
 }
 
 footer {
@@ -94,4 +94,69 @@ footer {
   justify-content: center;
   align-items: center;
   padding: 5px 54px;
+}
+
+.about-main {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 0px;
+}
+
+h1 {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-text {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.portfolio-container {
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border: 1px solid #2b571f;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+  padding: 30px;
+  margin: 30px;
+  width: 300px;
+  height: 100px;
+}
+
+.project-title {
+  font-size: 30px;
+}
+
+.project-description {
+  font-size: 16px;
+}
+
+.project-title,
+.project-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  padding: 0;
+}
+
+.card:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px;
+  transition: 0.3s;
 }
