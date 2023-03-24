@@ -1,3 +1,94 @@
-body {
-  background-color: white;
+html {
+  background: url(https://cdn.wallpapersafari.com/63/41/LGyeJz.gif) no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  opacity: 1;
+}
+
+#welcome-greeting {
+  font-size: 50px;
+  font-weight: 100;
+  font-family: "Helvetica";
+  text-align: center;
+  color: white;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  font-size: 50px;
+  font-family: "Helvetica";
+  gap: 5rem;
+}
+
+a:link {
+  text-decoration: none;
+  color: antiquewhite;
+}
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  text-decoration: none;
+  color: red;
+}
+
+#about-me-para {
+  font-family: "Helvetica";
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  color: white;
+}
+
+#projects {
+  font-family: "Helvetica";
+  font-size: medium;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+img {
+  height: 50%;
+  max-width: 30%;
+}
+
+/* Sticky Icons for Social Media */
+.stickyicon-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+.stickyicon-list a {
+  padding: 8px;
+  transition: all 0.5s ease;
+  color: white;
+  font-size: 20px;
+}
+/* HOver affect on sticky social media icons */
+.stickyicon-list a:hover {
+  color: grey;
+  width: 10px;
+}
+
+/* Now we have to design each icon of social media */
+.facebook {
+  color: white;
+}
+
+.instagram {
+  color: white;
+}
+
+.linkedin {
+  color: white;
 }
