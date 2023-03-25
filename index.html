@@ -1,13 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-
-    <link href="styles.css" rel="stylesheet" />
-
-    <title>Rocket Academy</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+
+  <body translate="no">
+    <!-- START NAV -->
+
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+        <li>
+          <a href="#welcome-section">About</a>
+        </li>
+        <li>
+          <a href="#projects">Work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- END NAV -->
+
+    <!-- START WELCOME SECTION -->
+
+    <section id="welcome-section" class="welcome-section">
+      <h1>Hey I am MZ</h1>
+      <p>a web developer</p>
+    </section>
+
+    <!-- END WELCOME SECTION -->
+
+    <!-- START PROJECTS SECTION -->
+
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header">These are some of my projects</h2>
+
+      <div class="projects-grid">
+        <a
+          href="https://cmz1212.github.io/recipe-site-bootcamp/"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://www.preciouscore.com/wp-content/uploads/2019/12/EASY-DINNER-RECIPES-FOR-FAMILY-1.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            recipe-site-bootcamp
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://codepen.io/freeCodeCamp/full/wgGVVX"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/calc.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            JavaScript Calculator
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://codepen.io/freeCodeCamp/full/mVEJag"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/map.jpg"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Map Data Across the Globe
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+      </div>
+
+      <a
+        href="https://github.com/cmz1212/portfolio-page-bootcamp"
+        class="btn btn-show-all"
+        target="_blank"
+        >Show all<i class="fas fa-chevron-right"></i
+      ></a>
+    </section>
+
+    <!-- END PROJECTS SECTION -->
+
+    <!-- START CONTACT SECTION -->
+
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h2>Let's work together...</h2>
+        <p>How do you take your coffee?</p>
+      </div>
+      <div class="contact-links">
+        <a
+          id="profile-link"
+          href="https://github.com/cmz1212/portfolio-page-bootcamp"
+          target="_blank"
+          class="btn contact-details"
+          ><i class="fab fa-github"></i> GitHub</a
+        >
+      </div>
+    </section>
+
+    <!-- END CONTACT SECTION -->
+
+    <!-- START FOOTER SECTION -->
+
+    <footer>
+      <p>
+        **This is a dummy portfolio page for purposes of Rocket BootCamp
+        Exercises
+      </p>
+      <p></p>
+    </footer>
+
+    <!-- END FOOTER SECTION -->
   </body>
 </html>
