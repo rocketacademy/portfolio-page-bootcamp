@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  font-size: calc(10px + 1vmin);
 }
 
 html {
@@ -33,56 +34,29 @@ a {
 }
 
 @media only screen and (max-height: 950px) and (max-width: 1100px) {
-  #nav-page {
+  #projects-page {
     height: 120vh;
   }
-  #projects-page {
-    height: 250vh;
-  }
   #experience-page {
-    height: 160vh;
-  }
-  #hi {
-    font-size: 40pt;
-  }
-  #projects,
-  #experience,
-  #contact {
-    font-size: 32pt;
+    height: 110vh;
   }
 }
 
 @media only screen and (max-height: 740px) and (max-width: 1000px) {
-  #nav-page {
+  #projects-page {
     height: 160vh;
   }
-  #projects-page {
-    height: 300vh;
-  }
   #experience-page {
-    height: 200vh;
+    height: 160vh;
   }
   #contact-page {
-    height: 122vh;
-  }
-  #hi {
-    font-size: 32pt;
-  }
-  #projects,
-  #experience,
-  #contact {
-    font-size: 28pt;
+    height: 105vh;
   }
 }
 
 #nav-page {
   overflow: hidden;
   position: relative;
-}
-
-#nav-page {
-  background-image: url("./images/dark-background.jpeg");
-  background-size: cover;
 }
 
 #nav-bar {
@@ -98,7 +72,6 @@ a {
 .nav-tab {
   background-color: #e84a5f;
   color: #f5f5f5;
-  font-size: 12pt;
   font-weight: 600;
   width: 31vw;
   text-align: center;
@@ -138,39 +111,39 @@ a {
   align-items: center;
   margin: auto 0;
   background-color: rgba(0, 0, 0, 0.65);
+  animation: bounceInDown;
+  animation-duration: 1.5s;
 }
 
 #intro-box img {
-  max-height: 500px;
-  margin: 20px;
+  max-height: calc(60px + 12vmin);
+  border-radius: 50%;
 }
 
 #intro-content {
   max-width: 400px;
-  animation: bounceInDown;
-  animation-duration: 1.5s;
   margin: 20px;
 }
 
 h1 {
   color: #e84a5f;
-  font-size: 48pt;
+  font-size: calc(20px + 3vmin);
   font-weight: 900;
-  margin: 40px 0;
+  margin-bottom: 2vmin;
+  text-align: center;
 }
 
 p {
   color: #f5f5f5;
-  font-size: 14pt;
   line-height: 35px;
   font-weight: 300;
-  text-align: justify;
+  text-align: center;
 }
 
 h2 {
   margin: 80px 0 10px 0;
   text-align: center;
-  font-size: 36pt;
+  font-size: calc(20px + 1.5vmin);
   font-weight: 900;
   text-decoration: underline;
   -webkit-text-decoration-style: wavy;
@@ -207,18 +180,15 @@ h2 {
 }
 
 #cards-container .card:hover img {
-  transform: translate(-3rem, -3rem);
+  transform: translate(-2rem, -2rem);
 }
 
 #cards-container .card:hover .card-caption {
-  transform: translate(3rem, 3rem);
+  transform: translate(2rem, 2rem);
 }
 
 #cards-container img {
   position: absolute;
-  border-style: solid;
-  border-color: #fecea8;
-  border-width: 0 6px 6px 0;
   top: 0;
   left: 0;
   width: 100%;
@@ -232,7 +202,7 @@ h2 {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 1.5rem;
+  padding: calc(5px + 1vmin);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -246,19 +216,26 @@ h2 {
 
 .card .card-caption .header {
   color: #292725;
-  font-size: 14pt;
   font-weight: 600;
 }
 
 .card .card-caption .text {
   color: #292725;
-  font-size: 12pt;
+  font-size: calc(10px + 0.5vmin);
   font-weight: 300;
 }
 
-.card .card-caption .text img {
+.text img {
   width: 70%;
   border: none;
+}
+
+.text a {
+  font-size: calc(10px + 0.5vmin);
+}
+
+.text a:hover {
+  color: #e84a5f;
 }
 
 #projects {
@@ -296,7 +273,6 @@ h2 {
 
 .experience .header {
   color: #ffffff;
-  font-size: 14pt;
   font-weight: 600;
   line-height: 30px;
   padding: 0 20px;
@@ -309,7 +285,7 @@ h2 {
 
 .experience .text {
   color: #ffeee0;
-  font-size: 12pt;
+  font-size: calc(10px + 0.75vmin);
   font-weight: 300;
   line-height: 30px;
   padding: 0 20px;
@@ -325,7 +301,6 @@ h2 {
   width: 50vw;
   background-color: rgba(255, 238, 224, 0.3);
   border-radius: 2px;
-  font-size: 14pt;
   font-weight: 500;
   color: #45171d;
 }
@@ -345,7 +320,6 @@ textarea {
   border: none;
   border-radius: 4px;
   resize: vertical;
-  font-size: 14pt;
   font-weight: 300;
   color: #292725;
 }
@@ -360,7 +334,6 @@ input[type="submit"] {
   border: none;
   padding: 6px 12px;
   border-radius: 4px;
-  font-size: 14pt;
   font-weight: 500;
   cursor: pointer;
 }
@@ -385,7 +358,6 @@ input[type="submit"]:hover {
   text-align: center;
   margin-top: 8px;
   font-family: "Dosis", sans-serif;
-  font-size: 14pt;
   font-weight: 400;
   color: #292725;
 }
