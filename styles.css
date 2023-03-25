@@ -180,11 +180,11 @@ h2 {
 }
 
 #cards-container .card:hover img {
-  transform: translate(-2rem, -2rem);
+  transform: translate(-2.5rem, -2.5rem);
 }
 
 #cards-container .card:hover .card-caption {
-  transform: translate(2rem, 2rem);
+  transform: translate(2.5rem, 2.5rem);
 }
 
 #cards-container img {
