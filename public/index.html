@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="Welcome to my portfolio page!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rock+Salt&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Animation library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Nav page -->
+      <div class="page" id="nav-page">
+        <div id="nav-bar">
+          <a href="#nav-page"><div class="nav-tab" id="back-to-top">↟</div></a>
+          <a href="#projects-page"
+            ><div class="nav-tab" id="projects-tab">Projects</div></a
+          >
+          <a href="#experience-page"
+            ><div class="nav-tab" id="experience-tab">Experience</div></a
+          >
+          <a href="#contact-page"
+            ><div class="nav-tab" id="contact-tab">Contact Me</div></a
+          >
+        </div>
+        <div id="intro-box">
+          <div id="intro-content">
+            <h1 id="hi">Hi! I'm Yabing.</h1>
+            <p>
+              Web Developer with experience in program management and solving
+              human problems
+            </p>
+          </div>
+          <div id="portrait"><img src="Yabing.jpg" /></div>
+        </div>
+      </div>
+
+      <!-- Project listing -->
+      <div class="page" id="projects-page">
+        <h2 id="projects">Projects</h2>
+        <div id="cards-container">
+          <div class="card">
+            <img src="AniMap.png" alt="AniMap" />
+
+            <div class="card-caption">
+              <div class="header">AniMap</div>
+              <div class="text">
+                The ultimate map app for animal lovers
+                <a href="https://github.com/peanutyabing/AniMap" target="_blank"
+                  >[Repo]</a
+                >
+                <a href="https://animap-2deae.web.app" target="_blank"
+                  >[Page]</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="Waffle.png" alt="Waffle" />
+            <div class="card-caption">
+              <div class="header">Waffle</div>
+              <div class="text">
+                Word game that challenges players to think in two dimensions
+                <a
+                  href="https://peanutyabing.github.io/project-waffle"
+                  target="_blank"
+                  >[Repo]</a
+                >
+                <a href="https://waffle-c4l.pages.dev/" target="_blank"
+                  >[Page]</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img src="wordle.jpg" alt="Wordle" />
+            <div class="card-caption">
+              <div class="header">W∞rdle</div>
+              <div class="text">
+                My take on the popular NYT word game
+                <a
+                  href="https://github.com/peanutyabing/peanuts-wordle"
+                  target="_blank"
+                  >[Repo]</a
+                >
+                <a href="https://w8rdle.pages.dev" target="_blank">[Page]</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Work experience -->
+      <div class="page" id="experience-page">
+        <h2 id="experience">Experience</h2>
+        <div id="experience-container">
+          <div class="experience">
+            <div class="header">Rocket Academy</div>
+            <div class="text">
+              <ul>
+                <li>Full-time software engineering bootcamp student</li>
+              </ul>
+            </div>
+          </div>
+          <div class="experience">
+            <div class="header">
+              Assistant Director, Talent Development, Infocomm Media Development
+              Authority (IMDA)
+            </div>
+            <div class="text">
+              <ul>
+                <li>
+                  Led a team of 7 to develop and implement policies to increase
+                  the national infocomm technology talent pipeline
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="experience">
+            <div class="header">
+              Senior Assistant Director, Community Justice Policy, Ministry of
+              Law
+            </div>
+            <div class="text">
+              <ul>
+                <li>
+                  Led a team of 4 in a comprehensive review of the national
+                  legal aid system
+                </li>
+                <li>
+                  Established the Public Defender’s Office which expanded
+                  coverage of vulnerable accused persons by >10%
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="experience">
+            <div class="header">
+              Policy Executive, Land Transport, Ministry of Transport
+            </div>
+            <div class="text">
+              <ul>
+                <li>
+                  > Introduced Singapore’s first legal framework to improve the
+                  safety of cycling
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact form -->
+      <div class="page" id="contact-page">
+        <h2 id="contact">Contact me</h2>
+        <div id="contact-form">
+          <form id="form">
+            <label for="fname">Name</label>
+            <input type="text" id="name" name="name" />
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+        <div id="social-container">
+          <div>
+            <a href="https://github.com/peanutyabing" target="_blank"
+              ><img src="github-mark.png"
+            /></a>
+          </div>
+          <div>
+            <a
+              href="https://www.linkedin.com/in/yabing-liu-singapore/"
+              target="_blank"
+              ><img src="LinkedIn.png"
+            /></a>
+          </div>
+          <div>
+            <a href="https://www.facebook.com/yabingl" target="_blank"
+              ><img src="facebook-logo.png"
+            /></a>
+          </div>
+          <div>
+            <a
+              href="mailto:sherry.liuyabing@gmail.com?subject=Hi!%20I%20just%20visited%20your%20portfolio%20page."
+              target="_blank"
+              ><img src="gmail.png"
+            /></a>
+          </div>
+        </div>
+        <div id="built-by">Designed and built by <span>Liu Yabing</span></div>
+      </div>
+    </div>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="firebase.js"></script>
+  </body>
+</html>
