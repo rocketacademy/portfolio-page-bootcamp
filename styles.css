@@ -1,3 +1,109 @@
-body {
-  background-color: white;
+* {
+  margin: 10;
+  padding: 10;
+  /* background-image: linear-gradient(62deg, rgb(82, 32, 32) 0%, rgb(58, 7, 7) 100%); */
+}
+h1,h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(245, 179, 179);
+}
+p {
+  color: aquamarine;
+}
+a{
+  color: rgb(245, 245, 82);
+}
+#navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: black;
+}
+
+#welcome-section {
+  font-size: 20px;
+  font-weight: 100;
+  font-family: Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: rgb(1, 1, 77);
+  padding: 20px 10px 30px;
+  text-align: center;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+#projects{
+  background-color: rgb(37, 9, 9);
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.project-tile a {
+  padding-bottom: 10px;
+  align-self: center;
+}
+
+.project-tile p {
+  padding-bottom: 20px;
+  line-height: 125%;
+  text-align: center;
+}
+
+.project-tile img {
+  width: 100%;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  #welcome-section {
+    padding-bottom: 60px;
+  }
+
+  .project-tile {
+    flex-direction: row;
+  }
+
+  .project-tile a {
+    align-self: flex-start;
+    padding-left: 20px;
+  }
+
+  .project-tile p {
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .project-tile {
+    max-width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 30px;
+  }
+}
+#chicken, #rps, #temp{
+  height: 550px;
+  width: 550px;
+}
+#p1 {
+  text-align: left;
 }
