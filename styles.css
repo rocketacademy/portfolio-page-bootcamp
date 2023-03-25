@@ -300,7 +300,14 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /*background: var(--main-gray);*/
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .welcome-section {
+    background-attachment: scroll;
+    background: var(--main-gray);
+  }
 }
 
 .contact-section-header > h2 {
