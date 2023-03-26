@@ -1,3 +1,81 @@
-body {
-  background-color: white;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+
+#navbar a:hover {
+  background-color: red;
+  color: black;
+}
+
+#welcome-section {
+  font-size: 10 px;
+  font-weight: 100;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-color: lightgoldenrodyellow;
+  padding: 15px;
+}
+
+#welcome-section h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px 20px 10px;
+  align-self: left;
+}
+
+.project-tile a {
+  padding: 10px 20px;
+}
+
+.project-tile p {
+  line-height: 125%;
+  padding-left: 20px;
+}
+
+.project-tile img {
+  max-width: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  #welcome-section {
+    padding: 25px;
+  }
+
+  .project-tile {
+    align-self: flex-start;
+  }
+
+  .project-tile a {
+    padding-left: 20px;
+  }
+
+  .project-tile img {
+    max-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .project-tile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .project-tile p {
+    max-width: 490px;
+  }
 }
