@@ -60,23 +60,27 @@ a {
 }
 
 #nav-bar {
+  background-color: #e84a5f;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: stretch;
   position: fixed;
   width: 100vw;
-  padding: 2px;
   z-index: 99;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .nav-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #e84a5f;
   color: #f5f5f5;
   font-weight: 600;
-  width: 31vw;
   text-align: center;
-  border-radius: 2px;
-  padding: 6px;
+  padding: 1vmax 1.5vmax;
   height: 100%;
 }
 
@@ -85,18 +89,9 @@ a {
   color: #000000;
 }
 
-#nav-bar #back-to-top {
-  width: 5vw;
-  background-color: #fecea8;
-  color: #45171d;
-  font-weight: 100;
-  height: 100%;
-}
-
 #back-to-top:hover {
-  background-color: #292725;
+  background-color: #45171d;
   color: #f5f5f5;
-  font-weight: 100;
 }
 
 #nav-page {
@@ -118,6 +113,9 @@ a {
 #intro-box img {
   max-height: calc(60px + 12vmin);
   border-radius: 50%;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #intro-content {
@@ -176,7 +174,7 @@ h2 {
   position: relative;
   width: 250px;
   height: 250px;
-  margin: 30px;
+  margin: 2rem;
 }
 
 #cards-container .card:hover img {
@@ -283,8 +281,9 @@ h2 {
 }
 
 .experience .find-me {
-  color: #ffffff99;
+  color: #f5f5f5;
   font-style: italic;
+  text-decoration: underline;
 }
 
 .experience .text {
@@ -354,6 +353,9 @@ input[type="submit"]:hover {
 #social-container {
   display: flex;
   justify-content: center;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #social-container img {
@@ -368,6 +370,9 @@ input[type="submit"]:hover {
   font-family: "Dosis", sans-serif;
   font-weight: 400;
   color: #292725;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 #built-by span {
