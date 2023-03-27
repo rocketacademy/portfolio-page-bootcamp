@@ -35,7 +35,7 @@ a {
 
 @media only screen and (max-height: 950px) and (max-width: 1100px) {
   #projects-page {
-    height: 120vh;
+    height: 130vh;
   }
   #experience-page {
     height: 110vh;
@@ -260,10 +260,8 @@ h2 {
 }
 
 #experience-container .experience {
-  border: #ffeee0 solid;
-  border-width: 0 2px 1px 0;
-  margin: 20px 0;
-  padding: 10px;
+  margin: 1vmin 0;
+  padding: 1vmin;
   width: 80vw;
 }
 
@@ -277,10 +275,16 @@ h2 {
   line-height: 30px;
   padding: 0 20px;
 }
+
 .experience:hover .header {
   color: #e84a5f;
   text-decoration: underline;
   text-decoration-color: #45171d;
+}
+
+.experience .find-me {
+  color: #ffffff99;
+  font-style: italic;
 }
 
 .experience .text {
@@ -293,6 +297,10 @@ h2 {
 
 .experience:hover .text {
   color: #292725;
+}
+
+.experience .text ul {
+  list-style-type: "> ";
 }
 
 #contact-form {
