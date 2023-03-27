@@ -58,46 +58,63 @@ body {
   color: black;
 }
 
-h1 {
+ 
+ 
+.myname {
   margin: 0;
   padding: 2rem; 
   position: absolute;
   color: white;
   top: 15rem;
+  font-size: 5rem;
 }
 
 .page-title {
   top: 5rem;
-  margin-left: 0.5rem;
+  /* margin-left: 0.5rem; */
   color: black;
+  text-align:center;
+  /* display: flex;
+  justify-content: center; */
+  width: 50%;
+  margin: auto;
+  padding: 1rem;
 } 
 
  
-h3 {
+.self-intro {
   margin: 0;
   padding: 2rem; 
   position: absolute;
   color: white;
-  top: 18rem;
+  top: 20rem;
+  font-size: 5rem;
 }
-
- .flex-container {
+.myhobby {
+  margin: 0;
+  padding: 2rem; 
+  position: absolute;
+  color: white;
+  top: 25rem;
+  font-size: 5rem;
+}
+ 
+.flex-container {
   display: flex;
   margin: 0;
   padding: 2rem; 
   position: absolute;
   top: 11rem;
-  
   align-items: center;
-  width: 60rem;
+  width: 80rem;
 } 
 
 .flex-item {
-  flex-basis: 40rem;
+  flex-basis: 45rem;
   background-color: white;
   margin: 1rem;
   padding: 1rem;
-  height: 20rem;
+  height: 30rem;
   align-items: center;
   text-align: center;
   border-radius: 2rem;
@@ -125,6 +142,7 @@ li {
 
 #projects {
    background:linear-gradient(90deg, rgba(0, 221, 255, 1) 0%, rgba(130, 156, 238, 0.89) 100%);
+  
 }
 
 #contact {
@@ -139,12 +157,35 @@ span:hover {
 .content {
   position: relative;
 }
+.flex-container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
+.flex-container3 {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-item3 {
+  justify-content: space-between;
+  flex-basis: auto;
+}
+.icon-container{
+  column-count: 2;
+}
+.bold {
+  font-weight: bold;
+}
 
+#stack {
+  width: 50%;
+  margin: auto;
+}
 h1 {
     position: absolute;
-    left: -350px;
-    width: 400px;
+    left: -1950px;
+    /* width: 400px; */
     height: 200px;
      
     -webkit-animation: slide 0.5s forwards;
@@ -162,15 +203,14 @@ h1 {
 }
 h3 {
     position: absolute;
-    left: -350px;
-    width: 400px;
+    left: -3000px;
+    /* width: 400px; */
     height: 200px;
      
     -webkit-animation: slide2 0.5s forwards;
     -webkit-animation-delay: 4s;
     animation: slide2 0.5s forwards;
     animation-delay: 4s;
-
 }
 @-webkit-keyframes slide2 {
     100% { left: 0; }
@@ -180,6 +220,24 @@ h3 {
     100% { left: 0; }
 } 
 
+h4 {
+  position: absolute;
+    left: -3000px;
+    /* width: 400px; */
+    height: 200px;
+
+    -webkit-animation: slide3 0.5s forwards;
+    -webkit-animation-delay: 6s;
+    animation: slide3 0.5s forwards;
+    animation-delay: 6s;
+}
+@-webkit-keyframes slide3 {
+    100% { left: 0; }
+}
+
+@keyframes slide3 {
+    100% { left: 0; }
+} 
 
 
 /*Below is the hamburger button for the nav bar*/
@@ -205,10 +263,10 @@ h3 {
 /* Using Grid */
 .grid-container {
   display: grid;
-  grid-template-rows: repeat(2, 13rem);
-  grid-template-columns: repeat(2, 15rem);
+  grid-template-rows: repeat(4, 30rem);
+  grid-template-columns: repeat(2, 50rem);
   grid-gap: 2rem;
-  width: 60rem;
+  width: 100rem;
   padding: 10rem;
   margin: 5rem auto;
   background: #eee (0, 0, 0, 0.4);
@@ -216,7 +274,7 @@ h3 {
 .item {
   padding: 10px;
   border-radius: 2rem;
-  font-size: 2 rem;
+  font-size: 1.5rem;
   color: white;
 }
   .item--1 {
@@ -237,6 +295,14 @@ h3 {
   .item--6 {
     background: indigo;
   }
+
+
+.flex-container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
 
 .contact-form {
   top: 10rem;
