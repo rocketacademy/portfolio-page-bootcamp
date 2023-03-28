@@ -1,3 +1,413 @@
-body {
-  background-color: white;
+* {
+  box-sizing: border-box;
+ 
 }
+
+body {
+  font-family: Roboto, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  height: 5rem;
+  width: 100%;
+  background-color: #34495e;
+  color: white;
+  /*  position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 9999;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+
+  padding: 0 5rem;
+  margin: 0.5rem;
+  line-height: 5rem;
+}
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  padding: 1.5rem;
+  display: block;
+}
+
+.navbar-links li a:hover {
+  background-color: aquamarine;
+  color: black;
+}
+
+ 
+ 
+.myname {
+  margin: 0;
+  padding: 2rem; 
+  position: absolute;
+  color: white;
+  top: 15rem;
+  font-size: 5rem;
+}
+
+.page-title {
+  top: 5rem;
+  /* margin-left: 0.5rem; */
+  color: black;
+  text-align:center;
+  /* display: flex;
+  justify-content: center; */
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+  justify-content: center;
+} 
+
+ 
+.self-intro {
+  margin: 0;
+  padding: 2rem; 
+  position: absolute;
+  color: white;
+  top: 20rem;
+  font-size: 5rem;
+}
+.myhobby {
+  margin: 0;
+  padding: 2rem; 
+  position: absolute;
+  color: white;
+  top: 25rem;
+  font-size: 5rem;
+}
+ 
+.flex-container {
+  display: flex;
+  margin: 0;
+  padding: 2rem; 
+  position: absolute;
+  top: 11rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+} 
+
+.flex-item {
+  flex-basis: 45rem;
+  background-color: white;
+  margin: 1rem;
+  padding: 1rem;
+  height: 30rem;
+  align-items: center;
+  text-align: center;
+  border-radius: 2rem;
+  justify-content: center;
+  text-align: left;
+}
+
+.skill-title {
+  text-align: center;
+}
+li {
+  font-size: 1.5rem;
+}
+#home, #skills, #projects, #contact {
+  height: 100vh;
+}
+
+#home {
+  background:linear-gradient(90deg, rgba(0, 0, 255, 1) 0%, rgba(130, 156, 238, 0.89) 100%);
+}
+
+#skills {
+  background:linear-gradient(90deg, rgba(255, 255, 0, 1) 0%, rgba(255, 59, 0, 1) 100%);
+}
+
+#projects {
+   background:linear-gradient(90deg, rgba(0, 221, 255, 1) 0%, rgba(130, 156, 238, 0.89) 100%);
+  
+}
+
+#contact {
+  background:linear-gradient(90deg, rgba(76, 175, 80, 1) 0%, rgba(49, 220, 255, 1) 100%);
+}
+span:hover {
+  background-color: blue;
+  color: yellow;
+  border-radius: 0.8rem;
+} 
+
+.content {
+  position: relative;
+}
+.flex-container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flex-container3 {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-item3 {
+  justify-content: space-between;
+  flex-basis: auto;
+}
+.icon-container{
+  column-count: 2;
+}
+.bold {
+  font-weight: bold;
+}
+
+#stack {
+  width: 50%;
+  margin: auto;
+}
+h1 {
+    position: absolute;
+    left: -1950px;
+    /* width: 400px; */
+    height: 200px;
+     
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+h3 {
+    position: absolute;
+    left: -3000px;
+    /* width: 400px; */
+    height: 200px;
+     
+    -webkit-animation: slide2 0.5s forwards;
+    -webkit-animation-delay: 4s;
+    animation: slide2 0.5s forwards;
+    animation-delay: 4s;
+}
+@-webkit-keyframes slide2 {
+    100% { left: 0; }
+}
+
+@keyframes slide2 {
+    100% { left: 0; }
+} 
+
+h4 {
+  position: absolute;
+    left: -3000px;
+    /* width: 400px; */
+    height: 200px;
+
+    -webkit-animation: slide3 0.5s forwards;
+    -webkit-animation-delay: 6s;
+    animation: slide3 0.5s forwards;
+    animation-delay: 6s;
+}
+@-webkit-keyframes slide3 {
+    100% { left: 0; }
+}
+
+@keyframes slide3 {
+    100% { left: 0; }
+} 
+
+
+/*Below is the hamburger button for the nav bar*/
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+/* Using Grid */
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(4, 30rem);
+  grid-template-columns: repeat(2, 50rem);
+  grid-gap: 2rem;
+  width: 100rem;
+  padding: 10rem;
+  margin: 5rem auto;
+  background: #eee (0, 0, 0, 0.4);
+}
+.item {
+  padding: 10px;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  color: white;
+}
+  .item--1 {
+    background: red;
+  }
+  .item--2 {
+    background: orange;
+  }
+  .item--3 {
+    background: grey;
+  }
+  .item--4 {
+    background: green;
+  }
+  .item--5 {
+    background: blue;
+  }
+  .item--6 {
+    background: indigo;
+  }
+
+
+.flex-container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contact-form {
+  top: 10rem;
+  position: absolute;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.submit-btn {
+  width: 10.3rem;
+  height: 2rem;
+  margin-top: 0.5rem;
+  padding: 0.3rem;
+}
+
+
+/*responsive design*/
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .logo {
+    margin: 0.2rem;
+  }
+}
+
+/* Background Styles Only */
+
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+* {
+  font-family: Roboto;
+}
+
+html {
+  background-color: #dfdfdf;
+}
+
+.side-links {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.side-link {
+display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-bottom: 10px;
+  color: white;
+  width: 180px;
+  padding: 10px 0;
+  border-radius: 10px;
+}
+
+.side-link-youtube {
+  background-color: red;
+}
+
+.side-link-twitter {
+  background-color: #1da1f2;
+}
+
+.side-link-github {
+  background-color: #6e5494;
+}
+
+.side-link-text {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.side-link-icon {
+  color: white;
+  font-size: 30px;
+}
+
