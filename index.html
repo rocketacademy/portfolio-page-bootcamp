@@ -1,13 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <title>Portfolio Page</title>
     <meta charset="utf-8" />
-
-    <link href="styles.css" rel="stylesheet" />
-
-    <title>Rocket Academy</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+      rel="stylesheet"
+    />
   </head>
+  <!-- START NAV -->
   <body>
-    <h1>Hello, world!</h1>
+    <nav id="navbar" class="nav">
+      <ul class="nav-list">
+        <li>
+          <a href="#welcome-section">About</a>
+        </li>
+        <li>
+          <a href="#projects">Work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- END NAV -->
+
+    <!-- START WELCOME SECTION -->
+
+    <section id="welcome-section" class="welcome-section">
+      <h1>I am Karina</h1>
+      <p>a full stack developer</p>
+    </section>
+
+    <!-- END WELCOME SECTION -->
+
+    <!-- START PROJECTS SECTION -->
+
+    <section id="projects" class="projects-section">
+      <h2 class="projects-section-header">Projects Worked On</h2>
+
+      <div class="projects-grid">
+        <a
+          href="https://www.google.com"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+             class="project-image"
+            src="https://www.giving.sg/image/organization_logo?img_id=37534077&1587056856000"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Govtech
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://bing.com"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Tesla
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+        <a
+          href="https://yandex.com"
+          target="_blank"
+          class="project project-tile"
+        >
+          <img
+            class="project-image"
+            src="https://www.htmlhints.com/image/react/reactWeatherApp.png"
+            alt="project"
+          />
+          <p class="project-title">
+            <span class="code">&lt;</span>
+            Weather app
+            <span class="code">&#47;&gt;</span>
+          </p>
+        </a>
+    
+    </section>
+
+    <!-- END PROJECTS SECTION -->
+
+    <!-- START CONTACT SECTION -->
+
+    <section id="contact" class="contact-section">
+      <div class="contact-section-header">
+        <h2>Contact Me</h2>
+      </div>
+      <div class="contact-links">
+
+        <a
+          href="https://facebook.com/carnivalcot"
+          target="_blank"
+          class="btn contact-details"
+> Facebook</a
+        >
+        <a
+          id="profile-link"
+          href="https://github.com/kaucers"
+          target="_blank"
+          class="btn contact-details"
+          > GitHub</a
+        >
+      </div>
+    </section>
+
+    <!-- END CONTACT SECTION -->
   </body>
 </html>
