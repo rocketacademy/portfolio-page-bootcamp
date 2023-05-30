@@ -1,3 +1,220 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
-  background-color: white;
+  font-family: "Lato", Arial, sans-serif;
+}
+section.hero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/006/852/804/original/abstract-blue-background-simple-design-for-your-website-free-vector.jpg); /* variable of the background image */
+  height: 800px;
+  width: 100%;
+  padding: 0 300px;
+  align-content: center;
+  position: relative;
+  isolation: isolate;
+}
+
+@media screen and (max-width: 1290px) {
+  section.hero {
+    padding: 0 0;
+    gap: 100px;
+  }
+}
+
+.image-hero {
+  width: 240px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+div.message {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 3em;
+  font-family: Lato;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+section#services {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 250px;
+  background: rgb(78 81 162);
+  width: 100%;
+  height: 700px;
+}
+section#services > h2 {
+  text-align: center;
+  padding: 40px 30px;
+  font-size: 3em;
+}
+div.container-services {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+.service > p {
+  text-align: center;
+  padding: 30px;
+  font-size: 2em;
+}
+.image-service {
+  width: 400px;
+  height: 250px;
+}
+.image-service > img {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1344px) {
+  .image-service {
+    width: 300px;
+    height: 150px;
+  }
+}
+@media screen and (max-width: 1670px) {
+  div.container-services {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  section#services {
+    padding: 0 0;
+    text-align: center;
+    height: 1000px;
+  }
+  div.container-services {
+    flex-direction: column;
+    gap: 0;
+  }
+  .image-service {
+    width: 250px;
+    height: 150px;
+  }
+  .service > p {
+    text-align: center;
+    padding: 10px;
+    font-size: 2em;
+  }
+}
+
+section#portfolio {
+  width: 100%;
+  height: 800px;
+  background: rgb(72 117 177);
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 100px;
+  padding: 0 20px;
+}
+section#portfolio > h2 {
+  font-size: 3em;
+  text-align: center;
+}
+div.projects {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+.image-project {
+  width: 300px;
+  height: 200px;
+}
+.image-project > img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.project-description > p {
+  font-size: 40px;
+  text-align: center;
+  padding: 8px;
+}
+
+.project-description > a {
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+  color: rgb(15, 216, 243);
+  display: block;
+  text-align: center;
+}
+@media screen and (max-width: 1140px) {
+  div.projects {
+    gap: 20px;
+  }
+  .project-description > p {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 8px;
+  }
+}
+@media screen and (max-width: 677px) {
+  section#portfolio {
+    gap: 40px;
+    height: 600px;
+  }
+  .image-project {
+    width: 150px;
+    height: 100px;
+  }
+}
+#contact {
+  background: rgb(38, 110, 139);
+  background: linear-gradient(
+    90deg,
+    rgba(38, 110, 139, 0.9164040616246498) 30%,
+    rgba(116, 150, 252, 0.8911939775910365) 100%
+  );
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+}
+#contact > h2 {
+  font-size: 3em;
+  text-align: center;
+  white-space: nowrap;
+}
+.contact-container {
+  width: 1000px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 300px;
+}
+.fa-brands {
+  font-size: 150px;
+}
+
+@media screen and (max-width: 900px) {
+  .contact-container {
+    width: 100%;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .fa-brands {
+    font-size: 80px;
+  }
+  #contact > h2 {
+    font-size: 2em;
+    text-align: center;
+    white-space: nowrap;
+  }
 }
