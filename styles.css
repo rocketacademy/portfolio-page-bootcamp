@@ -1,3 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+
+/* CSS Variables */
+:root {
+  --background-welcome: #2e8a99;
+  --font-color-1: #fff;
+  --text-background: #ecf8f9;
+  --text-fontcolor: #27374d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
 body {
-  background-color: white;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 20px 20px;
+}
+
+p {
+  font-size: 0.8rem;
+  margin: 20px 20px;
+}
+
+/* pic scaling */
+img {
+  width: 100%;
+  height: fit-content;
+}
+
+/* Main Grid */
+
+main {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  min-height: 100%;
+}
+
+/* Welcome Section */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+i {
+  color: var(--font-color-1);
+  margin: 30px 10px;
+}
+
+.panel-welcome {
+  display: grid;
+  background: var(--background-welcome);
+  padding: 20px 40px;
+  grid-template-rows: 1fr 2fr 1fr;
+  color: var(--font-color-1);
+}
+
+.panel-welcome nav a {
+  color: var(--font-color-1);
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.panel-welcome h1,
+h3 {
+  color: var(--font-color-1);
+}
+
+.navbar a {
+  transition: 0.2s ease-in-out;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  border-bottom: 1px #fff solid;
+}
+
+/* About Section */
+.panel-about {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  overflow: hidden;
+  background-color: var(--text-background);
+}
+
+.panel-about img {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.panel-about .text {
+  align-self: flex-start;
+  color: var(--text-fontcolor);
+}
+
+/* App Section */
+.panel-photos {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  overflow: hidden;
+  background-color: var(--text-background);
+}
+
+.panel-photos img {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.panel-photos .text {
+  color: var(--text-fontcolor);
+}
+
+/* Responsive Style */
+@media screen and (max-width: 1400px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+  .panel-photos {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column: span 2;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  main {
+    grid-template-columns: 100%;
+    grid-template-rows: 500px 400px 400px;
+  }
+  .panel-about {
+    grid-row: 2;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .panel img {
+    width: 100%;
+  }
 }
