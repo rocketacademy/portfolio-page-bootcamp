@@ -4,14 +4,17 @@
 		<meta charset="utf-8" />
 		<link href="styles.css" rel="stylesheet" />
 		<title>A simple portfolio page</title>
+		<script defer src="index.js"></script>
 	</head>
 
 	<nav>
-		<ul>
-			<li><a href="#about-me">about me</a></li>
-			<li><a href="#projects">projects</a></li>
-			<li><a href="#contact-me">contact me</a></li>
-		</ul>
+		<div class="nav-container">
+			<ul>
+				<li><a class="nav-link" href="#about-me">about me</a></li>
+				<li><a class="nav-link" href="#projects">projects</a></li>
+				<li><a class="nav-link" href="#contact-me">contact me</a></li>
+			</ul>
+		</div>
 	</nav>
 
 	<main>
@@ -27,20 +30,28 @@
 				<img class="masked" src="./images/Portrait me.jpeg" alt="" />
 			</div>
 		</div>
-		<div class="projects" id="projects">
+		<div class="projects hidden" id="projects">
 			<div class="project-1"></div>
 			<div class="project-2"></div>
 			<div class="project-3"></div>
 			<div class="project-4"></div>
 		</div>
-		<div class="contact-me" id="contact-me">
-			<h3>contact me</h3>
+		<div class="contact-me hidden" id="contact-me">
+			<h2>contact me</h2>
 			<form action="">
-				<input type="text" name="" id="" />
-				<input type="email" name="" id="" />
-				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<label for="name">
+					name
+					<input type="text" name="" id="" placeholder="name" />
+				</label>
+				<label for="email">
+					email
+					<input type="email" name="" id="" placeholder="emails" />
+				</label>
+				<textarea name="" id="" rows="15"></textarea>
 				<button type="button">submit</button>
 			</form>
 		</div>
+
+		<div class="social links"></div>
 	</main>
 </html>
