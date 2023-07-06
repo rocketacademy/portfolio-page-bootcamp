@@ -1,9 +1,23 @@
-/* body {
-  background-color: white;
-} */
+body {
+  margin: 0;
+  /* background-color: white; */
+}
 
 #main-bg {
   background-color: grey;
   width: 100vw;
   height: 100vh;
+}
+
+#secondary-bg {
+  background-color: lightblue;
+  width: 100vw;
+  height: 100vh;
+}
+
+.portfolio-box {
+  width: 100px;
+  height: 100px;
+  background-color: blueviolet;
+  margin: 5px;
 }
