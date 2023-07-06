@@ -1,6 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -29,11 +30,10 @@ body {
 .header-item {
   display: flex;
   padding: 0 20px;
-  height: 80%;
+  height: 100%;
   color: palegoldenrod;
   align-items: center;
   justify-content: center;
-  border-right: 1px solid palegoldenrod;
 }
 
 .header-item:hover {
@@ -62,8 +62,55 @@ body {
 }
 
 .body2 {
-  height: 600px;
-  background-color: rgb(250, 240, 104);
+  height: auto;
+  padding: 50px 0;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    133deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body2-container {
+  display: flex;
+  max-width: 1200px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.body2-wrapper {
+  max-height: 400px;
+  max-width: 350px;
+  height: 35%;
+  width: 30%;
+  margin: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.body2-image {
+  height: 100%;
+  width: 100%;
+}
+
+.body2-text {
+  height: 50px;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 110%;
+  background-color: rgb(62, 62, 62);
+  color: rgb(238, 238, 238);
 }
 
 .body3 {
