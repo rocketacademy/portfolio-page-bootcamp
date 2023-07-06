@@ -26,6 +26,7 @@ body {
 }
 
 #secondary-bg {
+These are some of my projects
   background-color: lightblue;
   width: 100vw;
   height: 100vh;
@@ -51,4 +52,6 @@ body {
 .box-row {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
