@@ -43,6 +43,11 @@ body {
   margin: 5px;
 }
 
+#boxes-wrapper {
+  width: 60%;
+  height: 60%;
+}
+
 .box-row {
   display: flex;
   flex-direction: row;
