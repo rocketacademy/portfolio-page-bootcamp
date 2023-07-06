@@ -7,12 +7,19 @@ body {
   background-color: grey;
   width: 100vw;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #secondary-bg {
   background-color: lightblue;
   width: 100vw;
   height: 100vh;
+}
+
+#landing-text {
 }
 
 .portfolio-box {
