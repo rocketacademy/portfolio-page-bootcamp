@@ -42,3 +42,8 @@ body {
   background-color: blueviolet;
   margin: 5px;
 }
+
+.box-row {
+  display: flex;
+  flex-direction: row;
+}
