@@ -1,11 +1,9 @@
 const links = document.querySelectorAll('.nav-link');
-const observer = new IntersectionObserver((entries) => {
-	entries.forEach((entry) => {
-		console.log(entry);
-		if (entry.isIntersecting) {
-			entry.target.classList.add('show');
-		}
-	});
+const socialIcons = document.querySelectorAll('.logo');
+const observer = new IntersectionObserver(revealIcons);
+socialIcons.forEach((icon) => {
+	icon.classList.add('hidden');
+	observer.observe(icon);
 });
 const hiddenElements = document.querySelectorAll('.hidden');
 
@@ -19,3 +17,22 @@ links.forEach((link) => {
 		this.classList.add('active');
 	});
 });
+
+function removeAnimationStyles(event) {
+	console.log('animation ended');
+	const icon = event.target;
+	icon.classList.remove('hidden');
+	icon.classList.remove('show');
+	icon.removeEventListener('animationend', removeAnimationStyles);
+}
+
+function revealIcons(entries) {
+	console.log('revealIcons is being executed');
+	entries.forEach((entry) => {
+		if (entry.isIntersecting) {
+			const icon = entry.target;
+			icon.classList.add('show');
+			console.log(entry);
+		}
+	});
+}
