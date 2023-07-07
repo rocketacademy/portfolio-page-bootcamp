@@ -25,6 +25,12 @@ body {
   font-size: 30px;
 }
 
+#secondary-text{
+  color: white;
+  text-align: center;
+  font-size: 25px;
+}
+
 #secondary-bg {
 These are some of my projects
   background-color: lightblue;
@@ -35,13 +41,14 @@ These are some of my projects
 }
 
 #landing-text {
+
 }
 
 .portfolio-box {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   background-color: blueviolet;
-  margin: 5px;
+  margin: 10px;
 }
 
 #boxes-wrapper {
