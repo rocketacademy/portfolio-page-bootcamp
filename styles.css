@@ -38,7 +38,7 @@ body {
 #secondary-text {
   color: white;
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   text-decoration: underline;
 }
 
@@ -53,8 +53,8 @@ body {
 }
 
 #boxes-wrapper {
-  width: 60%;
-  height: 60%;
+  width: 90%;
+  height: 90%;
 }
 
 .box-row {
