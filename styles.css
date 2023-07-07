@@ -25,14 +25,7 @@ body {
   font-size: 30px;
 }
 
-#secondary-text{
-  color: white;
-  text-align: center;
-  font-size: 25px;
-}
-
 #secondary-bg {
-These are some of my projects
   background-color: lightblue;
   width: 100vw;
   height: 100vh;
@@ -40,8 +33,14 @@ These are some of my projects
   flex-direction: column;
 }
 
-#landing-text {
+#secondary-text {
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  text-decoration: underline;
+}
 
+#landing-text {
 }
 
 .portfolio-box {
