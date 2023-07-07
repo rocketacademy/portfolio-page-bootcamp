@@ -51,9 +51,11 @@ body {
   background-color: blueviolet;
   margin: 15px;
 
-  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   cursor: pointer;
-  position: relative;
 }
 
 #boxes-wrapper {
@@ -91,8 +93,3 @@ a:hover,
 a:active {
   background-color: red;
 }
-
-/* .inner-box {
-  justify-content: center;
-  align-items: center;
-} */
