@@ -109,6 +109,11 @@ body {
   color: black;
 }
 
+.link a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 .porftolio-box a:link {
   background-color: #f44336;
   color: white;
