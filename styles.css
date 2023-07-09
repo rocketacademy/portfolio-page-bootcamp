@@ -141,6 +141,7 @@ a:visited {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  margin: auto;
 }
 
 .porftolio-box a:hover,
