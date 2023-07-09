@@ -1,0 +1,11 @@
+body {
+  font-family: Roboto, Arial;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
