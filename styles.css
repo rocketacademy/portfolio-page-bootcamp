@@ -9,7 +9,12 @@ body {
 .topnav {
   overflow: hidden;
   background-color: lightgrey;
+  height: 60px;
+  width: 100%;
   display: flex;
+  position: fixed;
+  top: 0;
+  align-items: center;
   justify-content: center;
 }
 
@@ -47,7 +52,7 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .topnav-text a:hover {
