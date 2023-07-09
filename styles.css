@@ -98,19 +98,18 @@ body {
   height: 150px;
   background-color: blueviolet;
   margin: 15px;
-
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
 }
 
-.porftolio-box hover {
+.porftolio-box a:hover {
   background-color: #ddd;
   color: black;
 }
 
-.porftolio-box a {
+.porftolio-box a:link {
   background-color: #f44336;
   color: white;
   padding: 14px 25px;
@@ -118,6 +117,11 @@ body {
   text-decoration: none;
   display: inline-block;
   margin: 15px;
+}
+
+.link a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
 #boxes-wrapper {
