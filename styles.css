@@ -13,15 +13,15 @@
   padding: 8px;
 }
 
-.header-logo img {
+.topnav-logo img {
   height: 100%;
 }
 
-#last-logo {
+.last-logo {
   margin-right: auto;
 }
 
-.header-logo:hover {
+.topnav-logo:hover {
   opacity: 100%;
   padding: 8px;
 }
