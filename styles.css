@@ -39,12 +39,12 @@
 }
 
 .topnav-text a {
-  float: left;
+  float: center;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .topnav-text a:hover {
@@ -58,7 +58,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 20px;
   background-color: whitesmoke;
   background-size: 100%;
   background-repeat: no-repeat;
