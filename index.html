@@ -2,12 +2,141 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-
     <link href="styles.css" rel="stylesheet" />
 
-    <title>Rocket Academy</title>
+    <title>James' blog</title>
   </head>
+
+  <!-- /* CSS consists of rules like the example above, where rules consist of
+  selectors (p tag above) and declarations (text-align and color declarations
+  above). CSS "selectors" can be HTML tags, CSS "classes", CSS "IDs", or any
+  combination of tags, classes and IDs. CSS classes and IDs are typically
+  kebab-case strings that we label HTML elements with to apply styles to those
+  elements with CSS. Classes are reusable across multiple elements; IDs are
+  meant for only 1 element. Class selectors are prefixed with . and ID selectors
+  are prefixed with #. */ 
+  
+  IDs are used for UNIQUE element
+  Classes - MULTIPLE elements that serve the same purpose.
+
+  Hierarchy: DIRECTNESS, ID, classes, selector
+-->
+
   <body>
-    <h1>Hello, world!</h1>
+    <div class="topnav">
+      <a class="topnav-logo" href="https://github.com/jewc">
+        <img src="linkedin-logo.png" alt="" />
+      </a>
+      <a class="topnav-logo" href="https://github.com/jewc">
+        <img src="github-logo.png" alt="" />
+      </a>
+
+      <a href="#main-bg"> Home </a>
+      <a href="#secondary-bg"> Projects</a>
+      <a href="#third-bg"> Contact Me </a>
+    </div>
+
+    <section id="main-bg">
+      <div id="landing-text">
+        <h1 id="main-text">Hi, I am James</h1>
+        <h4 id="main-subtext">a developer</h4>
+      </div>
+    </section>
+
+    <section id="secondary-bg">
+      <h1 id="secondary-text">These are some of my projects</h1>
+      <div id="boxes-wrapper">
+        <div class="box-row">
+          <div class="portfolio-box">
+            <a
+              href="https://jewc.github.io/recipe-site-bootcamp/"
+              target="_blank"
+            >
+              <span class="link"></span>
+              Recipe site
+            </a>
+          </div>
+          <div class="portfolio-box">
+            <a
+              href="https://jewc.github.io/recipe-site-bootcamp/"
+              target="_blank"
+            >
+              <span class="link"></span>
+              World Clock
+            </a>
+          </div>
+
+          <div class="portfolio-box">
+            <a
+              href="https://jewc.github.io/recipe-site-bootcamp/"
+              target="_blank"
+            >
+              <span class="link"></span>
+              High Card
+            </a>
+          </div>
+        </div>
+        <div class="box-row">
+          <div class="portfolio-box">
+            <a
+              href="https://jewc.github.io/recipe-site-bootcamp/"
+              target="_blank"
+            >
+              <span class="link"></span>
+              Guess the word
+            </a>
+          </div>
+          <div class="portfolio-box">
+            <a
+              href="https://jewc.github.io/recipe-site-bootcamp/"
+              target="_blank"
+            >
+              <span class="link"></span>
+              Recipe site
+            </a>
+          </div>
+          <div class="portfolio-box">
+            <a
+              href="https://jewc.github.io/recipe-site-bootcamp/"
+              target="_blank"
+            >
+              <span class="link"></span>
+              Recipe site
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="third-bg">
+      <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input
+            type="text"
+            id="fname"
+            name="firstname"
+            placeholder="Your name.."
+          />
+
+          <label for="lname">Last Name</label>
+          <input
+            type="text"
+            id="lname"
+            name="lastname"
+            placeholder="Your last name.."
+          />
+
+          <label for="subject">Subject</label>
+          <textarea
+            id="subject"
+            name="subject"
+            placeholder="Write something.."
+            style="height: 200px"
+          ></textarea>
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </section>
   </body>
 </html>

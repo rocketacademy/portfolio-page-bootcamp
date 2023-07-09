@@ -1,3 +1,142 @@
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.topnav-logo {
+  margin-left: 0px;
+  opacity: 80%;
+  height: 30px;
+  width: auto;
+  padding: 10px;
+}
+
+.topnav-logo img {
+  height: 80%;
+}
+
+.topnav-logo:hover {
+  opacity: 100%;
+  padding: 8px;
+}
+
 body {
-  background-color: white;
+  margin: 0px;
+  background-color: whitesmoke;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#main-bg {
+  background: linear-gradient(
+    to bottom,
+    #b721ff,
+    #2af598,
+    #fec051,
+    #fee140,
+    #fa709a
+  );
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-text {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+#main-subtext {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+#secondary-bg {
+  background-color: lightblue;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#secondary-text {
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+.portfolio-box {
+  width: 150px;
+  height: 150px;
+  background-color: blueviolet;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.porftolio-box a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.link a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.porftolio-box a:link {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 15px;
+}
+
+.link a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#boxes-wrapper {
+  width: 90%;
+  height: 90%;
+}
+
+.box-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
