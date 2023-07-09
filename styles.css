@@ -114,6 +114,11 @@ body {
   cursor: pointer;
 }
 
+.porftolio-box hover {
+  background-color: #ddd;
+  color: black;
+}
+
 .porftolio-box a:hover {
   background-color: #ddd;
   color: black;
