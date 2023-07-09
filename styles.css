@@ -16,6 +16,8 @@ body {
 .topnav:hover {
   opacity: 100%;
   padding: 8px;
+  background-color: #ddd;
+  color: black;
 }
 
 .topnav-logo {
