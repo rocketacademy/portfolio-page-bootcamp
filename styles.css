@@ -1,3 +1,206 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.placeholder-link {
+  background-color: rgb(16, 23, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#placeholder-return {
+  color: rgb(255, 235, 121);
+  font-size: 30px;
+  text-decoration: none;
+  margin: 100px auto;
+  padding: 0 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70px;
+  border: 2px solid rgb(255, 235, 121);
+  opacity: 80%;
+  border-radius: 5px;
+}
+
+#placeholder-return:hover {
+  opacity: 100%;
+}
+
 body {
   background-color: white;
+}
+
+.placeholder {
+  height: 60px;
+}
+
+.header {
+  height: 60px;
+  width: 100%;
+  background-color: rgb(27, 47, 47);
+  display: flex;
+  position: fixed;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-logo {
+  margin-left: 0px;
+  opacity: 80%;
+  height: 60px;
+  width: auto;
+  padding: 10px;
+}
+
+.header-logo img {
+  height: 100%;
+}
+
+#last-logo {
+  margin-right: auto;
+}
+
+.header-logo:hover {
+  opacity: 100%;
+  padding: 8px;
+}
+
+.header-item {
+  display: flex;
+  padding: 0 20px;
+  height: 100%;
+  color: rgb(197, 197, 197);
+  font-weight: 500;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.header-item:hover {
+  background-color: rgb(197, 197, 197);
+  color: rgb(27, 47, 47);
+  border-radius: 2px;
+}
+
+.body1 {
+  height: 600px;
+  background-color: rgb(16, 23, 44);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.body1 h1 {
+  color: rgb(238, 238, 238);
+  font-size: 60px;
+  margin-bottom: 15px;
+}
+
+.body1 p {
+  color: rgb(238, 238, 238);
+  font-size: 25px;
+}
+
+.body2 {
+  height: auto;
+  padding: 50px 0;
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    133deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.body2-container {
+  display: flex;
+  max-width: 1400px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.body2-wrapper {
+  max-height: 400px;
+  max-width: 350px;
+  min-height: 300px;
+  min-width: 263px;
+  height: 35%;
+  width: 35%;
+  margin: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.body2-image {
+  height: 100%;
+  width: 100%;
+}
+
+.body2-text {
+  height: 50px;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 110%;
+  background-color: rgb(27, 47, 47);
+  color: rgb(238, 238, 238);
+  text-decoration: none;
+}
+
+.body2-text:hover {
+  background-color: rgb(60, 62, 67);
+  text-decoration: underline;
+}
+
+.body3 {
+  height: 600px;
+  background-color: rgb(16, 23, 44);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.body3-form {
+  color: rgb(238, 238, 238);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 400px;
+  width: 1200px;
+  margin: 50px 50px;
+}
+
+.form-header {
+  font-size: 30px;
+}
+
+.input,
+.textarea {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-submit {
+  background-color: rgb(238, 238, 238);
+  color: rgb(27, 27, 27);
+  padding: 8px 20px;
+  border: none;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 2px;
 }
