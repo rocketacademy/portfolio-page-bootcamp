@@ -1,0 +1,9 @@
+Almost black: #292725
+
+https://palettes.shecodes.io/palettes/201
+Brown: #45171d
+Taupe: #e84a5f
+Orange-pink: #ff847c
+Light ornage-pink: #fecea8
+
+Card template: https://codepen.io/_niikhil/pen/MWpeqby
