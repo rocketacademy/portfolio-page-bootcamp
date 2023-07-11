@@ -19,7 +19,6 @@ links.forEach((link) => {
 });
 
 function removeAnimationStyles(event) {
-	console.log('animation ended');
 	const icon = event.target;
 	icon.classList.remove('hidden');
 	icon.classList.remove('show');
