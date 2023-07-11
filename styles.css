@@ -35,6 +35,10 @@ h2 {
   font-family: "Aleo", serif;
 }
 
+p {
+  line-height: 1.2;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -82,10 +86,6 @@ main {
 
 .card-content {
   padding: 0 15px;
-}
-
-.card-content p {
-  line-height: 1.2;
 }
 
 @media (max-width: 768px) {
