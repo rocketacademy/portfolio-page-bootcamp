@@ -1,3 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: white;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: linear-gradient(to bottom, #5f5449, #b09398);
+  color: #333333;
+  font-family: "Rubik", Arial, sans-serif;
+}
+
+header {
+  padding: 20px;
+  background-color: #cedfd9;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+h1,
+h2 {
+  font-family: "Aleo", serif;
+}
+
+.container {
+  margin: auto;
+  padding: 20px;
+  max-width: 1200px;
+}
+
+#intro {
+  margin: 0 15px;
+  padding-top: 17px;
+  color: #ebfcfb;
+}
+
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 17px 15px;
+  width: calc(33% - 30px);
+  border-radius: 10px;
+  background-color: #ebfcfb;
+}
+
+.card img {
+  max-width: 100%;
+  height: 300px;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 0 15px;
+}
+
+.card-content p {
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: calc(100% - 30px);
+  }
 }
