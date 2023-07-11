@@ -1,3 +1,410 @@
+/*  General rules */
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-  background-color: white;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	scroll-behavior: smooth;
+}
+
+main {
+	overflow: none;
+}
+
+h1 {
+	font-weight: 600;
+	margin-bottom: 1rem;
+}
+nav ul li a,
+h1,
+h2,
+form label {
+	text-transform: capitalize;
+}
+
+/* Nav bar rules */
+
+li {
+	position: relative;
+}
+
+nav {
+	width: 100vw;
+	padding: 1rem;
+	position: fixed;
+	z-index: 5;
+	background-color: white;
+}
+
+nav ul {
+	display: flex;
+	gap: 2rem;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	list-style-type: none;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: inherit;
+	font-size: 1.5rem;
+}
+a::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 0.1em;
+	background-color: hotpink;
+	opacity: 0;
+	transition: opacity 300ms, transform 600ms;
+}
+
+/* Scale from center */
+li a::after {
+	opacity: 1;
+	transform: scale(0);
+	transform-origin: center;
+}
+
+li a:hover::after,
+li a:active::after,
+li a.active::after {
+	transform: scale(1);
+	opacity: 1;
+	transition: none;
+}
+/*  about me section rules */
+
+.about-me {
+	height: calc(100vh - 2rem);
+	padding: 2rem;
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-child-one {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+	width: 31%;
+}
+
+.flex-child-one p {
+	font-size: 1.5rem;
+
+	word-wrap: break-word;
+}
+
+.flex-child-two {
+	display: flex;
+	justify-content: center;
+}
+
+.masked {
+	-webkit-clip-path: circle(34% at 60% 57%);
+	clip-path: circle(34% at 60% 57%);
+}
+
+/* Projects CSS */
+
+.projects {
+	gap: 4rem;
+	padding: 2rem;
+	margin-bottom: 3rem;
+}
+
+.project {
+	height: 25rem;
+	width: 25rem;
+	border: solid black 1px;
+	border-radius: 20px;
+}
+
+.project-1::before,
+.project-2::before,
+.project-3::before,
+.project-4::before,
+.project-5::before,
+.project-6::before {
+	font-size: 4rem;
+	position: relative;
+	left: 20%;
+	top: 40%;
+}
+
+.project-1::before {
+	content: 'project 1';
+}
+
+.project-2::before {
+	content: 'project 2';
+}
+
+.project-3::before {
+	content: 'project 3';
+}
+
+.project-4::before {
+	content: 'project 4';
+}
+
+.project-5::before {
+	content: 'project 5';
+}
+.project-6::before {
+	content: 'project 6';
+}
+
+/* end of projects CSS */
+
+.contact-me {
+	height: calc(100vh - 2rem);
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+.contact-me form {
+	display: flex;
+	flex-direction: column;
+
+	width: 50%;
+	justify-content: center;
+	align-content: center;
+	gap: 1rem;
+}
+
+form label {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	font-size: 1.5rem;
+}
+
+form:nth-child(2) > label:nth-child(1) > input:nth-child(1),
+#contact-me > form:nth-child(2) > label:nth-child(2) > input:nth-child(1) {
+	line-height: 2;
+	padding: 1rem;
+}
+
+form button {
+	align-self: flex-end;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+.hidden {
+	opacity: 0;
+	filter: blur(5px);
+	transition: transform 1s;
+	transform: translateX(-100%);
+}
+
+.show {
+	opacity: 1;
+	filter: blur(0);
+	transform: translateX(0);
+}
+
+.social-links {
+	display: flex;
+	justify-content: center;
+	margin-top: 5rem;
+	gap: 2rem;
+	padding: 2rem;
+}
+
+.social-links i:hover {
+	background-image: linear-gradient(
+		red,
+		orange,
+		yellow,
+		green,
+		blue,
+		indigo,
+		violet
+	);
+
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+.logo:nth-child(1) {
+	transition-delay: 200ms;
+}
+
+.logo:nth-child(2) {
+	transition-delay: 600ms;
+}
+.logo:nth-child(3) {
+	transition-delay: 800ms;
+}
+
+button {
+	appearance: none;
+	background-color: #000000;
+	border: 2px solid #1a1a1a;
+	border-radius: 15px;
+	box-sizing: border-box;
+	color: #ffffff;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Roobert, -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica,
+		Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+	font-size: 16px;
+	font-weight: 600;
+	line-height: normal;
+	margin: 0;
+	min-height: 60px;
+	min-width: 0;
+	outline: none;
+	padding: 16px 24px;
+	text-align: center;
+	text-decoration: none;
+	transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	width: 100%;
+	will-change: transform;
+}
+
+button:disabled {
+	pointer-events: none;
+}
+
+button:hover {
+	box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+	transform: translateY(-2px);
+}
+
+button:active {
+	box-shadow: none;
+	transform: translateY(0);
+}
+
+@media (prefers-reduced-motion) {
+	.hidden {
+		transition: none;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.projects {
+		display: grid;
+
+		grid-template-columns: 1fr;
+
+		justify-items: center;
+	}
+
+	.about-me {
+		flex-direction: column-reverse;
+
+		justify-content: flex-end;
+
+		gap: 0;
+
+		height: fit-content;
+
+		margin-bottom: 2rem;
+
+		text-align: center;
+	}
+
+	.projects > * {
+		margin-bottom: 1rem;
+
+		height: 15rem;
+
+		width: 15rem;
+	}
+
+	.flex-child-one {
+		width: fit-content;
+	}
+
+	.project-1::before,
+	.project-2::before,
+	.project-3::before,
+	.project-4::before,
+	.project-5::before,
+	.project-6::before {
+		font-size: 2rem;
+	}
+
+	.projects .flex-child-one {
+		width: 70%;
+	}
+
+	.contact-me {
+		height: fit-content;
+	}
+
+	.social-links {
+		margin-bottom: 10rem;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	.flex-child-one {
+		width: fit-content;
+		text-align: center;
+	}
+	.project {
+		height: 15rem;
+		width: 15rem;
+	}
+
+	.project::before {
+		font-size: 3rem;
+		left: 15%;
+	}
+
+	.contact-me {
+		height: fit-content;
+	}
+
+	.about-me {
+		flex-direction: column-reverse;
+		justify-content: flex-end;
+		gap: 0;
+		height: fit-content;
+		margin-bottom: 2rem;
+		text-align: center;
+	}
+
+	.social-links {
+		margin-bottom: 3rem;
+	}
+	.projects {
+		display: grid;
+		grid-template-columns: auto auto;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.projects {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		align-items: center;
+		justify-content: center;
+	}
 }
