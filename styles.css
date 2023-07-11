@@ -4,11 +4,17 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   margin: 0;
   padding: 0;
   height: 100%;
   background: linear-gradient(to bottom, #5f5449, #b09398);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: #333333;
   font-family: "Rubik", Arial, sans-serif;
 }
@@ -53,14 +59,14 @@ h2 {
   flex-direction: column;
   margin: 17px 15px;
   width: calc(33% - 30px);
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: #ebfcfb;
 }
 
 .card img {
   max-width: 100%;
-  height: 300px;
-  border-radius: 10px 10px 0 0;
+  height: 250px;
+  border-radius: 15px 15px 0 0;
   object-fit: cover;
 }
 
