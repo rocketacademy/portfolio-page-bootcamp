@@ -72,7 +72,7 @@ main {
   display: flex;
   flex-direction: column;
   margin: 15px;
-  width: calc(33% - 30px);
+  flex: calc(33% - 30px);
   border-radius: 15px;
   background-color: #ebfcfb;
 }
@@ -90,12 +90,12 @@ main {
 
 @media (max-width: 768px) {
   .card {
-    width: calc(50% - 30px);
+    flex: calc(50% - 30px);
   }
 }
 
 @media (max-width: 480px) {
   .card {
-    width: calc(100% - 30px);
+    flex: calc(100% - 30px);
   }
 }
