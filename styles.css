@@ -1,3 +1,60 @@
 body {
-  background-color: white;
+  display: block;
+  margin: 0;
 }
+#main-bg{
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(184, 0, 0, 1) 59%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  width:100vw;
+  height:90vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#main-text{
+  color : white;
+  text-align: center;
+  font-size: 40px;
+}
+#main-subtext{
+  color: #ffffff71;
+  text-align: center;
+}
+
+
+#secondary-bg{
+  background-color: dodgerblue;
+  width:100vw;
+  height:90vh;
+}
+
+
+#landing-text{
+  color : white;
+}
+
+#boxes-wrapper{
+  width: 700px;
+  height:60%;
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+  margin:auto;
+}
+.box-row{
+  display:flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:center;
+  align-items:center;
+}
+
