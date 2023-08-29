@@ -1,3 +1,150 @@
 body {
-  background-color: white;
+  background-color: #a1ccd1;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Playfair+Display:wght@700&family=Poppins:wght@300&display=swap");
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  padding: 20px;
+  row-gap: 50px;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(10%);
+  }
+  25% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10%);
+  }
+  75% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(10%);
+  }
+}
+
+.landing-container {
+  animation: 3s ease-in-out 0s bounce;
+  animation-iteration-count: infinite;
+
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+/* @media (max-width: 1500px) {
+        .card-container {
+          flex-direction: column;
+          justify-content: space-between;
+        }
+        .card {
+          color: grey;
+          background-color: #ffdbaa;
+          text-align: center;
+          width: 500px;
+
+          box-shadow: rgb(36, 36, 36) 20px 20px;
+          padding: 100px;
+          border-radius: 0px;
+        }
+      } */
+
+.card {
+  color: rgb(231, 61, 61);
+  background-color: #f4f2de;
+  text-align: center;
+
+  width: 140px;
+  height: 220px;
+  box-shadow: rgb(36, 36, 36) 20px 20px;
+  padding: 100px;
+  border-radius: 50px 50px 50px 0px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: rgb(231, 80, 69) 20px 20px;
+  width: 170px;
+}
+
+.landing {
+  color: rgb(231, 61, 61);
+  background-color: #fffef3;
+  text-align: center;
+  font-size: 60px;
+  width: 80%;
+  box-shadow: rgb(36, 36, 36) 20px 20px;
+  padding: 100px;
+  border-radius: 50px 50px 50px 0px;
+}
+
+menu {
+  background-color: #ffc39c;
+  height: fit-content;
+}
+
+/* Somehow adding style on the image-holder has to work in tandem with the img style as well.  */
+.image-holder {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+
+  margin-bottom: 50px;
+  margin-top: -20px;
+  box-shadow: white 20px 20px;
+  border-bottom-left-radius: 50px;
+}
+
+/* removing the text decoration for links */
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+#div1:hover {
+  background-color: rgb(198, 255, 132);
+}
+#div2:hover {
+  background-color: #ffcb90;
+}
+#div3:hover {
+  background-color: #87b1ff;
+}
+#div4:hover {
+  background-color: #83ffda;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: right;
+  color: #000000;
+  padding: 230px 0px 20px 0px;
+  margin-right: -70px;
+}
+h2 {
+  color: rgb(0, 68, 255);
+  padding: 30px 0px 10px;
+  text-decoration: underline;
+  font-family: "Playfair Display", serif;
+}
+
+p {
+  color: rgb(58, 45, 247);
+  font-family: "Poppins", sans-serif;
 }
