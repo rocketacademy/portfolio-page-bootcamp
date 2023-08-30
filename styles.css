@@ -159,7 +159,7 @@ img {
   white-space: nowrap;
   overflow: hidden;
   box-sizing: border-box;
-  animation: scrollLeft 10s linear infinite;
+  animation: scrollLeft 5s linear infinite;
 }
 
 /* Projects section */
