@@ -21,9 +21,14 @@
 
 html {
   box-sizing: border-box;
-
   font-size: 50%;
   scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 /* 1200px / 16px = 75em */
