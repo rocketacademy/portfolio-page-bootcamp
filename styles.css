@@ -1,3 +1,151 @@
 body {
-  background-color: white;
+  background-color: #04294b;
+  justify-content: center;
+  align-items: center;
+  font-family: "Corbel";
+  color: white;
+}
+img {
+  border-radius: 50%;
+  max-width: 15%;
+  height: auto;
+}
+
+.sidebar {
+  z-index: 5;
+  top: 20%;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #04294b;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #047baa;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #235569;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 50px 40px;
+  height: 300px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+/* Above (apart from body) is added from https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp 
+
+https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_sidenav_fixed2 
+
+Spacing between the different links: https://stackoverflow.com/questions/20808949/how-can-i-add-space-between-anchor-tags 
+*/
+
+.linknav {
+  width: 200px;
+  position: fixed;
+  z-index: 6;
+  bottom: 20px;
+  left: 10px;
+  background: none;
+  overflow-x: hidden;
+  padding: 40px 0;
+  color: white;
+  line-height: 0.5em;
+}
+
+.linknav a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.linknav a.active {
+  background-color: #047baa;
+  color: white;
+}
+
+/* Links on mouse-over */
+.linknav a:hover:not(.active) {
+  background-color: #235569;
+  color: white;
+}
+
+.namenav {
+  padding: 1px 16px;
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 7%; /* Stay at the top */
+  left: 0;
+  background-color: none; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.project-tile a {
+  padding-bottom: 10px;
+  align-self: center;
+}
+
+.project-tile p {
+  padding-bottom: 20px;
+  line-height: 125%;
+  text-align: center;
+}
+
+.project-tile img {
+  width: 50%;
+}
+
+.project-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
 }
