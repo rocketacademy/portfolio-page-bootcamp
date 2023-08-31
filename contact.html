@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <style>
+      /* Reset default margin and padding */
+      body,
+      h1,
+      p,
+      form,
+      label,
+      input,
+      textarea {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Common styles */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        background: url("background.jpg") no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+
+      nav {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+      }
+
+      form {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .form-row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+
+      .form-row label {
+        width: 50%;
+        font-size: 16px;
+      }
+
+      .form-row input,
+      .form-row select,
+      textarea {
+        width: 50%;
+        font-size: 16px;
+      }
+
+      .form-section {
+        margin-bottom: 20px;
+      }
+
+      input[type="submit"] {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+
+      .contact-info {
+        font-size: 14px;
+        margin-top: 20px;
+      }
+
+      .contact-info a {
+        text-decoration: none;
+        color: #007bff;
+      }
+
+      .copyright {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: #999;
+      }
+    </style>
+    <script>
+      function validateForm() {
+        var firstName = document.getElementById("first-name").value;
+        var lastName = document.getElementById("last-name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var message = document.getElementById("message").value;
+
+        if (
+          firstName === "" ||
+          lastName === "" ||
+          email === "" ||
+          phone === "" ||
+          message === ""
+        ) {
+          alert("All fields are required!");
+          return false;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <h1>Contact Form</h1>
+    <form onsubmit="return validateForm()">
+      <div class="form-row">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required />
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required />
+      </div>
+
+      <div class="form-row">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+      </div>
+
+      <div class="form-section">
+        <label for="message">Enquiries:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="4"
+          cols="50"
+          required
+        ></textarea>
+      </div>
+
+      <div class="form-section">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+    <div class="contact-info">
+      For more enquiries or information, you can also call me or WhatsApp me at
+      <a href="tel:+65XXXXXXXX">+65XXXX XXXX</a>.<br />
+      LinkedIn profile:
+      <a
+        href="https://www.linkedin.com/in/jaipal-singh-khaira-b39718153"
+        target="_blank"
+        >https://www.linkedin.com/in/jaipal-singh-khaira-b39718153</a
+      >
+    </div>
+    <!-- Copyright statement -->
+    <div class="copyright">
+      <p>&copy; Copyright 2023 Jaipal. All rights reserved.</p>
+    </div>
+  </body>
+</html>

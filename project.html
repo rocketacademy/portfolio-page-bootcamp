@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <style>
+      /* Reset default margin and padding */
+      body,
+      h1,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Common styles */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        background: url("background.jpg") no-repeat center center fixed;
+        background-size: cover;
+      }
+
+      nav {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+
+      nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+      }
+
+      .center-header {
+        text-align: center;
+        margin: 20px 0;
+      }
+
+      .portfolio-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .portfolio-image {
+        max-width: fit-content;
+        height: auto;
+        margin-bottom: 20px;
+        cursor: pointer;
+      }
+
+      .image-description {
+        font-size: 16px;
+        padding: 10px;
+        color: black;
+      }
+
+      .portfolio-link {
+        text-decoration: underline;
+        color: blue;
+      }
+
+      .copyright {
+        margin-top: auto; /* Pushes the copyright message to the bottom */
+        width: 100%;
+        color: #999;
+        padding: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="home.html">Home</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <h1 class="center-header">Projects</h1>
+
+    <div class="portfolio-container">
+      <a href="https://misticalmaqe.github.io/basics-blackjack">
+        <img
+          src="blackjack.jpg"
+          alt="Blackjack Game Screenshot"
+          class="portfolio-image"
+        />
+      </a>
+      <p class="image-description">
+        This is a game of Blackjack created in 2023. Click on the image to play
+        the game.
+      </p>
+
+      <a href="https://misticalmaqe.github.io/basics-beat-that/">
+        <img
+          src="beat that.jpg"
+          alt="Beat That Game Screenshot"
+          class="portfolio-image"
+        />
+      </a>
+      <p class="image-description">
+        This is a game of Beat That created in 2023. Click on the image to play
+        the game.
+      </p>
+    </div>
+
+    <!-- Copyright statement -->
+    <div class="copyright">
+      <p>&copy; Copyright 2023 Jaipal. All rights reserved.</p>
+    </div>
+  </body>
+</html>
