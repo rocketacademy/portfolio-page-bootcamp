@@ -1,3 +1,155 @@
+*{
+  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: white;
+  font-family: "Helvetica", san-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-container{
+  background: #fffffa;
+  box-shadow: 0px 8px 24px rgba(0,0,0,0.1);
+  height: 60px;
+}
+
+.wrapper{
+  margin: 0 auto;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+}
+
+nav .logo{
+  /*font-family: "Helvetica", san-serif;*/
+  font-style: normal;
+  font-weight: 600;
+  font-size: 50px;
+  color: #333;
+  text-decoration: none;
+}
+
+nav .nav-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+}
+
+.nav-items li{
+  list-style: none;
+  margin: 0 65px;
+  transition: 0.1s;
+}
+
+.nav-items li:hover{
+  color: black;
+  font-weight: 1000;
+}
+
+.nav-items li a{
+  /*font-family: "Helvetica", san-serif;*/
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  text-align: center;
+}
+
+.header-container{
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 8px 24px rgba(0,0,0,0.1);
+  height: 100vh;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.name {
+ /*font-family: "Helvetica", san-serif;*/
+  font-style: normal;
+  color: #333;
+}
+
+.name h1{
+  text-align: center;
+  font-size: 40px;
+}
+
+.name p{
+  font-size: 20px;
+  letter-spacing: 10px;
+  word-spacing: 10px;
+}
+
+.icon a {
+  padding: 0 2%;
+  text-decoration: none;
+  color:#333;
+}
+
+.section1-container{
+  padding: 120px 0px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 10px;
+}
+
+section a{
+  text-decoration: none;
+  color:#333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  transition: 0.1s;
+}
+
+section a:hover{
+  color: black;
+  font-weight: 1000;
+}
+
+section a img{
+  width: 100%;
+  max-width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.footer-container{
+  display: flex;
+  align-items: center;
+  height: 5vh;
+  font-size:  0.8em;
 }
