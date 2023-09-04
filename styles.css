@@ -1,3 +1,119 @@
+* {
+  margin:0px;
+  padding:0px;
+}
+
 body {
   background-color: white;
 }
+
+header{
+  background-color:black;
+  height:50px;
+  display:flex;
+  justify-content:start;
+  align-items:center;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+nav li a{
+  padding:20px;
+  color:azure;
+  font-size: 20px;
+  text-decoration:none;
+  font-family:cursive;
+}
+
+#landing-pad {
+  max-width:100%;
+}
+
+#concert-hall{
+  max-width:100%;
+  max-height:100%;
+  display:block;
+}
+
+.hello-world {
+  position:absolute;
+  bottom: 17vw;
+  left: 30vh;
+  font-size: 40px;
+  color: white;
+  font-family:cursive;
+}
+
+#about {
+  display:flex;
+  flex-direction:row;
+}
+#bio {
+  width:50%;
+  text-align:center;
+  border-style:solid;
+  background-color:rgb(38, 53, 13);
+  color: white;
+  border-color: black;
+}
+#pic-of-me {
+  width:50%;
+  background-color:black;
+  border-style:solid;
+}
+#coffee {
+  max-width:100%;
+  display:block;
+}
+p {
+  font-size:20px;
+}
+section#projects {
+  background-color:cornflowerblue;
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+.project-tile {
+  border-style:solid;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  background-color:blueviolet;
+  max-width:30%;
+}
+
+.project-tile img {
+  max-width: 100%;
+}
+.project-tile a{
+  display:flex;
+  font-size:20px;
+  justify-content:center;
+  color:
+}
+.wrapper {
+  max-width: 100%;
+}
+.wrapper p{
+  max-width: 100%;
+}
+footer {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color:black;
+}
+footer img {
+  height:70px;
+  width:100px;
+  margin:20px 40px;
+}
+footer p {
+  color:white;
+}
+

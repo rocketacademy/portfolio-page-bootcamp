@@ -5,9 +5,140 @@
 
     <link href="styles.css" rel="stylesheet" />
 
-    <title>Rocket Academy</title>
+    <title>Tortoise</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+
+    <!-- Navbar -->
+    <header><!-- using header just in case i want to put some non-nav stuff alongside the navigation links -->
+      <nav><!-- set of navigation links-->
+        <ul>
+          <li><a href = "#">HOME</a></li><!-- to update links-->
+          <li><a href = "#about">ABOUT</a></li>
+          <li><a href = "#projects">PROJECTS</a></li>
+          <li><a href = "#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Page content(Houses basically everything else except the footer)-->
+    <div>
+      <!--triangle images-->
+      <section id = 'landing-pad'>
+        <div>
+          <img src="concerthall.jpg" id = "concert-hall">
+        </div><!--First image - cello - the full image - triangle either by clip-path or gradient control-->
+        <!--<div></div>Second image - coding - upper triangle, directly on top of the first-->
+        <div class = "hello-world">
+          <h3>Hello, world - <br><!--maybe split this into 2 elements-->
+            Welcome to my page.
+          </h3>
+        </div><!--Hi, I'm Ken - text in the middle, to be shown on top-->
+      </section>
+      <!--about me section-->
+      <!--Paragraph talking about me-->
+      <section id="about">
+        <div id = 'bio'>
+          <h1>About Me</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <!--this is a picture of me-->
+        <div id ="pic-of-me">
+          <img src = "/coffee.jpg" id="coffee">
+        </div>
+      </section>
+      <!--Portfolio section - just copy boxes from other ppl-->
+      <section id ='projects'>
+        <div class = "project-tile">
+          <img src="/tortoise.jpg">
+          <div class = "wrapper">
+            <a href ="https://www.turtle-tortoise.com/">Insert Project Here</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div class = "project-tile">
+          <img src="/tortoise.jpg">
+          <div class = "wrapper">
+            <a href ="https://www.turtle-tortoise.com/">Insert Project Here</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div class = "project-tile">
+          <img src="/tortoise.jpg">
+          <div class = "wrapper">
+            <a href ="https://www.turtle-tortoise.com/">Insert Project Here</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div class = "project-tile">
+          <img src="/tortoise.jpg">
+          <div class = "wrapper">
+            <a href ="https://www.turtle-tortoise.com/">Insert Project Here</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div class = "project-tile">
+          <img src="/tortoise.jpg">
+          <div class = "wrapper">
+            <a href ="https://www.turtle-tortoise.com/">Insert Project Here</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+        <div class = "project-tile">
+          <img src="/tortoise.jpg">
+          <div class = "wrapper">
+            <a href ="https://www.turtle-tortoise.com/">Insert Project Here</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat.</p>
+          </div>
+        </div>
+      </section>
+      <!--Contact section - do i want this to be <footer>? Also what is <i> - further check on the w3schools css-->
+        <footer id="contact">
+          <a href = "https://github.com/kenleeyx"> <img src = "githublogo.png"></a>
+          <a href = "https://www.linkedin.com/in/kenneth-lee-a70b598b/"><img src = "linkedinlogo.png"></a>
+          <p><b>kenleeyx@gmail.com</b></p>
+        </footer>
+    </div>
   </body>
 </html>
+
+<!--
+What do I want on this page?
+-A navigation bar
+-Landing pad - photo with me and cello+photo of me coding(a silly one?) Split the photos down the center with diagonal line - Hi, I'm Ken.
+-About(can be below) Title: I am a...
+->Software engineer(Central)(tab structure? can click tabs to show details)
+->Musician(all musical details)
+->Chemical engineering graduate student(all educational details and micron work history)
+->Cancer survivor
+
+
+->Education
+->Work history
+->Music
+->Personal(mushrooms and mangoes)
+-Sample work(can be further below) - use flexbox and square items
+-Contact details(Github, FB, LinkedIn, email)(at the bottom)
+
+Menu is for doing stuff with the page(refresh, popup something, manipulate stuff on page) while nav is for going elsewhere
+
+ -->
