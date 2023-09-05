@@ -73,6 +73,13 @@
 
       .form-section {
         margin-bottom: 20px;
+        position: relative;
+      }
+
+      .form-section label {
+        position: absolute;
+        top: 0;
+        left: 0;
       }
 
       input[type="submit"] {
@@ -105,38 +112,23 @@
         color: #999;
       }
     </style>
-    <script>
-      function validateForm() {
-        var firstName = document.getElementById("first-name").value;
-        var lastName = document.getElementById("last-name").value;
-        var email = document.getElementById("email").value;
-        var phone = document.getElementById("phone").value;
-        var message = document.getElementById("message").value;
-
-        if (
-          firstName === "" ||
-          lastName === "" ||
-          email === "" ||
-          phone === "" ||
-          message === ""
-        ) {
-          alert("All fields are required!");
-          return false;
-        }
-      }
-    </script>
   </head>
   <body>
     <nav>
-      <a href="home.html">Home</a>
+      <a href="index.html">Home</a>
       <a href="project.html">Projects</a>
       <a href="contact.html">Contact Us</a>
     </nav>
     <h1>Contact Form</h1>
-    <form onsubmit="return validateForm()">
+    <form
+      action="https://formsubmit.co/khaira_jaipal@hotmail.com"
+      method="POST"
+      onsubmit="return validateForm()"
+    >
+      <input type="hidden" name="_captcha" value="false" />
       <div class="form-row">
         <label for="first-name">First Name:</label>
-        <input type="text" id="first-name" name="first-name" required />
+        <input type="text" id="first-name" name="name" required />
         <label for="last-name">Last Name:</label>
         <input type="text" id="last-name" name="last-name" required />
       </div>
@@ -164,7 +156,7 @@
       </div>
     </form>
     <div class="contact-info">
-      For more enquiries or information, you can also call me or WhatsApp me at
+      For more inquiries or information, you can also call me or WhatsApp me at
       <a href="tel:+65XXXXXXXX">+65XXXX XXXX</a>.<br />
       LinkedIn profile:
       <a
@@ -177,5 +169,25 @@
     <div class="copyright">
       <p>&copy; Copyright 2023 Jaipal. All rights reserved.</p>
     </div>
+    <script>
+      function validateForm() {
+        var firstName = document.getElementById("first-name").value;
+        var lastName = document.getElementById("last-name").value;
+        var email = document.getElementById("email").value;
+        var phone = document.getElementById("phone").value;
+        var message = document.getElementById("message").value;
+
+        if (
+          firstName === "" ||
+          lastName === "" ||
+          email === "" ||
+          phone === "" ||
+          message === ""
+        ) {
+          alert("All fields are required!");
+          return false;
+        }
+      }
+    </script>
   </body>
 </html>
