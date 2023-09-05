@@ -137,7 +137,7 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required />
         <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="phone" required pattern="[0-9]*" />
+        <input type="tel" id="phone" name="phone" required />
       </div>
 
       <div class="form-section">
@@ -188,6 +188,20 @@
           return false;
         }
       }
+
+      // Attach an event listener to the phone number input field
+      document
+        .getElementById("phone")
+        .addEventListener("input", function (event) {
+          // Get the current value of the input
+          var inputValue = event.target.value;
+
+          // Remove non-numeric characters using a regular expression
+          var numericValue = inputValue.replace(/\D/g, "");
+
+          // Update the input value with the numeric value
+          event.target.value = numericValue;
+        });
     </script>
   </body>
 </html>
