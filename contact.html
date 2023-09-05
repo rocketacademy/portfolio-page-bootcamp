@@ -59,7 +59,7 @@
         margin-bottom: 10px;
       }
 
-      .form-row label {
+      .form-label {
         width: 50%;
         font-size: 16px;
       }
@@ -121,22 +121,22 @@
     </nav>
     <h1>Contact Form</h1>
     <form
-      action="https://formsubmit.co/0aad4cdb2fa304bff2bef0aa343dd2c4"
+      action="https://formsubmit.co/jaipals.k95@gmail.com"
       method="POST"
       onsubmit="return validateForm()"
     >
       <input type="hidden" name="_captcha" value="false" />
       <div class="form-row">
-        <label for="first-name">First Name:</label>
+        <label for="first-name" class="form-label">First Name:</label>
         <input type="text" id="first-name" name="name" required />
-        <label for="last-name">Last Name:</label>
+        <label for="last-name" class="form-label">Last Name:</label>
         <input type="text" id="last-name" name="last-name" required />
       </div>
 
       <div class="form-row">
-        <label for="email">Email:</label>
+        <label for="email" class="form-label">Email:</label>
         <input type="email" id="email" name="email" required />
-        <label for="phone">Phone Number:</label>
+        <label for="phone" class="form-label">Phone Number:</label>
         <input type="tel" id="phone" name="phone" required />
       </div>
 
