@@ -1,13 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Page</title>
+    <style>
+      /* Reset default margin and padding */
+      body,
+      h1,
+      p {
+        margin: 0;
+        padding: 0;
+      }
 
-    <link href="styles.css" rel="stylesheet" />
+      /* Common styles */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        background: url("background.jpg") no-repeat center center fixed;
+        background-size: cover;
+        position: relative;
+        min-height: 100vh;
+      }
 
-    <title>Rocket Academy</title>
+      nav {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0;
+      }
+
+      nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333;
+        font-size: 18px;
+      }
+
+      /* Copyright statement */
+      .copyright {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: #999;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <h1>About Us</h1>
+    <p>Welcome to Jaipal's portfolio.</p>
+    <p>
+      Hi there, Welcome to my portfolio. I graduated with a Diploma in
+      Electrical and Electronics Engineering with a specialization in
+      Electronics and Robotics from Singapore Polytechnic. <br />
+      I am currently studying in Rocket Academy Bootcamp to be a Software
+      Engineer. I have learnt to code in C++, CodeBlocks, Arduino and am current
+      learning how to code in JavaScript.<br />
+      You can find my resume from this link:
+      <a
+        href="https://drive.google.com/file/d/1hdu_2xkFgf5U4Xmp5EXC9lyqX3Qpej7D/view?usp=sharing"
+        target="_blank"
+      >
+        https://drive.google.com/file/d/1hdu_2xkFgf5U4Xmp5EXC9lyqX3Qpej7D/view?usp=sharing
+      </a>
+    </p>
+
+    <!-- Copyright statement -->
+    <div class="copyright">
+      <p>&copy; Copyright 2023 Jaipal. All rights reserved.</p>
+    </div>
   </body>
 </html>
