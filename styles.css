@@ -44,9 +44,11 @@
 
 #skills {
   width: 100%;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
-  background-color: #395144;
+  align-items: center;
+  background-color: #f0ebce;
   padding: 30px 0;
 }
 
@@ -54,15 +56,18 @@
 .hard-skills {
   text-align: center;
   flex-direction: column;
-  background-color: #f0ebce;
+  justify-content: center;
+  background-color: #395144;
   padding: 0 40px 10px;
-  color: #2c3639;
+  color: #f0ebce;
+
+  height: 60vh;
 }
 
 .skill-header {
   width: auto;
   display: block;
-  font-size: 20px;
+  font-size: 50px;
   padding: 10px 0;
   font-weight: bold;
   text-decoration: underline;
@@ -71,12 +76,14 @@
 li {
   text-align: left;
   padding-bottom: 5px;
+  font-size: 30px;
 }
 
 #projects {
   background-color: #395144;
   justify-content: space-around;
   flex-wrap: wrap;
+  height: 100vh;
 }
 
 .project-header {
@@ -84,24 +91,18 @@ li {
   font-size: 30px;
   text-decoration: underline;
   justify-content: center;
+  align-items: flex-end;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 .project-container {
   flex: 1 2 auto;
   min-width: 300px;
-  height: 250px;
+  height: 300px;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-}
-
-.project-container p {
-  color: #f0ebce;
-  font-size: 20px;
-  max-width: 300px;
-  text-align: center;
 }
 
 .project {
@@ -112,6 +113,14 @@ li {
   background-color: #f0ebce;
   color: #2c3639;
   font-size: 30px;
+}
+
+.project-container p {
+  color: #f0ebce;
+  font-size: 20px;
+  max-width: 300px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 #links {
