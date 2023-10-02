@@ -27,7 +27,7 @@
   align-items: center;
   width: 100%;
   padding: 20% 10%;
-  max-height: 500px;
+  height: 100vh;
 }
 
 .introduction {
@@ -71,6 +71,47 @@
 li {
   text-align: left;
   padding-bottom: 5px;
+}
+
+#projects {
+  background-color: #395144;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.project-header {
+  color: #f0ebce;
+  font-size: 30px;
+  text-decoration: underline;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.project-container {
+  flex: 1 2 auto;
+  min-width: 300px;
+  height: 250px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project-container p {
+  color: #f0ebce;
+  font-size: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.project {
+  height: 200px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0ebce;
+  color: #2c3639;
+  font-size: 30px;
 }
 
 body {
