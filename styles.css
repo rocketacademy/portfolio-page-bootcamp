@@ -1,34 +1,33 @@
 .header {
-  background-color: #8c3333;
-  padding: 5px 10px;
+  background-color: #aa8b56;
+  padding: 5px 10px 7px;
+  align-items: center;
 }
 
 .header .profile-pic {
   width: 50px;
   border-radius: 50%;
+  border-style: solid;
+  border-color: #2c3639;
   margin-right: 20px;
-  vertical-align: bottom;
   display: flex;
 }
 
 .nav {
   font-size: 20px;
   margin: 0 20px;
-  color: #f0ebce;
-}
-
-.navbar {
-  align-items: center;
+  color: #2c3639;
 }
 
 #about-me {
-  background-image: url("image/nature-background.webp");
+  background-image: url("image/nature-long.jpg");
   background-size: 120%;
   background-repeat: no-repeat;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 10%;
+  padding: 20% 10%;
+  max-height: 500px;
 }
 
 .introduction {
@@ -47,19 +46,24 @@
   width: 100%;
   display: flex;
   justify-content: space-around;
+  background-color: #395144;
+  padding: 30px 0;
 }
 
 .soft-skills,
 .hard-skills {
   text-align: center;
   flex-direction: column;
+  background-color: #f0ebce;
+  padding: 0 40px 10px;
+  color: #2c3639;
 }
 
 .skill-header {
   width: auto;
   display: block;
   font-size: 20px;
-  padding: 30px 0 10px;
+  padding: 10px 0;
   font-weight: bold;
   text-decoration: underline;
 }
