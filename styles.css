@@ -13,10 +13,20 @@
   display: flex;
 }
 
+.navbar {
+  width: 100%;
+  justify-content: flex-end;
+}
+
 .nav {
   font-size: 20px;
-  margin: 0 20px;
   color: #2c3639;
+  padding: 10px;
+}
+
+.nav:hover {
+  background-color: #395144;
+  color: #f0ebce;
 }
 
 #about-me {
@@ -155,6 +165,11 @@ body {
 
 div {
   display: flex;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
 }
 
 * {
