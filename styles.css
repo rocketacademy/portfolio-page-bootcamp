@@ -1,5 +1,4 @@
 .header {
-  display: block;
   background-color: #8c3333;
   padding: 5px 10px;
 }
@@ -9,6 +8,7 @@
   border-radius: 50%;
   margin-right: 20px;
   vertical-align: bottom;
+  display: flex;
 }
 
 .nav {
@@ -18,30 +18,46 @@
 }
 
 .navbar {
-  padding: 11px;
-  height: 50px;
+  align-items: center;
 }
 
 #about-me {
   background-image: url("image/nature-background.webp");
   background-size: 120%;
   background-repeat: no-repeat;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   padding: 10%;
 }
 
 .introduction {
-  display: inline-block;
   color: #f0ebce;
   max-height: 300px;
-  width: 50%;
+  width: 80%;
   min-width: 300px;
   font-size: 40px;
   text-align: center;
   background-color: #395144;
-  padding: 30px 2%;
+  padding: 30px 5%;
   overflow: hidden;
+}
+
+#skills {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.soft-skills,
+.hard-skills {
+  text-align: center;
+  flex-direction: column;
+}
+
+.skill-header {
+  width: auto;
+  display: block;
 }
 
 body {
@@ -49,7 +65,7 @@ body {
 }
 
 div {
-  display: inline-block;
+  display: flex;
 }
 
 * {
