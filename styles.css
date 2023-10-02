@@ -114,6 +114,31 @@ li {
   font-size: 30px;
 }
 
+#links {
+  background-color: #aa8b56;
+  flex-direction: column;
+}
+
+.link-header {
+  width: 100%;
+  justify-content: center;
+  font-size: 30px;
+  color: #2c3639;
+  margin: 30px 0;
+}
+
+.link-container {
+  justify-content: center;
+}
+
+.link-container a {
+  padding: 10px 30px;
+  margin: 0 20px;
+  background-color: #395144;
+  color: #f0ebce;
+  margin-bottom: 40px;
+}
+
 body {
   background-color: white;
 }
