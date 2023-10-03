@@ -2,6 +2,8 @@
   background-color: #aa8b56;
   padding: 5px 10px 7px;
   align-items: center;
+  position: fixed;
+  width: 100%;
 }
 
 .header .profile-pic {
