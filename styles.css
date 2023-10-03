@@ -1,3 +1,96 @@
-body {
-  background-color: white;
+/* Reset some default browser styles */
+html,
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
 }
+
+/* Apply a background color and font to the entire page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* center both inline/inline-block and block-level elements */
+}
+
+/* Style the header and navigation menu */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Style the main sections */
+section {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the individual projects in the portfolio section */
+.project {
+  margin-bottom: 20px;
+}
+
+.project img {
+  max-width: 50%;
+  height: auto;
+}
+
+/* Style the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Hamburger menu icon styles */
+.menu-icon {
+  cursor: pointer;
+  padding: 15px;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #da1212;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Styles for navigation links */
+/* .nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li {
+  margin: 0 15px;
+} */

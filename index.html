@@ -2,12 +2,67 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-
-    <link href="styles.css" rel="stylesheet" />
-
-    <title>Rocket Academy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header>
+      <nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div class="menu-links">
+          <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h1>About Me</h1>
+      <p>
+        Welcome to my portfolio website. I'm a passionate web developer with a
+        love for creating beautiful and functional websites.
+      </p>
+    </section>
+
+    <section id="portfolio">
+      <h1>Portfolio</h1>
+      <div class="project">
+        <h3>Project 1</h3>
+        <img src="recipe-page.png" alt="Project 1" />
+
+        <p>
+          A recipe app called Forkify that has over 100,000 recipes that you can
+          search!
+        </p>
+      </div>
+
+      <div class="project">
+        <h3>Project 2</h3>
+        <img src="project2.jpg" alt="Project 2" />
+        <p>A brief description of your second project goes here.</p>
+      </div>
+      <!-- Add more projects as needed -->
+    </section>
+
+    <section id="contact">
+      <h1>Contact</h1>
+      <p>
+        If you'd like to get in touch with me, please feel free to reach out at
+        yourname@example.com.
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy; 2023 Your Name</p>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
