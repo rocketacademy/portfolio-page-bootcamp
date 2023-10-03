@@ -1,3 +1,6 @@
+* {
+  font-family: Helvetica;
+}
 body {
   background-color: white;
   width: 100%;
@@ -20,13 +23,44 @@ h1 {
   flex-direction: row;
   justify-content: right;
   gap: 15px;
-  background-color: lightblue;
+  background-color: #cc0024;
   padding: 10px;
 }
 
-.projects {
-  background-color: lightcyan;
+.project {
   padding: 10px;
   display: flex;
   justify-content: center;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.each-project {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 500px 500px;
+  gap: 30px;
+  margin: 60px;
+}
+
+#span {
+  grid-column: span 2;
+}
+
+.color1 {
+  background-color: #8d6c8f;
+}
+.color2 {
+  background-color: #016eae;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.project-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 400px;
 }
