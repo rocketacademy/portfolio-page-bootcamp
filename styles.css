@@ -1,3 +1,180 @@
+.header {
+  background-color: #aa8b56;
+  padding: 5px 10px 7px;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+}
+
+.header .profile-pic {
+  width: 50px;
+  border-radius: 50%;
+  border-style: solid;
+  border-color: #2c3639;
+  margin-right: 20px;
+  display: flex;
+}
+
+.navbar {
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.nav {
+  font-size: 20px;
+  color: #2c3639;
+  padding: 10px;
+}
+
+.nav:hover {
+  background-color: #395144;
+  color: #f0ebce;
+}
+
+#about-me {
+  background-image: url("image/nature-long.jpg");
+  background-size: 120%;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20% 10%;
+  height: 100vh;
+}
+
+.introduction {
+  color: #f0ebce;
+  max-height: 300px;
+  width: 80%;
+  min-width: 300px;
+  font-size: 40px;
+  text-align: center;
+  background-color: #395144;
+  padding: 30px 5%;
+  overflow: hidden;
+}
+
+#skills {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f0ebce;
+  padding: 30px 0;
+}
+
+.skills-container {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #395144;
+  padding: 0 40px 10px;
+  color: #f0ebce;
+
+  height: 60vh;
+}
+
+.skills-container div {
+  justify-content: center;
+}
+
+.skill-header {
+  width: auto;
+  font-size: 50px;
+  padding: 10px 0;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+li {
+  text-align: left;
+  padding-bottom: 5px;
+  font-size: 30px;
+}
+
+#projects {
+  background-color: #395144;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.project-header {
+  color: #f0ebce;
+  font-size: 30px;
+  text-decoration: underline;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.project-container {
+  min-width: 300px;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.project {
+  height: 300px;
+  width: 300px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0ebce;
+  color: #2c3639;
+  font-size: 30px;
+}
+
+.project-container p {
+  color: #f0ebce;
+  font-size: 20px;
+  max-width: 300px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#links {
+  background-color: #aa8b56;
+  flex-direction: column;
+}
+
+.link-header {
+  width: 100%;
+  justify-content: center;
+  font-size: 30px;
+  color: #2c3639;
+  margin: 30px 0;
+}
+
+.link-container {
+  justify-content: center;
+}
+
+.link-container a {
+  padding: 10px 30px;
+  margin: 0 20px;
+  background-color: #395144;
+  color: #f0ebce;
+  margin-bottom: 40px;
+}
+
 body {
   background-color: white;
+}
+
+div {
+  display: flex;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
