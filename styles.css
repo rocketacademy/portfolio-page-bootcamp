@@ -1,15 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .nav-bar {
   font-family: "Hind", sans-serif;
   display: flex;
   flex-direction: row;
-  background-color: white;
   margin: 10px;
+  justify-content: flex-end;
 }
 
 .nav-bar > div {
   margin: 8px;
   text-align: center;
   font-size: 12px;
+}
+
+.nav-bar-filler {
+  display: flex;
+  flex-grow: 1;
 }
 
 body {
