@@ -1,5 +1,16 @@
 body {
-  background-color: white;
+  background-color: #0e8c7f;
+  margin: 0px;
+  width: 100%;
+}
+
+h1 {
+  margin: auto;
+}
+
+h2 {
+  padding: 20px;
+  margin: 0px;
 }
 
 .head {
@@ -8,11 +19,13 @@ body {
   display: flex;
   justify-content: space-between;
   height: 100px;
+  width: 100%;
   padding: 3px 10px;
 }
 
 .photo-img {
   border-radius: 100%;
+  margin-right: 20px;
 }
 
 .navi {
@@ -20,4 +33,21 @@ body {
   justify-content: space-around;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #1171ba;
+}
+
+.content {
+  margin: 0px;
+}
+
+.about-me,
+.job-history,
+.contact {
+  width: 100%;
+  background-color: #1399c6;
+}
+
+.project,
+.education {
+  background-color: #24aae2;
+  width: 100%;
 }
