@@ -66,3 +66,21 @@ body {
   font-size: 16px;
   padding-top: 5px;
 }
+
+.contact {
+  background-color: #b0b6bc;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  margin-top: 50px;
+  padding: 20px 20px 20px 20px;
+}
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 40px 10px 10px 10px;
+}
