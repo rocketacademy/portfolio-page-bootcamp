@@ -39,15 +39,22 @@ h2 {
   margin: 0px;
 }
 
-.about-me,
-.job-history,
-.contact {
+#about-me,
+#job-history,
+#contact {
   width: 100%;
+  height: 500px;
   background-color: #1399c6;
 }
 
-.project,
-.education {
+#project,
+#education {
   background-color: #24aae2;
   width: 100%;
+  height: 500px;
+}
+
+.info {
+  margin: auto;
+  width: 50%;
 }
