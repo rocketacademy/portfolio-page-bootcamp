@@ -1,5 +1,4 @@
 body {
-  background-color: #0e8c7f;
   margin: 0px;
   width: 100%;
 }
@@ -17,9 +16,9 @@ h3 {
   padding: 0px 10px;
 }
 
-.head {
+#head {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #096192;
+  background-color: #1f7798;
   display: flex;
   justify-content: space-between;
   height: 100px;
@@ -35,7 +34,10 @@ h3 {
   display: flex;
   justify-content: flex-start;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #1171ba;
+  background-color: #2d7a96;
+
+  border-bottom: 3px solid #103d4e;
+  border-top: 3px solid #103d4e;
 }
 
 .content {
@@ -115,4 +117,19 @@ h3 {
 
 .project-name {
   text-align: center;
+}
+
+#top-button {
+  border-radius: 100%;
+  border: 3px solid #0f3a4a;
+  position: fixed;
+  font-size: 25px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  background-color: #3c7b93;
+  right: 30px;
+  bottom: 30px;
+  color: #0c2d38;
+  text-decoration: none;
 }
