@@ -38,6 +38,7 @@ body {
 .link-container div {
   padding: 15px 20px;
   font-family: monaco;
+  margin: 15px;
 }
 
 a {
@@ -51,3 +52,31 @@ a:hover {
 }
 
 /* about me */
+
+.name {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  font-size: 30px;
+  letter-spacing: 2px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bolder;
+}
+
+.short-intro {
+  position: absolute;
+  top: 30%;
+  left: 15%;
+  margin: 10px 0;
+  font-size: 25px;
+}
+
+.say-hello-button {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  margin: 10px 0;
+  font-size: 15px;
+  padding: 10px;
+  border: 2px solid black;
+}
