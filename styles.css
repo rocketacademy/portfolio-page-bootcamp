@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0px;
   width: 100%;
@@ -23,6 +27,7 @@ h3 {
   justify-content: space-between;
   height: 100px;
   padding: 3px 10px;
+  scroll-behavior: smooth;
 }
 
 .photo-img {
