@@ -80,3 +80,40 @@ a:hover {
   padding: 10px;
   border: 2px solid black;
 }
+
+/* projects */
+
+h1 {
+  margin: 30px;
+  padding: 10px;
+  text-align: center;
+  font-size: 40px;
+}
+
+.project-column {
+  border: 3px solid black;
+  height: 300px;
+  width: 200px;
+}
+
+.project-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.project-info {
+  text-align: center;
+  font-size: 25px;
+  padding: 15px;
+  font-family: monaco;
+}
+
+.project-title {
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+#project-button {
+  display: inline-block;
+  margin: 50px auto;
+}
