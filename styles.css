@@ -6,17 +6,48 @@ body {
   margin: 0;
 }
 
+/* header section */
+
 .home-section {
   background-image: url("brown-wallpaper.jpg");
-  height: 350px;
+  height: 450px;
 }
 
-.home-container {
+.header-section {
+  background: white;
+  height: 80px;
+}
+
+.hire-button {
+  display: inline-block;
+  position: absolute;
+  padding: 10px;
+  right: 45px;
+  top: 15px;
+  border: 3px solid black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 15px;
+}
+
+.link-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   gap: 20px;
 }
 
-.home-container div {
+.link-container div {
   padding: 15px 20px;
+  font-family: monaco;
 }
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.5em;
+}
+
+/* about me */
