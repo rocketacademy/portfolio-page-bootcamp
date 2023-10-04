@@ -10,3 +10,13 @@ body {
   background-image: url("brown-wallpaper.jpg");
   height: 350px;
 }
+
+.home-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.home-container div {
+  padding: 15px 20px;
+}
