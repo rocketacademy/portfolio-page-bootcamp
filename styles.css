@@ -71,9 +71,26 @@ footer {
 }
 
 /* Hamburger menu icon styles */
+.menu-links ul.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-links ul.nav-links li {
+  margin: 0 15px;
+}
+
+.menu-links ul.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
 .menu-icon {
   cursor: pointer;
   padding: 15px;
+  display: block;
 }
 
 .bar {
@@ -83,14 +100,3 @@ footer {
   margin: 6px 0;
   transition: 0.4s;
 }
-
-/* Styles for navigation links */
-/* .nav-links {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-.nav-links li {
-  margin: 0 15px;
-} */
