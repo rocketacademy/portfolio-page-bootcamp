@@ -2,12 +2,126 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-
     <link href="styles.css" rel="stylesheet" />
-
-    <title>Rocket Academy</title>
+    <title>Ian Lau's Portfolio</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <section id="head">
+      <h1>Welcome to Ian Lau's Portfolio Page</h1>
+      <img src="img/photo.jpg" class="photo-img" />
+    </section>
+    <nav class="navi">
+      <div class="navi-link">
+        <h3><a href="#about-me">About Me</a></h3>
+      </div>
+      <div class="navi-link">
+        <h3><a href="#project">Project</a></h3>
+      </div>
+      <div class="navi-link">
+        <h3><a href="#contact">Contact</a></h3>
+      </div>
+    </nav>
+    <section class="content">
+      <div id="about-me">
+        <h2>About me</h2>
+        <div id="info-photo">
+          <div id="info">
+            <h3>Hello! I am Ian. Welcome to my page.</h3>
+            <p>
+              Back in the day when I was studying at university, programming was
+              really catching my eyes. I feel "in the zone" when I am reading or
+              writing programming languages. After several years in society, I
+              think software engineering is really my dream job and what I am
+              really passionate about. And I also have the passion to learn more
+              programming languages and do more practice on my algorithm.
+            </p>
+            <div id="info-list">
+              <div>
+                <h4>Programming Languages:</h4>
+                <ul>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Personality:</h4>
+                <ul>
+                  <li>Cooperative</li>
+                  <li>Challenge taker</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Interest:</h4>
+                <ul>
+                  <li>Boardgame</li>
+                  <li>Chess</li>
+                  <li>Meme</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <img src="img/AboutMePhoto.jpg" id="about-me-photo" />
+        </div>
+      </div>
+
+      <div id="project">
+        <h2>Project</h2>
+        <div id="project-container">
+          <div class="project-content">
+            <a
+              href="https://ianlauyin.github.io/Project-3-basics-blackjack/"
+              target="_blank"
+            >
+              <img src="img/project1.jpg" class="project-img" />
+              <h3 class="project-name">Black Jack</h3>
+            </a>
+          </div>
+          <div class="project-content">
+            <a
+              href="https://ianlauyin.github.io/Project-3-basics-blackjack/"
+              target="_blank"
+            >
+              <img src="img/project1.jpg" class="project-img" />
+              <h3 class="project-name">Black Jack</h3>
+            </a>
+          </div>
+          <div class="project-content">
+            <a
+              href="https://ianlauyin.github.io/Project-3-basics-blackjack/"
+              target="_blank"
+            >
+              <img src="img/project1.jpg" class="project-img" />
+              <h3 class="project-name">Black Jack</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="contact">
+      <h2>Contact</h2>
+      <div id="contact-info">
+        <a
+          href="https://github.com/ianlauyin"
+          class="contact-content"
+          target="_blank"
+          ><img src="img/github-logo.png" class="logo-img" />Github</a
+        >
+        <a
+          href="https://wa.me/15551234567"
+          class="contact-content"
+          target="_blank"
+          ><img src="img/whatsapp-logo.png" class="logo-img" />Whatsapp</a
+        >
+        <a
+          href="mailto: ianlauyin@gmail.com"
+          class="contact-content"
+          target="_blank"
+          ><img src="img/email-logo.png" class="logo-img" />Email</a
+        >
+        <a href="tel:+852.5703.0374" class="contact-content" target="_blank"
+          ><img src="img/phone-logo.png" class="logo-img" />Phone</a
+        >
+      </div>
+    </div>
+    <a href="#head" id="top-button"><b>⮝</b></a>
   </body>
 </html>
