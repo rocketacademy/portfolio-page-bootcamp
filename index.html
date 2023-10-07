@@ -8,83 +8,84 @@
     <title>Qian's Portfolio</title>
   </head>
   <body>
-    <section id="home" class="home-section">
-      <div class="header-section">
+    <section class="header-section">
+      <div class="header">
+        <p id="author-name">Yap Qianling</p>
+        <div class="header-navigation">
+          <a href="#home">Home</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </div>
         <div>
-          <button type="button" class="hire-button">Hire Me ></button>
-        </div>
-        <div class="link-container">
-          <div>
-            <a href="#home">Home</a>
-          </div>
-          <div>
-            <a href="#projects">Projects</a>
-          </div>
-          <div>
-            <a href="#work-experience">Experience</a>
-          </div>
-          <div>
-            <a href="#contact">Contact</a>
-          </div>
-        </div>
-      </div>
-      <p class="name">
-        Hey there, I'm Qianling! <br />An aspiring Software Engineer
-      </p>
-      <p class="short-intro">
-        Based in Singapore, I am passionate about creating a product from
-        scratch, and bringing it to life.
-      </p>
-      <button type="button" class="say-hello-button">Say Hello ></button>
-    </section>
-    <section id="projects" class="project-section">
-      <h1>Latest Work</h1>
-      <div class="project-row">
-        <div class="project-column">
-          <p class="project-info project-title">Front-end</p>
-          <p class="project-info">Launching soon</p>
-          <div id="project-button">
-            <button type="button" onclick="alert('Launching soon!')">
-              Explore
-            </button>
-          </div>
-        </div>
-        <div class="project-column">
-          <p class="project-info project-title">Full-stack</p>
-          <p class="project-info">Launching soon</p>
-          <div id="project-button">
-            <button type="button" onclick="alert('Launching soon!')">
-              Explore
-            </button>
-          </div>
-        </div>
-        <div class="project-column">
-          <p class="project-info project-title">Back-end</p>
-          <p class="project-info">Launching soon</p>
-          <div id="project-button">
-            <button type="button" onclick="alert('Launching soon!')">
-              Explore
-            </button>
-          </div>
-        </div>
-        <div class="project-column">
-          <p class="project-info project-title">Capstone</p>
-          <p class="project-info">Launching soon</p>
-          <div id="project-button">
-            <button type="button" onclick="alert('Launching soon!')">
-              Explore
-            </button>
-          </div>
+          <button class="hire-button">Hire Me ></button>
         </div>
       </div>
     </section>
-    <section id="education-experience" class="education-section">
-      <h1>Education</h1>
-      <article class="education-info">
-        <p>Rocket Academy</p>
-        <p>2023 - 2024</p>
-      </article>
+
+    <section id="home" class="home-section">
+      <div class="about">
+        <p class="title">
+          Hey there, I'm Qianling! <br />An aspiring Software Engineer.
+        </p>
+        <p>
+          Based in Singapore, I am passionate about creating a product from
+          scratch, and bringing it to life.
+        </p>
+        <div>
+          <button class="say-hello-button">Say Hello ></button>
+        </div>
+      </div>
     </section>
-    <section id="contact" class="contact-section"></section>
+    <hr />
+    <section id="projects" class="projects-section">
+      <h1>Latest Works</h1>
+
+      <div class="project-container">
+        <p class="project-title">Front-end</p>
+        <p class="project-title">Full-Stack</p>
+        <p class="project-title">Back-end</p>
+        <p class="project-title">Capstone</p>
+      </div>
+      <div class="image-container">
+        <div><img src="questionmark.png" alt="question-mark-logo" /></div>
+        <div><img src="questionmark.png" alt="question-mark-logo" /></div>
+        <div><img src="questionmark.png" alt="question-mark-logo" /></div>
+        <div><img src="questionmark.png" alt="question-mark-logo" /></div>
+      </div>
+      <div class="button-container">
+        <div class="project-button">
+          <button onclick="alert('Launching soon!')">Explore</button>
+        </div>
+        <div class="project-button">
+          <button onclick="alert('Launching soon!')">Explore</button>
+        </div>
+        <div class="project-button">
+          <button onclick="alert('Launching soon!')">Explore</button>
+        </div>
+        <div class="project-button">
+          <button onclick="alert('Launching soon!')">Explore</button>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section id="skills" class="skills-section">
+      <h1>Skills</h1>
+      <ul>
+        <li>Javascript</li>
+        <li>CSS</li>
+        <li>HTML</li>
+      </ul>
+    </section>
+    <hr />
+    </body>
+<footer id="contact" class="contact-section">
+   <h2 class="footer-header">Contact</h2>
+   
+
+
+
+</footer>
+    
   </body>
 </html>
