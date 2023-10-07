@@ -1,5 +1,15 @@
+body {
+  color: #2f3f30;
+}
+
 html {
   scroll-behavior: smooth;
+  background-color: #b0d9b1;
+}
+
+a {
+  text-decoration: none;
+  color: #2f3f30;
 }
 
 body {
@@ -30,12 +40,29 @@ h3 {
   scroll-behavior: smooth;
 }
 
+@keyframes photo-expand {
+  from {
+    height: 100px;
+  }
+  to {
+    height: 300px;
+  }
+}
+
 .photo-img {
   border-radius: 100%;
   margin-right: 20px;
 }
 
+.photo-img:hover {
+  animation-name: photo-expand;
+  animation-duration: 4s;
+  height: 300px;
+  z-index: 1;
+}
+
 .navi {
+  height: 50px;
   display: flex;
   justify-content: flex-start;
   font-family: Arial, Helvetica, sans-serif;
@@ -45,17 +72,25 @@ h3 {
   border-top: 3px solid #618264;
 }
 
+.navi-link {
+  border-right: 2px solid #618264;
+}
+
+.navi-link:hover {
+  background-color: #567855;
+}
+
 .content {
   scroll-behavior: smooth;
   width: 200%;
   display: flex;
   justify-content: space-between;
   overflow-x: hidden;
-  margin: 0px;
   max-width: 100%;
 }
 
 #about-me {
+  position: relative;
   min-width: 100%;
   max-width: 100%;
   width: 100%;
@@ -64,16 +99,18 @@ h3 {
 }
 
 #project {
+  position: relative;
   min-width: 100%;
   max-width: 100%;
   background-color: #b0d9b1;
   width: 100%;
   height: 600px;
 }
+
 #contact {
   width: 100%;
   height: 100px;
-  background-color: #618264;
+  background-color: #79ac78;
 }
 
 #info-photo {
@@ -82,12 +119,12 @@ h3 {
 }
 
 #info {
-  padding: 30px;
+  padding: 50px;
   border-radius: 10% 0 10% 0;
   box-shadow: 5px 5px #4d6d4c;
   background-color: #79ac78;
   margin: 20px;
-  height: 400px;
+  height: 350px;
   width: 600px;
 }
 
@@ -119,6 +156,11 @@ h3 {
   padding: 20px 20px;
 }
 
+.project-content:hover {
+  background-color: #567855;
+  border-radius: 5%;
+}
+
 .project-img {
   border: 2px solid #618264;
   box-shadow: 2px 2px #3f5340;
@@ -131,6 +173,9 @@ h3 {
 }
 
 .project-name {
+  font-size: 25px;
+  border-radius: 5px;
+  border: 2px solid #3f5340;
   text-align: center;
 }
 
@@ -159,4 +204,8 @@ h3 {
   padding-bottom: 5px;
   color: #8dd48e;
   text-decoration: none;
+}
+
+#top-button:hover {
+  color: #5e8b5f;
 }
