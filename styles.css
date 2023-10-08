@@ -74,7 +74,7 @@ p.title {
   background-color: whitesmoke;
 }
 
-/* projects */
+/* project section */
 
 .projects-section,
 .skills-section {
@@ -86,6 +86,7 @@ h1 {
   text-align: center;
   font-size: 30px;
 }
+
 .project-container,
 .image-container {
   display: flex;
@@ -95,7 +96,6 @@ h1 {
 .button-container {
   display: flex;
   height: 20vh;
-
   justify-content: space-around;
   align-items: flex-end;
 }
@@ -112,7 +112,8 @@ img[alt*="launching"] {
   font-family: monaco;
 }
 
-/* skills section */
+/* skill section */
+
 .skills-section {
   height: 30vh;
 }
@@ -137,8 +138,7 @@ h2 {
 }
 
 .contact img {
-  height: 40px;
-
+  height: 20px;
   display: inline-block;
   margin: auto;
 }
