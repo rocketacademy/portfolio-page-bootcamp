@@ -1,3 +1,117 @@
+* {
+  font-family: Helvetica;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
   background-color: white;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+h1 {
+  font-size: 8rem;
+}
+
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100svh;
+  align-items: center;
+}
+
+.top {
+  gap: 15px;
+  background-color: #cc0024;
+  padding: 10px;
+  color: white;
+  position: fixed;
+  right: 10px;
+  width: 60px;
+  text-align: center;
+}
+
+.all-project {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 600px 600px 600px;
+  gap: 30px;
+  margin: 60px;
+}
+
+#span {
+  grid-column: span 2;
+}
+
+.color1 {
+  background-color: #8d6c8f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.color3 {
+  background-color: #016eae;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.color2 {
+  background-color: #7bb3d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.project-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.emoji {
+  font-size: 11rem;
+  margin: 0px;
+}
+
+.emoji-card {
+  color: white;
+  font-size: 13rem;
+  margin: 0px;
+}
+
+a:visited { 
+ text-decoration: none; 
+ color: pink;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+  justify-content: center;
+  align-items: center;
 }
