@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  background-color: rgb(253, 219, 219);
+  background-color: rgb(255, 242, 216);
 }
 
 #welcome-section {
@@ -36,10 +36,10 @@ h2 {
 .header {
   text-align: center;
   font-size: 30px;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 40px;
   padding: 15px;
-  background-color: rgb(210, 224, 251);
+  background-color: rgb(132, 214, 229);
 }
 .flex-container {
   display: flex;
