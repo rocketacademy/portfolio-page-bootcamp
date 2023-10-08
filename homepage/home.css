@@ -1,0 +1,45 @@
+#navbar {
+  height: 40px;
+  width: 100%;
+  border: solid;
+  margin: 0;
+  position: fixed;
+  border-color: blanchedalmond;
+  text-align: center;
+  display: block;
+}
+
+#opening {
+  display: block;
+  padding-top: 50px;
+}
+
+#projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#project-card {
+  display: block;
+  width: 50%;
+  font-size: 32px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+}
+
+#SAGE-logo {
+  height: 135px;
+  width: 500px;
+}
+
+#GHS-logo {
+  height: 121.5px;
+  width: 245.25px;
+}

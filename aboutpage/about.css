@@ -1,0 +1,26 @@
+#navbar {
+  height: 40px;
+  width: 100%;
+  border: solid;
+  margin: 0;
+  position: static;
+  border-color: blanchedalmond;
+  text-align: center;
+  display: block;
+}
+
+#navbar-links {
+  padding: 40px;
+}
+
+#profile-picture {
+  display: block;
+  height: 20%;
+  width: 20%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  background-color: white;
+}
