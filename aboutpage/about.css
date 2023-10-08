@@ -1,0 +1,19 @@
+#navbar {
+  height: 50px;
+  width: 100%;
+  background-color: lightgray;
+  border: solid;
+  margin: 0;
+  position: fixed;
+  border-color: blanchedalmond;
+  text-align: center;
+  display: grid;
+}
+
+#navbar-links {
+  padding: 40px;
+}
+
+body {
+  background-color: white;
+}
