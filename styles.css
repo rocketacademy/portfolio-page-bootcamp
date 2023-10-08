@@ -1,34 +1,44 @@
 * {
   font-family: Helvetica;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
   background-color: white;
-  width: 100%;
-  margin: 0px;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  
 }
 
 h1 {
   font-size: 8rem;
 }
 
+
 .intro {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   height: 100svh;
   align-items: center;
 }
 
 .top {
-  display: flex;
-  flex-direction: row;
-  justify-content: right;
   gap: 15px;
   background-color: #cc0024;
   padding: 10px;
   color: white;
+  position: fixed;
+  right: 10px;
+  width: 60px;
+  text-align: center;
 }
 
-.each-project {
+.all-project {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 600px 600px 600px;
@@ -78,17 +88,30 @@ h1 {
 }
 
 .emoji {
-  font-size: 8rem;
+  font-size: 11rem;
   margin: 0px;
 }
 
 .emoji-card {
   color: white;
-  font-size: 10rem;
+  font-size: 13rem;
   margin: 0px;
 }
 
 a:visited { 
  text-decoration: none; 
  color: pink;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  max-width: 1500px;
+  justify-content: center;
+  align-items: center;
 }
