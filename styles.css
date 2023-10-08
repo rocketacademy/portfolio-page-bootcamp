@@ -19,11 +19,10 @@ body {
 }
 
 #avatar {
-  max-width: 25%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 400px;
+  width: 350px;
   height: 450px;
 }
 
@@ -51,7 +50,7 @@ h3 {
   margin-bottom: 40px;
   padding: 15px;
 }
-.flex-container {
+.project-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -68,7 +67,7 @@ h3 {
   text-align: center;
 }
 
-.container {
+.contact-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -82,4 +81,7 @@ h3 {
   margin-bottom: 30px;
   padding: 1px 45px;
   width: 200px;
+}
+a:hover {
+  background-color: rgb(244, 232, 105);
 }
