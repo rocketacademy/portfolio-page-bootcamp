@@ -66,6 +66,7 @@ p.title {
   font-weight: bold;
   letter-spacing: 2px;
   font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(64, 21, 21);
 }
 
 .say-hello-button {
@@ -85,16 +86,23 @@ h1 {
   text-align: center;
   font-size: 30px;
 }
-
 .project-container,
-.image-container,
-.button-container {
+.image-container {
   display: flex;
   justify-content: space-around;
 }
 
-img {
-  height: 170px;
+.button-container {
+  display: flex;
+  height: 20vh;
+
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+img[alt*="launching"] {
+  height: 5vh;
+  border: 3px solid black;
 }
 
 .project-title {
@@ -121,9 +129,26 @@ ul {
 /* contact section */
 
 .contact-section {
-  height: 30vh;
+  height: 20vh;
 }
 
 h2 {
   text-align: center;
+}
+
+.contact img {
+  height: 40px;
+
+  display: inline-block;
+  margin: auto;
+}
+
+.contact {
+  text-align: center;
+}
+
+.footer-message {
+  text-align: center;
+  font-style: italic;
+  font-size: 15px;
 }
