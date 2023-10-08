@@ -1,3 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-bar {
+  font-family: "Hind", sans-serif;
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  justify-content: flex-end;
+  font-size: 14px;
+  position: fixed;
+  top: 0;
+  width: 98%;
+}
+
+.nav-bar > div {
+  margin: 8px;
+  text-align: center;
+}
+
+.nav-bar-filler {
+  display: flex;
+  flex-grow: 1;
+}
+
 body {
-  background-color: white;
+  background-color: #dfe0dc;
+}
+
+.banner {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  margin: 80px 20px 20px 20px;
+}
+
+.about {
+  font-family: "Hind", sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  height: 200px;
+}
+
+.projects {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 350px;
+}
+.projects > div {
+  margin: 30px;
+  height: 250px;
+  width: 250px;
+}
+
+.project-text {
+  font-family: "Hind", sans-serif;
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+.contact {
+  background-color: #b0b6bc;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  margin-top: 50px;
+  padding: 20px 20px 20px 20px;
+}
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 40px 10px 10px 10px;
 }
