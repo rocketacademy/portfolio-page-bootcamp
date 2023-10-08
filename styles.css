@@ -1,3 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
-  background-color: white;
+  background-color: rgb(253, 219, 219);
+}
+
+#welcome-section {
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 50px;
+  color: rgb(58, 166, 185);
+  padding: 15px;
+  border: 5px solid rgb(58, 166, 185);
+  border-radius: 10px;
+  margin: 50px;
+  text-align: center;
+}
+
+#avatar {
+  max-width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  height: 450px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 35px;
+  border: 1px;
+  padding: 10px;
+}
+.header {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  padding: 15px;
+  background-color: rgb(210, 224, 251);
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px 30px;
+}
+
+.project-tile img {
+  width: 400px;
+  height: 450px;
+}
+
+div a {
+  font-size: 30px;
 }
