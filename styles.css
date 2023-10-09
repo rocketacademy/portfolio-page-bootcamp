@@ -1,3 +1,125 @@
-body {
-  background-color: white;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+p,
+h1,
+h2,
+h3,
+ul {
+  padding: 0.25em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  padding: 0.25em;
+}
+
+header {
+  background-color: rgb(231, 231, 33);
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+#about img {
+  border-radius: 50%;
+  max-width: 20%;
+}
+
+#about p {
+  text-align: center;
+}
+
+.project {
+  margin: 2em auto;
+}
+
+/* Media Query */
+@media screen and (min-width: 576px) {
+  ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+  ul li {
+    padding: 0.25em;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+
+  #about {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 962px;
+    margin: 2em auto;
+    background-color: bisque;
+  }
+  #about h2 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 3em;
+  }
+  #about img {
+    width: 50%;
+  }
+
+  #about p {
+    width: 50%;
+    font-size: 1.25em;
+    padding-left: 0.5em;
+  }
+
+  #projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25em;
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: blanchedalmond;
+  }
+
+  #projects h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 1.85em;
+  }
+  .project {
+    flex: 1;
+    margin: 0 auto;
+  }
+
+  .project img {
+    border: 0.1em solid gray;
+    border-radius: 4px;
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+  }
+
+  footer {
+    text-align: center;
+    background-color: maroon;
+  }
 }
