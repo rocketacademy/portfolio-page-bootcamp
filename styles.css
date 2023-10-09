@@ -1,5 +1,5 @@
 /* Reset some default browser styles */
-html,
+/* html,
 body,
 h1,
 h2,
@@ -8,13 +8,21 @@ ul,
 li {
   margin: 0;
   padding: 0;
+} */
+
+:root {
+  --background-light: #f4f4f4;
+  --background-dark: #333;
+  --text-light: #333;
+  --text-dark: #1a0f0f;
+  --text-nav-dark: #fff;
 }
 
 /* Apply a background color and font to the entire page */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  background-color: var(--background-light);
+  color: var(--text-light);
   line-height: 1.6;
   margin: 0;
   padding: 0;
@@ -23,8 +31,8 @@ body {
 
 /* Style the header and navigation menu */
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--background-light);
+  color: var(--text-light);
   padding: 20px;
   text-align: center;
 }
@@ -40,7 +48,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #fff;
+  color: var(--text-light);
   font-weight: bold;
 }
 
@@ -68,35 +76,4 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px;
-}
-
-/* Hamburger menu icon styles */
-.menu-links ul.nav-links {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-}
-
-.menu-links ul.nav-links li {
-  margin: 0 15px;
-}
-
-.menu-links ul.nav-links li a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-.menu-icon {
-  cursor: pointer;
-  padding: 15px;
-  display: block;
-}
-
-.bar {
-  width: 30px;
-  height: 3px;
-  background-color: #da1212;
-  margin: 6px 0;
-  transition: 0.4s;
 }
