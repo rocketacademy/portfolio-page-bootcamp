@@ -1,92 +1,125 @@
-/* Global Styles */
-body {
-  margin: 0;
+* {
   padding: 0;
-  font-family: Arial,'Times New Roman', Times, serif;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+p,
+h1,
+h2,
+h3,
+ul {
+  padding: 0.25em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  padding: 0.25em;
 }
 
 header {
-  background-color: #adf33d;
-  color: #fff;
-  padding: 20px;
+  background-color: rgb(231, 231, 33);
 }
 
-header h1 {
-  margin: 0;
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-}
-
-section {
-  padding: 40px;
-}
-
-footer {
-  background-color: #adad38;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Specific Styles */
 #about {
-  background-color: #d8e486;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
 }
-
-#about h2 {
-  color: #668543;
-}
-
 #about img {
-  width: 100px;
   border-radius: 50%;
-  margin-bottom: 20px;
+  max-width: 20%;
 }
 
-#projects {
-  background-color: #f3cdcd;
+#about p {
+  text-align: center;
 }
 
 .project {
-  text-align: center;
-  margin-bottom: 40px;
+  margin: 2em auto;
 }
 
-.project img {
-  width: 300px;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
+/* Media Query */
+@media screen and (min-width: 576px) {
+  ul {
+    list-style-type: none;
+    display: flex;
+  }
 
-.project h3 {
-  color: #f6c6c6;
-}
+  ul li {
+    padding: 0.25em;
+  }
 
-#contact {
-  background-color: #f2f2f2;
-  text-align: center;
-}
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
 
-#contact p {
-  color: #4f6736;
-}
+  #about {
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 962px;
+    margin: 2em auto;
+    background-color: bisque;
+  }
+  #about h2 {
+    flex-basis: 100%;
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 3em;
+  }
+  #about img {
+    width: 50%;
+  }
 
-#contact a {
-  color: #3f6d69;
-  text-decoration: none;
+  #about p {
+    width: 50%;
+    font-size: 1.25em;
+    padding-left: 0.5em;
+  }
+
+  #projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25em;
+    margin-bottom: 2em;
+    padding: 1em;
+    background-color: blanchedalmond;
+  }
+
+  #projects h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 1.85em;
+  }
+  .project {
+    flex: 1;
+    margin: 0 auto;
+  }
+
+  .project img {
+    border: 0.1em solid gray;
+    border-radius: 4px;
+  }
+
+  #contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+  }
+
+  footer {
+    text-align: center;
+    background-color: maroon;
+  }
 }
