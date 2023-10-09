@@ -1,3 +1,92 @@
+/* Global Styles */
 body {
-  background-color: white;
+  margin: 0;
+  padding: 0;
+  font-family: Arial,'Times New Roman', Times, serif;
+}
+
+header {
+  background-color: #adf33d;
+  color: #fff;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 40px;
+}
+
+footer {
+  background-color: #adad38;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Specific Styles */
+#about {
+  background-color: #d8e486;
+  text-align: center;
+}
+
+#about h2 {
+  color: #668543;
+}
+
+#about img {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+#projects {
+  background-color: #f3cdcd;
+}
+
+.project {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.project img {
+  width: 300px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.project h3 {
+  color: #f6c6c6;
+}
+
+#contact {
+  background-color: #f2f2f2;
+  text-align: center;
+}
+
+#contact p {
+  color: #4f6736;
+}
+
+#contact a {
+  color: #3f6d69;
+  text-decoration: none;
 }
