@@ -2,12 +2,88 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-
-    <link href="styles.css" rel="stylesheet" />
-
-    <title>Rocket Academy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Name - Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <body class="light-mode">
+    <header class="light-mode">
+      <nav>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <div class="menu-links">
+          <ul class="nav-links">
+            <li>
+              <a href="#about" class="navigation" class="light-mode"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a
+                href="#portfolio"
+                class="navigation light-mode"
+                class="light-mode"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="navigation" class="light-mode"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <button onclick="toggleMode()">Light/Dark Mode</button>
+
+    <section id="about">
+      <h1>About Me</h1>
+      <p>
+        Welcome to my portfolio website. I'm a passionate web developer with a
+        love for creating beautiful and functional websites. 😁
+      </p>
+    </section>
+
+    <section id="portfolio">
+      <h1>Portfolio Page</h1>
+      <div class="project">
+        <h3>Project 1: Forkify App</h3>
+        <img src="recipe-page.png" alt="Project 1" />
+
+        <p>
+          A recipe app called Forkify that has over 100,000 recipes that you can
+          search!
+        </p>
+        <a href="https://forkify-ianchow9898.netlify.app/?" class="no-dark-mode"
+          >Visit my Forkify App!</a
+        >
+      </div>
+
+      <div class="project">
+        <h3>Project 2: Mapty App</h3>
+        <img src="mapty-app.png" alt="Project 2" />
+        <p>A map website to log your own workouts!</p>
+        <a href="https://mapty.netlify.app/">Visit my Mapty App!</a>
+      </div>
+      <!-- Add more projects as needed -->
+    </section>
+
+    <section id="contact">
+      <h1>Contact</h1>
+      <p>
+        If you'd like to get in touch with me, please feel free to reach out at
+        ianchow9898@gmail.com
+      </p>
+    </section>
+
+    <footer>
+      <p>&copy;Copyright by Ian Chow</p>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

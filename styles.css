@@ -1,3 +1,79 @@
+/* Reset some default browser styles */
+/* html,
+body,
+h1,
+h2,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+} */
+
+:root {
+  --background-light: #f4f4f4;
+  --background-dark: #333;
+  --text-light: #333;
+  --text-dark: #1a0f0f;
+  --text-nav-dark: #fff;
+}
+
+/* Apply a background color and font to the entire page */
 body {
-  background-color: white;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-light);
+  color: var(--text-light);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* center both inline/inline-block and block-level elements */
+}
+
+/* Style the header and navigation menu */
+header {
+  background-color: var(--background-light);
+  color: var(--text-light);
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-light);
+  font-weight: bold;
+}
+
+/* Style the main sections */
+section {
+  padding: 20px;
+  margin: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the individual projects in the portfolio section */
+.project {
+  margin-bottom: 20px;
+}
+
+.project img {
+  max-width: 50%;
+  height: auto;
+}
+
+/* Style the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
 }
