@@ -1,3 +1,15 @@
+:root {
+  font-family: "Roboto Flex", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Roboto Flex", sans-serif;
+  }
+}
 body {
-  background-color: white;
+  background-color: #333333;
+  color: #cccccc;
+}
+.fa-file-pdf {
+  font-size: 5em;
 }
