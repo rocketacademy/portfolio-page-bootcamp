@@ -125,7 +125,7 @@ h1 {
 
 .portfolio-list div {
   background: #d9cdc4;
-  padding: 50px;
+  padding: 10%;
   font-size: 14px;
   border-radius: 10px;
   transition: background 0.5s, transform 0.5s;
@@ -139,7 +139,6 @@ h1 {
 
 .portfolio-list div a {
   font-size: 14px;
-  margin-top: 20px;
   color: black;
   display: inline-block;
   text-decoration: none;
