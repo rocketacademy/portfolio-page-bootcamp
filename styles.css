@@ -1,12 +1,84 @@
+.name {
+  margin-top: 1rem;
+  margin-left: 4vw;
+}
+
+.navbar-full p {
+  margin-top: 1rem;
+}
+
+nav.navbar.navbar-expand-lg.navbar-light.bg-light {
+  background-color: #c5adc5 !important;
+  font-family: "Raleway", sans-serif;
+}
+
 body {
   background-color: white;
-  margin: 5%;
+  margin: 0px;
+}
+
+.topnav {
+  background-color: #a19b9b;
+  height: fit-content;
+  font-family: "Raleway", sans-serif;
+}
+
+.topnav a {
+  float: center;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+img.social {
+  height: 25px;
+  vertical-align: text-bottom;
+}
+
+img.social:hover {
+  transform: scale(1.5);
+}
+
+.hero-image {
+  background-image: url("images/beach.jpg");
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 0px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+h3 {
+  margin-top: 5%;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  font-family: "Raleway", sans-serif;
 }
 
 .grid {
   display: flex;
   flex-wrap: wrap;
   max-width: 1920px;
+  margin: 10% 10% 10% 10%;
 }
 
 .card img {
@@ -17,13 +89,15 @@ body {
 }
 
 .card {
-  max-width: 50%;
   flex: 25%;
   position: relative;
+  --bs-card-border-color: none;
+  margin-right: 2em;
+  font-family: "Raleway", sans-serif;
 }
 
 .card-body {
-  background-color: lightblue;
+  background-color: #b2b5e0;
   height: auto;
   display: block;
   margin-left: 0px;
@@ -93,12 +167,35 @@ a.card {
   text-decoration: none;
 }
 
+.social-footer {
+  text-align: center;
+  background-color: #c5adc5;
+  border-radius: 30px;
+  max-width: 600px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-family: "Raleway", sans-serif;
+}
+.social-footer p {
+  font-size: 1.5rem;
+  padding: 1.5rem;
+}
+
+.social-footer a {
+  text-decoration: none !important;
+  color: black;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 600px) {
   .card {
     flex: 100%;
     max-width: 100%;
+    margin: 5%;
   }
 }
 
