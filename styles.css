@@ -1,3 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(./goose.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  padding: 20px 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav .logo {
+  color: white;
+  font-weight: 600;
+  font-size: 2.5em;
+  text-align: unset;
+  padding-left: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bolder;
+}
+
+nav ul li a:hover {
+  color: rgb(211, 225, 241);
+}
+
+.header-text {
+  margin-top: 15%;
+  font-size: 2em;
+}
+
+.header-text h1 {
+  color: white;
+  font-size: 2.3em;
+  position: relative;
+  margin-left: 5%;
+  margin-bottom: 1%;
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+
+.header-text button {
+  position: relative;
+  top: 60%;
+  margin-left: 5%;
+  font-size: 0.7em;
+  background-color: rgb(80, 162, 255);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  min-height: 30px;
+  min-width: 120px;
+}
+
+.about {
+  text-align: center;
+  width: 100%;
+  height: 20vh;
+  background-color: #3d3646;
+}
+
+.about .container {
+  padding: 50px;
+}
+
+.about .container p {
+  color: white;
+  text-align: center;
+  font-size: 2em;
+}
+
+.portfolio {
+  margin: 2%;
+}
+
+.portfolio-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 30px;
+}
+
+.work img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.portfolio-list div {
+  background: #d9cdc4;
+  padding: 10%;
+  font-size: 14px;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.portfolio-list div i {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.portfolio-list div a {
+  font-size: 14px;
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.portfolio-list div:hover {
+  background: #dac1aa;
+  transform: translateY(-10px);
+}
+
+.contact {
+  text-align: center;
+  width: 100%;
+  background-color: #8c4227;
+}
+
+.contact .container {
+  padding: 50px;
+}
+
+.contact .container p {
+  color: white;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2em;
+}
+
+.contact div i {
+  font-size: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.end-banner .container {
+  padding: 0;
+}
+
+.image-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-list img {
+  width: 100%;
+  display: block;
+}
+
+.layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #bf3030;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container:hover .layer {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  text-transform: uppercase;
+  font-size: large;
+}
+
 body {
   background-color: white;
+}
+
+/* CSS CODE FOR SMALL SCREENS */
+
+@media only screen and (max-width: 600px) {
+  #header {
+    background-image: url(goose.jpeg);
+    width: 100%;
+    height: 50vh;
+  }
+
+  nav .logo {
+    color: white;
+    font-weight: 600;
+    font-size: 1.5em;
+    text-align: unset;
+    padding-left: 20px;
+  }
+
+  .header-text h1 {
+    color: white;
+    font-size: 1.2em;
+    position: relative;
+    padding-top: 45px;
+    margin-left: 5%;
+    margin-bottom: 1%;
+    animation: fadeIn;
+    animation-duration: 2s;
+  }
+
+  .header-text button {
+    position: relative;
+    top: 60%;
+    margin-left: 5%;
+    font-size: 0.5em;
+    background-color: rgb(80, 162, 255);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    min-height: 30px;
+    min-width: 120px;
+  }
 }
