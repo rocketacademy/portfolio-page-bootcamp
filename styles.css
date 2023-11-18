@@ -1,3 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: white;
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f9f9;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  background-color: #ffffff;
+  position: relative;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(224, 223, 223);
+  padding-bottom: 5px;
+}
+
+#name-container {
+  color: #ffa500;
+  text-shadow: 5px 2px 4px rgba(194, 185, 21, 0.673);
+  font-size: 25px;
+  font-family: "" Poppins ", sans-serif;";
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  /* anchor-nav bar words */
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 17px;
+  margin: 80px 20px 20px;
+  color: #2d2e32;
+  text-shadow: 5px 2px 4px rgba(194, 185, 21, 0.673);
+}
+
+nav a:hover {
+  color: #ffa500;
+}
+
+#main-heading {
+  flex: 1;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+h1 {
+  font-size: 55px;
+  font-family: "Poppins", sans-serif;
+  margin: 300px 150px 300px;
+  color: #ffa500;
+  text-shadow: 5px 2px 4px rgba(194, 185, 21, 0.673);
+}
+
+h1 span {
+  color: #2d2e32;
+}
+
+h1::after {
+  content: " 🫡👋";
+  font-size: 1.25em;
+}
+
+#h1-content {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  color: #2d2e32;
+}
+
+h2 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  margin: 300px 150px 20px;
+  color: #2d2e32;
+  text-shadow: 5px 2px 4px rgba(194, 185, 21, 0.673);
+}
+
+p {
+  color: #767676;
+  font-family: "Mulish", sans-serif;
+  font-size: 18px;
+}
+
+#about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  padding: 100px;
+}
+
+#about-section p {
+  margin-bottom: 10px;
+  max-width: 800px;
+  margin-right: auto;
+}
+
+.highlight-js {
+  background-color: yellow;
+  font-weight: bold;
+  color: rgb(55, 55, 55);
+}
+
+.highlight-react {
+  background-color: #61dbfb;
+  font-weight: bold;
+  color: white;
+}
+
+.highlight-node {
+  background-color: #303030;
+  font-weight: bold;
+  color: #68a063;
+}
+
+#works-section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  padding: 100px;
+}
+
+#works-section p {
+  margin-bottom: 10px;
+  max-width: 800px;
+  margin-right: auto;
+}
+#contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  padding: 100px;
+}
+
+#contact-section p {
+  margin-bottom: 10px;
+  max-width: 800px;
+  margin-right: auto;
+}
+
+body::-webkit-scrollbar {
+  width: 25px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #ffa500;
+  border-radius: 12px;
 }
