@@ -1,51 +1,92 @@
-body{
+body {
   color: #f1f1f1;
   height: 100vh;
   width: 100vw;
-  background-color: #0F0F0F;
-  font-family: 'Lexend', sans-serif;
+  background-color: #0f0f0f;
+  font-family: "Lexend", sans-serif;
 }
 
-main{
+main {
+  display: flex;
+  justify-content: center;
   height: 100vh;
   width: 100vw;
   /* background-color: #0F0F0F; */
   background-image: url("https://images.unsplash.com/photo-1623479322729-28b25c16b011?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-position: center 0%;
-  position:relative;
+  position: relative;
   z-index: 2;
+  transition: transform 0.8s ease-in;
+}
+
+.hero-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content h1, .hero-content p{
+  text-shadow: 0 2px 5px black;
 }
 
 
 /* Typewriter effect */
 
 .typewriter h1 {
+  font-size: 5rem;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 /* NAV */
 
-#nav-toggle{
+nav{
+  height: 50vh;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 1;
+}
+
+#nav-links{
+  display: flex;
+  justify-content: space-around;
+  gap: clamp(1rem,2vw,2rem);
+  margin-top: clamp(2rem,2vw,3rem);
+  padding: 0rem clamp(1rem, 2vw,2rem);
+  transform: translateY(70%) scale(0.9);
+  transition: transform 500ms ease-in;
+}
+
+#nav-toggle {
   height: 5rem;
   width: 5rem;
   position: fixed;
@@ -53,7 +94,7 @@ main{
   left: 50%;
   bottom: 3rem;
   transform: translateX(-50%);
-  background-color:#6e2bf3 ;
+  background-color: #6e2bf3;
   border: none;
   border-radius: 100%;
   outline: none;
@@ -63,9 +104,59 @@ main{
   transition-timing-function: ease;
   transition-duration: 500ms;
 }
-#nav-toggle:hover{
+#nav-toggle:hover {
   transform: translateX(-50%) scale(1.04);
 }
-#nav-toggle:active{
+#nav-toggle:active {
   transform: translateX(-50%) scale(0.96);
+}
+
+#nav-toggle > i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #f1f1f1;
+  font-size: 2.1em;
+  opacity: 0;
+  transition: transform, opacity;
+  transition-timing-function: ease;
+  transition-duration: 500ms;
+}
+
+#nav-links > .nav-link > .nav-link-label{
+  font-size: 1.25rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+#nav-links > .nav-link > .nav-link-img{
+  width: max(20vw, 400px);
+  aspect-ratio: 1.8/1;
+  border-radius: 0.5rem;
+  margin-top: 0.75rem;
+  object-fit: cover;
+}
+
+/* Changes when body.data changes states */
+
+body:not([data-nav="true"]) > #nav-toggle:hover > .open {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+body[data-nav="true"] > #nav-toggle > .close {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+body[data-nav="true"] > main {
+  transform: translateY(-50%);
+}
+
+body[data-nav="true"] > nav > #nav-links{
+  transform: translateY(0%) scale(1);
+}
+body:not([data-nav="false"]) > nav > #nav-links{
+  transition-delay: 400ms;
 }
