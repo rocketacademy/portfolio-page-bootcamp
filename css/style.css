@@ -6,6 +6,12 @@ body {
   font-family: "Lexend", sans-serif;
 }
 
+a{
+  text-decoration: none;
+  color: #f1f1f1;
+  /* cursor: pointer; */
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -26,10 +32,14 @@ main {
   justify-content: center;
   align-items: center;
   transition: transform 0.8s ease;
+  transform: translateY(20vh);
+  margin-bottom: 40vh;
 }
 
 .hero-content h1, .hero-content p{
   text-shadow: 0 2px 5px black;
+  max-width: 100vw;
+  word-wrap: break-word;
 }
 
 
@@ -129,14 +139,25 @@ nav{
   font-size: 1.25rem;
   margin: 0;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 #nav-links > .nav-link > .nav-link-img{
-  width: max(20vw, 400px);
+  width: max(20vw);
   aspect-ratio: 1.8/1;
   border-radius: 0.5rem;
   margin-top: 0.75rem;
   object-fit: cover;
+  cursor: pointer;
+}
+
+
+/* Modals */
+
+.modal{
+  border: 10px solid black ;
+  height: 100px;
+  width: 100px;
 }
 
 /* Changes when body.data changes states */
@@ -163,6 +184,5 @@ body:not([data-nav="false"]) > nav > #nav-links{
 }
 
 body[data-nav="true"] > main > .hero-content{
-  /* position:absolute; */
-  transform: translateY(30vh);
+  transform: translateY(50vh);
 }
