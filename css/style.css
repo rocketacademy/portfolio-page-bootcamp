@@ -161,14 +161,26 @@ nav{
 
 /* Modals */
 
-.modal{
+dialog, .modal{
+  background-color: #202124;
+  color: #e2eeff;
   position: relative;
-  border: 1px solid white ;
+  /* border: 1px solid white ; */
   border-radius: 3rem;
   height: 85vh;
   width: 85vw;
   margin-inline: auto;
   margin-block: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.modal.show{
+  opacity: 1;
+}
+
+dialog::backdrop{
+  background: rgba(226,238,255,0.2);
 }
 
 .modal-media{
@@ -210,9 +222,7 @@ nav{
   right: 5%;
   top: 5%;
   background-color: #85091c;
-  /* transform: translate(-50%, -50%); */
   color: #f1f1f1;
-  font-size: 2.1em;
   outline: none;
   border-radius: 50%;
   border: none;
