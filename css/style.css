@@ -1,4 +1,3 @@
-
 body {
   color: #e2eeff;
   height: 100vh;
@@ -7,18 +6,18 @@ body {
   font-family: "Lexend", sans-serif;
 }
 
-p{
+p {
   font-size: 1.6rem;
   line-height: 2.4rem;
 }
 
-a{
+a {
   text-decoration: none;
   color: #e2eeff;
   /* cursor: pointer; */
 }
 
-.dark-mode-body{
+.dark-mode-body {
   color: #202124;
   background-color: #e2eeff;
 }
@@ -37,7 +36,7 @@ main {
   transition: transform 0.8s ease-in;
 }
 
-.hero-content{
+.hero-content {
   max-height: 0;
   display: flex;
   flex-direction: column;
@@ -47,12 +46,12 @@ main {
   transform: translateY(50vh);
 }
 
-.hero-content h1, .hero-content p{
+.hero-content h1,
+.hero-content p {
   text-shadow: 0 2px 5px black;
   max-width: 100vw;
   word-wrap: break-word;
 }
-
 
 /* Typewriter effect */
 
@@ -64,6 +63,20 @@ main {
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 2s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@media screen and (max-width: 415px) {
+  p{
+    font-size: 1rem;
+    line-height:1.6rem;
+  }
+  .typewriter h1 {
+    font-size: 2.5rem;
+  }
+  #nav-links{
+    overflow: scroll;
+  }
+
 }
 
 /* The typing effect */
@@ -89,7 +102,7 @@ main {
 
 /* NAV */
 
-nav{
+nav {
   height: 50vh;
   width: 100%;
   position: absolute;
@@ -98,12 +111,12 @@ nav{
   z-index: 1;
 }
 
-#nav-links{
+#nav-links {
   display: flex;
   justify-content: space-around;
-  gap: clamp(1rem,2vw,2rem);
-  margin-top: clamp(2rem,2vw,3rem);
-  padding: 0rem clamp(1rem, 2vw,2rem);
+  gap: clamp(1rem, 2vw, 2rem);
+  margin-top: clamp(2rem, 2vw, 3rem);
+  padding: 0rem clamp(1rem, 2vw, 2rem);
   transform: translateY(70%) scale(0.9);
   transition: transform 500ms ease-in;
 }
@@ -147,14 +160,14 @@ nav{
   transition-duration: 500ms;
 }
 
-#nav-links > .nav-link > .nav-link-label{
+#nav-links > .nav-link > .nav-link-label {
   font-size: 1.25rem;
   margin: 0;
   text-transform: uppercase;
   cursor: pointer;
 }
 
-#nav-links > .nav-link > .nav-link-img{
+#nav-links > .nav-link > .nav-link-img {
   width: max(20vw);
   aspect-ratio: 1.8/1;
   border-radius: 0.5rem;
@@ -163,10 +176,26 @@ nav{
   cursor: pointer;
 }
 
+@media screen and (max-width:768px) {
+  #nav-toggle{
+    height: 3rem;
+    width: 3rem;
+  }
+  #nav-toggle>i{
+    font-size: 1.4em;
+  }
+  #nav-links>.nav-link> .nav-link-label{
+    font-size: 0.8rem;
+  }
+  #nav-links>.nav-link> .nav-link-img{
+    width: max(80vw);
+  }
+}
 
 /* Modals */
 
-dialog, .modal{
+dialog,
+.modal {
   background-color: #202124;
   color: #e2eeff;
   position: relative;
@@ -180,15 +209,15 @@ dialog, .modal{
   transition: opacity 0.3s ease;
 }
 
-.modal.show{
+.modal.show {
   opacity: 1;
 }
 
-dialog::backdrop{
-  background: rgba(226,238,255,0.2);
+dialog::backdrop {
+  background: rgba(226, 238, 255, 0.2);
 }
 
-.modal-media{
+.modal-media {
   height: 40%;
   width: auto;
   margin-block: 3rem;
@@ -196,31 +225,31 @@ dialog::backdrop{
   border-radius: 10px;
 }
 
-.modal-profilepic{
+.modal-profilepic {
   margin-inline: auto;
   height: 25vw;
   width: 25vw;
   border-radius: 50%;
-  border: 5px solid rgba(226,238,255,0.5);
+  border: 5px solid rgba(226, 238, 255, 0.5);
   overflow: hidden;
 }
 
-.modal-profilepic >img{
+.modal-profilepic > img {
   /* object-fit: cover; */
   width: 100%;
   height: auto;
   transform: translateY(-25%);
 }
 
-.modal-content > .modal-content__header{
+.modal-content > .modal-content__header {
   text-align: center;
 }
 
-.modal-content > .modal-content__desc{
+.modal-content > .modal-content__desc {
   margin-inline: 5rem;
 }
 
-.modal-close{
+.modal-close {
   height: 3vh;
   width: 3vh;
   position: absolute;
@@ -242,7 +271,7 @@ body:not([data-nav="true"]) > #nav-toggle:hover > .open {
   transform: translate(-50%, -50%) scale(1);
 }
 
-body[data-nav="true"] > #nav-toggle{
+body[data-nav="true"] > #nav-toggle {
   background-color: #85091c;
 }
 
@@ -255,21 +284,20 @@ body[data-nav="true"] > main {
   transform: translateY(-50%);
 }
 
-body[data-nav="true"] > nav > #nav-links{
+body[data-nav="true"] > nav > #nav-links {
   transform: translateY(0%) scale(1);
 }
-body:not([data-nav="false"]) > nav > #nav-links{
+body:not([data-nav="false"]) > nav > #nav-links {
   transition-delay: 400ms;
 }
 
-body[data-nav="true"] > main > .hero-content{
+body[data-nav="true"] > main > .hero-content {
   transform: translateY(80vh);
 }
 
-
 /* contact */
 
-.contact-container{
+.contact-container {
   margin-top: 5%;
   display: flex;
   flex-direction: column;
@@ -277,28 +305,29 @@ body[data-nav="true"] > main > .hero-content{
   align-items: center;
 }
 
-.contact-container>form>.input-field>textarea{
+.contact-container > form > .input-field > textarea {
   resize: none;
 }
 
-input[type='email'],
-input[type='text'],textarea{
+input[type="email"],
+input[type="text"],
+textarea {
   width: 100%;
   border-radius: 5px;
   padding: 0.5rem 0.7rem;
   outline: 0;
   border: 1px solid #ced4da;
-  transition: border-color 0.15s, box-shadow 0.15s ;
+  transition: border-color 0.15s, box-shadow 0.15s;
 }
 
-input[type='email']:focus,
-input[type='text']:focus,
-textarea:focus{
-    box-shadow: 0 0 0 3px #b9d3fa ;
-    border-color: #86b7fe;
+input[type="email"]:focus,
+input[type="text"]:focus,
+textarea:focus {
+  box-shadow: 0 0 0 3px #b9d3fa;
+  border-color: #86b7fe;
 }
 
-.contact-container>form>button{
+.contact-container > form > button {
   background: #489abb;
   width: 20rem;
   color: #ffff;
@@ -310,15 +339,15 @@ textarea:focus{
   cursor: pointer;
 }
 
-.input-field{
+.input-field {
   margin: 0.5rem;
 }
 
-.embedded-map{
+.embedded-map {
   border-radius: 30px;
 }
 
-#copy{
+#copy {
   text-align: center;
-  color: #6F767D;
+  color: #6f767d;
 }
