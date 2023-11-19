@@ -18,6 +18,11 @@ a{
   /* cursor: pointer; */
 }
 
+.dark-mode-body{
+  color: #202124;
+  background-color: #e2eeff;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -259,4 +264,61 @@ body:not([data-nav="false"]) > nav > #nav-links{
 
 body[data-nav="true"] > main > .hero-content{
   transform: translateY(80vh);
+}
+
+
+/* contact */
+
+.contact-container{
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container>form>.input-field>textarea{
+  resize: none;
+}
+
+input[type='email'],
+input[type='text'],textarea{
+  width: 100%;
+  border-radius: 5px;
+  padding: 0.5rem 0.7rem;
+  outline: 0;
+  border: 1px solid #ced4da;
+  transition: border-color 0.15s, box-shadow 0.15s ;
+}
+
+input[type='email']:focus,
+input[type='text']:focus,
+textarea:focus{
+    box-shadow: 0 0 0 3px #b9d3fa ;
+    border-color: #86b7fe;
+}
+
+.contact-container>form>button{
+  background: #489abb;
+  width: 20rem;
+  color: #ffff;
+  outline: 0;
+  border: none;
+  border-radius: 30px;
+  padding: 1rem 0.7rem;
+  margin: 1rem 1rem;
+  cursor: pointer;
+}
+
+.input-field{
+  margin: 0.5rem;
+}
+
+.embedded-map{
+  border-radius: 30px;
+}
+
+#copy{
+  text-align: center;
+  color: #6F767D;
 }
