@@ -1,14 +1,14 @@
 body {
-  color: #f1f1f1;
+  color: #e2eeff;
   height: 100vh;
   width: 100vw;
-  background-color: #0f0f0f;
+  background-color: #202124;
   font-family: "Lexend", sans-serif;
 }
 
 a{
   text-decoration: none;
-  color: #f1f1f1;
+  color: #e2eeff;
   /* cursor: pointer; */
 }
 
@@ -162,6 +162,14 @@ nav{
   margin-inline: auto;
   margin-block: auto;
 }
+
+.about-media{
+  height: 40%;
+  width: auto;
+  background-color: #85091c;
+  margin-block: 3rem;
+}
+
 
 /* Changes when body.data changes states */
 
