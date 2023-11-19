@@ -27,7 +27,7 @@ main {
 }
 
 .hero-content{
-  height: 0;
+  max-height: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -187,5 +187,5 @@ body:not([data-nav="false"]) > nav > #nav-links{
 }
 
 body[data-nav="true"] > main > .hero-content{
-  transform: translateY(50vh);
+  transform: translateY(80vh);
 }
