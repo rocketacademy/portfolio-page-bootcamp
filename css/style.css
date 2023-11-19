@@ -1,9 +1,15 @@
+
 body {
   color: #e2eeff;
   height: 100vh;
   width: 100vw;
   background-color: #202124;
   font-family: "Lexend", sans-serif;
+}
+
+p{
+  font-size: 1.6rem;
+  line-height: 2.4rem;
 }
 
 a{
@@ -105,7 +111,8 @@ nav{
   left: 50%;
   bottom: 3rem;
   transform: translateX(-50%);
-  background-color: #6e2bf3;
+  /* background-color: #6e2bf3; */
+  background-color: #489abb;
   border: none;
   border-radius: 100%;
   outline: none;
@@ -155,6 +162,7 @@ nav{
 /* Modals */
 
 .modal{
+  position: relative;
   border: 1px solid white ;
   border-radius: 3rem;
   height: 85vh;
@@ -163,13 +171,54 @@ nav{
   margin-block: auto;
 }
 
-.about-media{
+.modal-media{
   height: 40%;
   width: auto;
-  background-color: #85091c;
   margin-block: 3rem;
+  margin-inline: 3rem;
+  border-radius: 10px;
 }
 
+.modal-profilepic{
+  margin-inline: auto;
+  height: 25vw;
+  width: 25vw;
+  border-radius: 50%;
+  border: 5px solid rgba(226,238,255,0.5);
+  overflow: hidden;
+}
+
+.modal-profilepic >img{
+  /* object-fit: cover; */
+  width: 100%;
+  height: auto;
+  transform: translateY(-25%);
+}
+
+.modal-content > .modal-content__header{
+  text-align: center;
+}
+
+.modal-content > .modal-content__desc{
+  margin-inline: 5rem;
+}
+
+.modalClose{
+  height: 3vh;
+  width: 3vh;
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  background-color: #85091c;
+  /* transform: translate(-50%, -50%); */
+  color: #f1f1f1;
+  font-size: 2.1em;
+  outline: none;
+  border-radius: 50%;
+  border: none;
+  z-index: 3;
+  cursor: pointer;
+}
 
 /* Changes when body.data changes states */
 
