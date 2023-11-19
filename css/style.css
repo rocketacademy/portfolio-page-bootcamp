@@ -155,9 +155,12 @@ nav{
 /* Modals */
 
 .modal{
-  border: 10px solid black ;
-  height: 100px;
-  width: 100px;
+  border: 1px solid white ;
+  border-radius: 3rem;
+  height: 85vh;
+  width: 85vw;
+  margin-inline: auto;
+  margin-block: auto;
 }
 
 /* Changes when body.data changes states */
