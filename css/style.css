@@ -170,6 +170,10 @@ body:not([data-nav="true"]) > #nav-toggle:hover > .open {
   transform: translate(-50%, -50%) scale(1);
 }
 
+body[data-nav="true"] > #nav-toggle{
+  background-color: #85091c;
+}
+
 body[data-nav="true"] > #nav-toggle > .close {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
