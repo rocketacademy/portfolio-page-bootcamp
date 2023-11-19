@@ -215,7 +215,7 @@ dialog::backdrop{
   margin-inline: 5rem;
 }
 
-.modalClose{
+.modal-close{
   height: 3vh;
   width: 3vh;
   position: absolute;
