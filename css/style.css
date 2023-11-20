@@ -73,7 +73,7 @@ main {
   .typewriter h1 {
     font-size: 2.5rem;
   }
-  #nav-links{
+  #nav>#nav-links{
     overflow: scroll;
   }
 
@@ -109,10 +109,18 @@ nav {
   left: 0px;
   bottom: 0px;
   z-index: 1;
+  overflow: scroll;
+  overflow-y: auto;
+  overflow-x: auto;
 }
 
 #nav-links {
+  box-sizing: border-box;
   display: flex;
+  width: max-content;
+  /* flex-direction: row; */
+  padding: 0;
+  margin-inline: auto;
   justify-content: space-around;
   gap: clamp(1rem, 2vw, 2rem);
   margin-top: clamp(2rem, 2vw, 3rem);
@@ -190,6 +198,8 @@ nav {
   #nav-links>.nav-link> .nav-link-img{
     width: max(80vw);
   }
+  
+  
 }
 
 /* Modals */
