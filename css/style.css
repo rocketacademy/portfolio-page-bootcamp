@@ -112,6 +112,13 @@ nav {
   overflow: scroll;
   overflow-y: auto;
   overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  overscroll-behavior-block: contain;
+  scroll-snap-type: inline mandatory;
+}
+
+.snaps-inline> #nav-links > .nav-link{
+  scroll-snap-align: start;
 }
 
 #nav-links {
