@@ -1,3 +1,114 @@
-body {
-  background-color: white;
+.nav {
+  background: #a36671;
+  height: 80px;
+  width: 100%;
+}
+
+.nav ul li {
+  color: black;
+  display: inline-block;
+  height: 80px;
+  line-height: 80px;
+  list-style-type: none;
+  text-align: right;
+  transition: background 0.5s;
+  padding: 0 10px;
+}
+
+.header {
+  background: #d5d7d9;
+  height: 400px;
+  text-align: center;
+}
+
+.header h1 {
+  color: black;
+  line-height: 90px;
+  font-size: 70px;
+  margin-bottom: 10px;
+  padding-top: 120px;
+}
+
+.header p {
+  color: black;
+  font-weight: 500;
+  font-size: 30px;
+}
+
+.project_heading {
+  background: #b4b5b6;
+  text-align: center;
+  padding: 20px;
+}
+
+.project_heading h2 {
+  color: black;
+  font-size: 50px;
+  margin: 0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background: #b4b5b6;
+}
+
+.project_section {
+  background: #b4b5b6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.project_tile {
+  width: calc(25% - 20px);
+  margin-right: 220px;
+  margin-left: 200px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border: 1px solid #000305;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+  background: #895a31;
+}
+
+.project_tile img {
+  max-width: 100%;
+  min-width: 100%;
+  height: 300px;
+}
+
+.project_tile .text {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+}
+
+.project_tile .text a {
+  color: #d5d7d9;
+  text-decoration: none;
+}
+
+.project_tile a {
+  padding-bottom: 10px;
+  align-self: center;
+}
+
+.foot {
+  background: #e3ad5d;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.foot h2 {
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  padding-top: 30px;
+}
+
+.btn {
+  text-align: center;
 }
