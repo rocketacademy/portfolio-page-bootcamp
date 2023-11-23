@@ -53,5 +53,10 @@ p {
 }
 
 a {
-  background-color: ;
+  display: flex;
+  background-color: #f5c396;
+  color: white;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  text-transform: uppercase;
 }
