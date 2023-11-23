@@ -1,13 +1,14 @@
 :root {
-  background-color: #3f4531;
+  background-color: #41521f;
 }
 
 div {
   display: flex;
 }
 
-h2 {
+h1 {
   text-align: center;
+  padding: 50px;
 }
 
 body {
@@ -17,30 +18,40 @@ body {
 }
 
 .project-tile {
-  background-color: #499167;
+  background-color: #a89f68;
 }
 
 .project-tile-wrapper {
   position: relative;
-  background-color: ;
 }
 
 img {
-  width: 50vw;
-  height: 50vh;
+  width: 100%;
+  height: 100%;
+  max-width: 600px;
   margin: 5vw;
 }
 
 p {
   margin: 5vw;
 }
+
 .nav-bar {
   display: flex;
+  width: 100%;
   justify-content: flex-end;
   position: fixed;
-  background-color: #76f7bf;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  background-color: #f5fdc6;
 }
 
 .nav-bar-links {
   margin-left: 2vw;
+}
+
+a {
+  background-color: ;
 }
