@@ -1,3 +1,46 @@
+:root {
+  background-color: #3f4531;
+}
+
+div {
+  display: flex;
+}
+
+h2 {
+  text-align: center;
+}
+
 body {
-  background-color: white;
+  background-color: var(--main-dark-green);
+  font-family: "Roboto", sans-serif;
+  font-size: larger;
+}
+
+.project-tile {
+  background-color: #499167;
+}
+
+.project-tile-wrapper {
+  position: relative;
+  background-color: ;
+}
+
+img {
+  width: 50vw;
+  height: 50vh;
+  margin: 5vw;
+}
+
+p {
+  margin: 5vw;
+}
+.nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  background-color: #76f7bf;
+}
+
+.nav-bar-links {
+  margin-left: 2vw;
 }
