@@ -1,13 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
 
-    <link href="styles.css" rel="stylesheet" />
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <script defer src="js/scripts.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/x-icon"
+    href="https://assets-global.website-files.com/63272a4884915258a601e154/63f5d1fbd33aa94a63f0cf93_Rocket%20Favicon.png">
 
-    <title>Rocket Academy</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-  </body>
+  <title>Stewart's portfolio site</title>
+</head>
+
+<body>
+
+  <section class="w-full mt-6 flex justify-center mb-8">
+    <span class="text-2xl m-0 p-0 font-bold">Welcome to my page!</span>
+  </section>
+
+  <section class="w-full mx-auto"> <!-- This container centers the grid and allows it to be full width -->
+    <div class="grid grid-cols-3 justify-items-center gap-4 px-4">
+      <!-- This is the grid container with some padding -->
+
+      <!-- Each child div here is a grid item -->
+      <div>
+        <img class="w-full" src="https://picsum.photos/200" alt="Project Thumbnail">
+        <div class="mt-2">
+          <a href="#" class="text-xl block">
+            name of project here
+          </a>
+          <p class="text-sm mt-1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <img class="w-full" src="https://picsum.photos/200" alt="Project Thumbnail">
+        <div class="mt-2">
+          <a href="#" class="text-xl block">
+            name of project here
+          </a>
+          <p class="text-sm mt-1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <img class="w-full" src="https://picsum.photos/200" alt="Project Thumbnail">
+        <div class="mt-2">
+          <a href="#" class="text-xl block">
+            name of project here
+          </a>
+          <p class="text-sm mt-1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+
+ 
+
+      <div class="col-span-3 flex justify-center"> <!-- Make the fourth item span all columns and use flex for centering -->
+        <div class="w-full max-w-md"> <!-- Use a div with a max-width to limit its width -->
+          <img class="w-full" src="https://picsum.photos/200" alt="Project Thumbnail">
+          <div class="mt-2">
+            <a href="#" class="text-xl block">
+              name of project here
+            </a>
+            <p class="text-sm mt-1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <footer class="w-full mt-6 mb-6 flex flex-col justify-center items-center">
+    <div class="text-center mb-2">
+      Copyright 2024
+    </div>
+    <a href="https://github.com/nordic-roast" target="_blank" class="text-center">
+      <i class="fab fa-github mr-1"></i>Github
+    </a>
+  </footer>
+  <!-- 
+Changed the <section> to <footer> for proper semantics.
+Added flex-col to stack items vertically.
+Added items-center to center-align the items vertically.
+Added text-center to center-align the text inside each block.
+ -->
+</body>
+
 </html>
