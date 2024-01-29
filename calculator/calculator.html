@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/calculator.css" />
+    <title>Rainbow Calculator</title>
+  </head>
+  <body>
+    <h1>Rainbow Calculator</h1>
+    <div class="calculator-box">
+      <div class="calculator-result-box">
+        
+        <!-- The calculation result -->
+        <span id="result" class="calculator-result">0</span>
+      </div>
+      <div class="calculator-pad-box">
+        <!-- Includes numbers, formulas, operation -->
+        <!-- Row 1 -->
+        <div class="calculator-pad-row">
+            <button id="toggleReset" class="btn operation">AC</button>
+            <button id="toggleNumberState" class="btn operation">+/-</button>
+            <button id="togglePercentage" class="btn operation">&percnt;</button>
+            <button id="toggleDivide" class="btn symbol">&divide;</button>
+
+          </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="calculator-pad-row">
+            <button id="number7" class="btn number">7</button>
+            <button id="number8" class="btn number">8</button>
+            <button id="number9" class="btn number">9</button>
+            <button id="toggleMultiply" class="btn symbol">&times;</button>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="calculator-pad-row">
+            <button id="number4" class="btn number">4</button>
+            <button id="number5" class="btn number">5</button>
+            <button id="number6" class="btn number">6</button>
+            <button id="toggleSubtract" class="btn symbol">&minus;</button>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="calculator-pad-row">
+            <button id="number1" class="btn number">1</button>
+            <button id="number2" class="btn number">2</button>
+            <button id="number3" class="btn number">3</button>
+            <button id="toggleAdd" class="btn symbol">&plus;</button>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="calculator-pad-row last">
+            <button id="number0" class="btn number">0</button>
+            <button id="toggleDot" class="btn number">.</button>
+            <button id="toggleEvaluate" class="btn symbol equal">&equals;</button>
+        </div>
+      </div>
+    </div>
+    <script src="./calculator.js" defer></script>
+  </body>
+</html>

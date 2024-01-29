@@ -1,0 +1,70 @@
+:root{
+  /* Color */
+  --number-background-color: #868e96;
+  --symbol-background-color: #ff922b;
+  --operation-background-color: #495057;
+  --primary-font-color: #fff; 
+  --result-background-color: #343a40;
+
+  /* Font Size */
+  --12px: 0.75rem;
+  --16px: 1rem;
+  --20px: 1.25rem;
+  --24px: 1.5rem;
+  --30px: 1.875rem;
+  --36px: 2.25rem;
+  --48px: 3rem;
+}
+
+body{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: var(--48px);
+  height: 100dvh;
+  background: rgb(175,175,175);
+}
+
+input{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border: none;
+  padding: var(--12px);
+  border-radius: 25px;
+  font-size: var(--24px);
+  padding-left: 40px;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+}
+
+.container p a:link,
+.container p a:visited{
+  font-size: 20px;
+  color: rgb(255,255,255);
+  display: inline-block;
+  text-decoration: none;
+}
+
+.icon{
+  position: absolute;
+  bottom: 197px;
+  left: 10px;
+  /* left: px; */
+  font-size: var(--24px);
+}
+
+.image-box{
+  /* background: red; */
+  min-width: 300px;
+}
+
+.image{
+  border-radius:100%;
+  width:300px;
+  height:auto;
+}

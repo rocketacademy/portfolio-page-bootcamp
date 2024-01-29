@@ -3,11 +3,132 @@
   <head>
     <meta charset="utf-8" />
 
-    <link href="styles.css" rel="stylesheet" />
+    <link href="./styles/main.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-    <title>Rocket Academy</title>
+    <title>Bobby's Portfolio</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <header class="author-header">
+      <div class="author-about">
+        <h1 class="author-name">Bobby Liu</h1>
+        <p class="author-description">
+          Hello! I'm a self-taught enthusiast on a passionate journey to become
+          a skilled developer.
+        </p>
+      </div>
+      <nav class="author-nav">
+        <a href="#">Contact</a>
+        <a href="https://github.com/liurm97?tab=repositories" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+      </nav>
+    </header>
+    <main class="portfolio-body">
+      <h2>Here are some things I have built using JavaScript</h2>
+      <figure class="portfolio-content">
+        <div class="portfolio-reflection">
+          <p class="portofolio-reflection-motivation">
+            My motivation was applying what I have learnt about Asynchronous
+            Javascript.<br> How it can be used to effectively handle potential
+            blocking operations, <br>such as fetching image using a public API.
+          </p>
+          <div>
+            <h4>The concepts I have applied in the process:</h4>
+            <div class="portfolio-reflection-experiment">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+              <p>Async/Await Operation</p>
+            </div>
+            <div class="portfolio-reflection-experiment">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <p>
+              </ion-icon>State
+              Management
+            </p>
+          </div>
+          <div class="portfolio-reflection-experiment">
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <p>
+              Conditional
+              Statement
+            </p>
+            </div>
+          </div>
+        </div>
+        <div class="portofolio-content-display">
+          <a href="./find_my_dog/goPuppy.html"
+            ><span>1. GoPuppy Search Engine</span></a
+          >
+        </div>
+      </figure>
+      <figure class="portfolio-content white">
+        <div class="portofolio-content-display">
+          <a href="./bouncing_ball/bouncingBall.html"
+            ><span>2. Bouncing Ball Mini-game</span></a
+          >
+        </div>
+        <div class="portfolio-reflection">
+          <p class="portofolio-reflection-motivation">
+            My motivation was applying what I have learnt about creative coding<br> using the free and open-sourced p5.js library.
+          </p>
+          <div>
+            <h4>The concepts I have applied in the process:</h4>
+            <div class="portfolio-reflection-experiment">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+              <p>Import external library</p>
+            </div>
+            <div class="portfolio-reflection-experiment">
+            <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <p>
+              </ion-icon>State
+              Management
+            </p>
+          </div>
+          <div class="portfolio-reflection-experiment">
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <p>
+              Game Design
+            </p>
+            </div>
+          </div>
+        </div>
+      </figure>
+      <figure class="portfolio-content">
+        <div class="portfolio-reflection">
+          <p class="portofolio-reflection-motivation">
+            My motivation was applying what I have learnt about DOM Manipulation<br> to create a calculator app clone.
+          </p>
+          <div>
+            <h4>The concepts I have applied in the process:</h4>
+            <div class="portfolio-reflection-experiment">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+              <p>String & Array methods</p>
+            </div>
+
+          <div class="portfolio-reflection-experiment">
+          <ion-icon name="checkmark-circle-outline"></ion-icon>
+            <p>
+              Problem solving
+            </p>
+            </div>
+          </div>
+        </div>
+        <div class="portofolio-content-display">
+          <a href="./calculator/calculator.html"
+            ><span>3. Rainbow Calculator App</span></a
+          >
+        </div>
+      </figure>
+    </main>
+
+    <footer>&copy; Bobby Liu 2024 - 🚀 Academy</footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
   </body>
 </html>
