@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/goPuppy.css" />
+    <title>Find My Dog</title>
+    <script src="goPuppy.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>GoPuppy</h1>
+      <h3>Search against the internet's biggest collection of dog pictures.</h3>
+      <ion-icon class="icon" name="search-outline"></ion-icon>
+
+      <form id="form" class="form">
+        <input
+          type="text"
+          name="puppy"
+          id="puppy"
+          placeholder="Your fav puppy breed?"
+        />
+      </form>
+
+      <div class="breed-list">
+        <ul>
+          Try these breeds:
+          <li>Husky</li>
+          <li>Hound</li>
+          <li>Bulldog</li>
+          <li>Chihuahua</li>
+        </ul>
+      </div>
+      <p>
+        Powered by
+        <a href="https://dog.ceo/dog-api/" target="_blank">🐶Dog API🐶 </a>
+      </p>
+    </div>
+    <div id="image-box" class="image-box"></div>
+    <!-- <label for="puppy"></label> -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
+</html>

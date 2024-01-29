@@ -22,7 +22,7 @@ function setup() {
   button.style("width", "100px");
   button.style("height", "75px");
   button.style("cursor", "pointer");
-
+  // button.parent("body");
   // --- Button interaction --- //
   button.mousePressed(btnClicked);
 

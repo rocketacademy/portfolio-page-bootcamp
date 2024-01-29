@@ -1,7 +1,6 @@
-// Calculation result
 const result = document.getElementById("result");
-
 const buttons = document.querySelectorAll(".btn");
+
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
     // `=` Calculate
@@ -10,6 +9,8 @@ buttons.forEach((btn) => {
 
       // Is dividing
       if (currentString.includes("/")) {
+        const temp = Number(result.innerHTML);
+
         const splitted = currentString.replaceAll(" ", "").split("/");
         console.log(splitted);
         result.innerHTML = String(
@@ -40,6 +41,7 @@ buttons.forEach((btn) => {
 
       // Is adding
       else if (currentString.includes("+")) {
+        console.log(result.innerHTML);
         const splitted = currentString.replaceAll(" ", "").split("+");
         console.log(splitted);
         result.innerHTML = String(
