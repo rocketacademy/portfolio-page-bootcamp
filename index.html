@@ -3,11 +3,47 @@
   <head>
     <meta charset="utf-8" />
 
-    <link href="styles.css" rel="stylesheet" />
-
-    <title>Rocket Academy</title>
+    <link href="./styles/styles.css" rel="stylesheet" />
+    
+    <title>Aaron's Portfolio</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <nav>
+      <ul>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact-me">Contact Me</a></li>
+      </ul>
+    </nav>
+    <div class="intro">
+      <h1 data-value="HI I AM AARON">HI I AM AARON</h1>
+      <p>&nbsp;I am an aspiring software engineer</p>
+    </div>
+    <div class="about-me" id="about-me">
+      <p>About me</p>
+      <p>My interest lies in Lorem ipsum dolor sit 
+        amet consectetur adipisicing elit. Nostrum quod totam, nesciunt consectetur sit quis quisquam deserunt itaque debitis ad voluptate molestiae modi sunt porro nemo consequuntur. Tenetur, necessitatibus minus.
+      </p>
+    </div>
+    <div class="projects" id="projects">
+      <div class="project-card">
+        <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0" target="_blank" class="video-link">&#128279;</a>
+        <h3>Project 1</h3>
+        <p>Automated trading bot that has made 5k in profits on average per month no cap. This project was built using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div class="project-card">
+        <a href="https://www.youtube.com/watch?v=D_m-G5vt41s" target="_blank" class="video-link">&#128279;</a>
+        <h3>Project 2</h3>
+        <p>No project yet huhu. Blah blah application developed with React and Node.js.</p>
+      </div>
+    </div>
+    
+    <div class="contact-me" id="contact-me">
+      <h2>Contact Me</h2>
+      <p>Feel free to reach out to me via email at: givemejobplease@gg.com</p>
+    </div>
+    <div id="blob"></div>
+    <div id="blur"></div>
+    <script src="./src/main.js"></script>  
   </body>
 </html>
