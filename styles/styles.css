@@ -1,0 +1,126 @@
+*, 
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+body {
+  background-color: #0a0a0a;
+  margin: 0rem;
+  color: #cbd5e1;
+  font-family: 'Space Mono', monospace; 
+  overflow: hidden;
+
+}
+nav {
+  background-color: #cbd5e1;
+  overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: #18181b;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+}
+
+.about-me, .contact-me {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.project-card {
+  position: relative;
+  width: 300px; 
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fafafa;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.video-link {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  text-decoration: none;
+  color: black; 
+  font-size: 24px; 
+}
+
+.projects, .about-me {
+  margin-bottom: 50px; 
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  
+  50% {
+    scale: 1 1.5;
+  }
+  
+  to {
+    rotate: 360deg;
+  }
+}
+
+#blob {
+  background-color: #f1f5f9;
+  height: 34vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, #f8fafc, #fb7185);
+  animation: rotate 20s infinite;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+#blur {
+  height: 100%;
+  top: 0;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  backdrop-filter: blur(12vmax);
+}
+
+
