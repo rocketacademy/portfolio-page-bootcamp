@@ -31,18 +31,13 @@ This portfolio website template is designed to help you present yourself and you
 ### About
 
 - The "About Me" section provides a brief introduction to you.
-- A tooltip with the description "A Data Analyst, A Painter, a Dreamer" appears when you hover over the "About Me" link.
+- A tooltip with the description appears when you hover over the "About Me" link.
 
 ### Portfolio
 
 - The "Portfolio" section showcases your projects.
 - Each project is represented by an image, a title, and a brief description.
 - Hovering over a project title reveals a tooltip with project details.
-
-### Painting
-
-- The "Painting" section could be used to display your artwork if desired.
-- Currently, it's a placeholder section.
 
 ### Contact
 
