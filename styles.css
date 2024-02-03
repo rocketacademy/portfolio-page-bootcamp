@@ -38,8 +38,8 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top:20%;
-    font-size: 50px;
+    margin-top:0%;
+    font-size: 30px;
     flex-wrap: wrap;
     
 }
@@ -55,7 +55,7 @@ nav ul li a{
     color: #f4f5f7;
     text-decoration: none;
     margin-top:80%;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bolder;
     position: relative;
 }
@@ -81,9 +81,10 @@ nav ul li a:hover::after{
 }
 
 .header-text{
-    margin-top: -25%;
+    margin-top: 25%;
     font-size: 30px;
     margin-left: 5%;
+    width:700px;
     font-weight: bolder;
     color: white
 }
@@ -91,6 +92,10 @@ nav ul li a:hover::after{
 .header-text h1{
     font-size: 60px;
     margin-top: 10px;
+}
+
+.header-text p{
+  font-size: 25px;
 }
 
 .header-text h1 span{
