@@ -47,7 +47,7 @@ nav {
 nav ul li {
   display: inline-block;
   list-style: none;
-  margin: 20px 20px;
+  margin: 20px 45px;
   z-index: 10;
 }
 
@@ -137,6 +137,7 @@ nav ul li a:hover::after{
 
 .row {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -169,7 +170,7 @@ nav ul li a:hover::after{
   position: absolute;
   z-index: 1;
   top: 90%; /* Align the top of tooltip to the bottom of the nav-item */
-  left: 60%;
+  left: 80%;
   transform: translateX(-200px) translateY(150px);
   /* Fade in tooltip */
   transition: opacity 0.3s, visibility 0.3s ease-in-out;
@@ -181,218 +182,33 @@ nav ul li a:hover::after{
   opacity: 0.8;
 }
 
-/* 为 "About Me" 下的工具提示设置字体大小 */
 .about-tooltip {
-  font-size: 18px; /* 较大的字体大小 */
+font-size: 18px; 
 }
 
-.portfolio-tooltip {
-  font-size: 28px !important;
-  line-height: 1.7 !important;
-}
-
-.nav-item img {
-  max-width: 200px;
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  transform: translateX(-50%);
-  z-index: 2;
-}
-.nav-item:hover img.hidden-image {
-  display: block;
-}
-
-*{
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
-}
-
-
-body {
-background-color: rgb(185, 202, 237);
-color:aliceblue
-}
-
-#header {
-      width: 100%;
-      height: 100vh;
-      background-size:cover;
-      background-position: center;
-      justify-content:center;
-      background-image: url(./image2.png);
-      z-index: -1;
-}
-
-#header img{
-  width: 50%;
-  height: auto;
-  display: block;
-  margin: auto;
-}
-
-.container {
-  padding: 10px 10%;
-  z-index: 2;
-  
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top:20%;
-  font-size: 50px;
-  flex-wrap: wrap;
-  
-}
-
-nav ul li {
-display: inline-block;
-list-style: none;
-margin: 20px 20px;
-z-index: 10;
-}
-
-nav ul li a{
-  color: #f4f5f7;
-  text-decoration: none;
-  margin-top:80%;
-  font-size: 30px;
-  font-weight: bolder;
-  position: relative;
-}
-
-nav ul li :hover{
-color: #f2cc32;
-
-}
-
-nav ul li a::after{
-  content: '';
-  width: 0%;
-  height: 3px;
-  background: rgb(203, 219, 241);
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-  transition: width 0.5s;
-}
-nav ul li a:hover::after{
-  width: 100%;
-  height: 6px;
-}
-
-.header-text{
-  margin-top: -25%;
-  font-size: 30px;
-  margin-left: 5%;
-  font-weight: bolder;
-  color: white
-}
-
-.header-text h1{
-  font-size: 60px;
-  margin-top: 10px;
-}
-
-.header-text h1 span{
-  color: rgb(216, 141, 42);
-  filter: brightness(140%);
-}
-
-
-#about{
-  padding: 80px 0;
-  color: #3e56dc;
-}
-
-#recom{
-  height:100%;
-}
-
-.about-col-1 {
-width: 40%;
-height:100%;
-}
-
-
-.about-col-2 {
-width: 60%;
-
-flex-basis :60%;
-}
-
-
-.about-col-2 h1 {
-color: #3e56dc; /* Light blue */
-width: 100%;
-margin-top:30%;
-font-size: 30px;
-}
-
-.about-col-2 p{
-font-size: 20px;
-}
-
-
-.row {
-display: flex;
-justify-content: space-between;
-flex-wrap: wrap;
-}
-
-/* Position the navigation items relatively so that the tooltip can be absolutely positioned in relation to it */
-.nav-item {
-position: relative;
-display: inline-block;
-/* ... your existing styles ... */
-}
-
-/* Style the custom tooltip */
-.nav-item .custom-tooltip {
-visibility: hidden;
-opacity: 0;
-color: #fff; /* Tooltip text color */
-text-align: center;
-border-radius: 6px;
-width: 800px; 
-height: 200px;
-line-height: 200px;
-background-color: #7cbfd4;
-color: #fff;
-font-size: 40px;
-text-align: center;
-padding: 5px 10px;
-
-
-/* Position the tooltip - adjust bottom as per the height of your navigation bar */
-position: absolute;
-z-index: 1;
-top: 90%; /* Align the top of tooltip to the bottom of the nav-item */
-left: 60%;
-transform: translateX(-200px) translateY(150px);
-/* Fade in tooltip */
-transition: opacity 0.3s, visibility 0.3s ease-in-out;
-}
-
-/* Show the tooltip text when hovering */
-.nav-item:hover .custom-tooltip {
-visibility: visible;
-opacity: 0.8;
-}
-
-/* 为 "About Me" 下的工具提示设置字体大小 */
-.about-tooltip {
-font-size: 18px; /* 较大的字体大小 */
-}
-
-.portfolio-tooltip {
+.nav-item .portfolio-tooltip {
 font-size: 28px !important;
 line-height: 1.7 !important;
+top: 90% !important;
+left: -50% !important;
+transform: translateX(-200px) translateY(150px) !important;
+padding: 5px 10px;
 }
 
-
+.artworks {
+  display: flex;
+  flex-direction: row;
+  height:300px;
+  width:1600px;
+  position: absolute;
+  align-items:center;
+  top:400%; 
+  left: -500%;
+  z-index: 9999;
+}
+.nav-item .artworks {
+  visibility: hidden;
+}
+.nav-item:hover .artworks {
+  visibility: visible;
+}
