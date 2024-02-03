@@ -1,102 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
   <script defer src="js/scripts.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="icon" type="image/x-icon"
     href="https://assets-global.website-files.com/63272a4884915258a601e154/63f5d1fbd33aa94a63f0cf93_Rocket%20Favicon.png">
-
   <title>Stewart's portfolio site</title>
 </head>
 
-<body>
+<body class="bg-gray-900 text-white font-sans leading-normal tracking-normal">
 
-  <section class="w-full mt-6 flex justify-center mb-8">
-    <span class="text-2xl m-0 p-0 font-bold">Welcome to my page!</span>
-  </section>
-
-  <section class="w-full mx-auto"> <!-- This container centers the grid and allows it to be full width -->
-    <div class="grid grid-cols-3 justify-items-center gap-4 px-4">
-      <!-- This is the grid container with some padding -->
-
-      <!-- Each child div here is a grid item -->
-      <div>
-        <img class="w-full" src="https://picsum.photos/200" alt="Project Thumbnail">
-        <div class="mt-2">
-          <a href="#" class="text-xl block">
-            name of project here
-          </a>
-          <p class="text-sm mt-1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </p>
-        </div>
-      </div>
-
-      <div>
-        <img class="w-full" src="https://picsum.photos/200" alt="Project Thumbnail">
-        <div class="mt-2">
-          <a href="#" class="text-xl block">
-            name of project here
-          </a>
-          <p class="text-sm mt-1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </p>
-        </div>
-      </div>
-
-      <div>
-        <img class="w-full" src="https://picsum.photos/200" alt="Project Thumbnail">
-        <div class="mt-2">
-          <a href="#" class="text-xl block">
-            name of project here
-          </a>
-          <p class="text-sm mt-1">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
-          </p>
-        </div>
-      </div>
-
- 
-
-      <div class="col-span-3 flex justify-center"> <!-- Make the fourth item span all columns and use flex for centering -->
-        <div class="w-full max-w-md"> <!-- Use a div with a max-width to limit its width -->
-          <img class="w-full" src="https://picsum.photos/200" alt="Project Thumbnail">
-          <div class="mt-2">
-            <a href="#" class="text-xl block">
-              name of project here
-            </a>
-            <p class="text-sm mt-1">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua.
-            </p>
-          </div>
-        </div>
-      </div>
-
+  <!-- Navigation -->
+  <nav class="flex justify-between items-center py-4 px-6 bg-gray-800">
+    <a href="#" class="text-xl font-bold">Stewart - Product Designer</a>
+    <div>
+      <a href="#projects" class="px-4 hover:text-gray-300">Projects</a>
+      <a href="#contact" class="px-4 hover:text-gray-300">Contact</a>
     </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="text-center py-20">
+    <h1 class="text-4xl font-bold mb-2">Stewart - Product Designer</h1>
+    <p class="text-xl">Crafting beautiful web experiences</p>
+  </header>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 parallax bg-fixed bg-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-10 text-center">Featured Projects</h2>
+
+
+      <div class="flex flex-wrap justify-center gap-8">
+
+        <!-- Project 1 - Recipe book -->
+        <div class="w-full max-w-sm transform hover:scale-105 transition duration-300 ease-in-out bg-gray-800 p-6 rounded-lg shadow-lg mb-4">
+          <a href="https://nordic-roast.github.io/recipe-site-bootcamp/" target="_blank" class="w-full max-w-sm">
+            <img class="w-full rounded-t-lg mb-4 hover:opacity-75" src="img/recipe-book.webp" alt="Project Thumbnail">
+            <h3 class="text-xl font-semibold mb-2">Savory Recipe Book</h3>
+            <p class="text-gray-400">Discover and create delectable dishes with Savory, your go-to digital recipe
+              organizer</p>
+          </a>
+        </div>
+
+        <!-- Project 2 - World clock -->
+        <div class="w-full max-w-sm transform hover:scale-105 transition duration-300 ease-in-out bg-gray-800 p-6 rounded-lg shadow-lg mb-4">
+          <a href="https://nordic-roast.github.io/world-clock/" target="_blank" class="w-full max-w-sm">
+            <img class="w-full rounded-t-lg mb-4 hover:opacity-75" src="img/clock.webp" alt="Project Thumbnail">
+            <h3 class="text-xl font-semibold mb-2">TimeSphere World Clock</h3>
+            <p class="text-gray-400">Stay globally synced with TimeSphere, interactive world-clock app</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
   </section>
 
 
-  <footer class="w-full mt-6 mb-6 flex flex-col justify-center items-center">
-    <div class="text-center mb-2">
-      Copyright 2024
+  <!-- Contact Section -->
+  <section id="contact" class="py-10">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center">Contact Me</h2>
+      <form action="#" method="POST" class="max-w-lg mx-auto space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 rounded bg-gray-700 text-white" required>
+        <input type="email" placeholder="Your Email" class="w-full p-3 rounded bg-gray-700 text-white" required>
+        <textarea placeholder="Your Message" class="w-full p-3 rounded bg-gray-700 text-white" required></textarea>
+        <button type="submit" class="w-full p-3 rounded bg-blue-500 hover:bg-blue-600 transition duration-300">Send
+          Message</button>
+      </form>
     </div>
-    <a href="https://github.com/nordic-roast" target="_blank" class="text-center">
-      <i class="fab fa-github mr-1"></i>Github
-    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-6">
+    <div class="container mx-auto px-4 text-center">
+      <p>Developed using TailwindCSS</p>
+      <a href="https://github.com/nordic-roast" target="_blank" class="hover:text-gray-300 m-3">
+        <i class="fab fa-github mr-1"></i>Github
+      </a>
+    </div>
   </footer>
-  <!-- 
-Changed the <section> to <footer> for proper semantics.
-Added flex-col to stack items vertically.
-Added items-center to center-align the items vertically.
-Added text-center to center-align the text inside each block.
- -->
+
 </body>
 
 </html>
