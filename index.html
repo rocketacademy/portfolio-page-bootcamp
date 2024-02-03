@@ -1,13 +1,122 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
+<html lang="en" class="scroll-smooth">
 
-    <link href="styles.css" rel="stylesheet" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+  <script defer src="js/scripts.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" type="image/x-icon"
+    href="https://assets-global.website-files.com/63272a4884915258a601e154/63f5d1fbd33aa94a63f0cf93_Rocket%20Favicon.png">
+  <title>Stewart's portfolio site</title>
+</head>
 
-    <title>Rocket Academy</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-  </body>
+<body class="bg-gray-900 text-white font-sans leading-normal tracking-normal">
+  <!-- Navigation -->
+  <nav class="bg-gray-800">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between">
+
+        <!-- Primary Nav Links -->
+        <div class="hidden md:flex ml-auto space-x-1">
+          <a href="#projects" class="py-5 px-3 text-gray-300 hover:text-white hover:bg-gray-700 rounded transition duration-300 ease-in-out">Projects</a>
+          <a href="#contact" class="py-5 px-3 text-gray-300 hover:text-white hover:bg-gray-700 rounded transition duration-300 ease-in-out">Contact</a>
+        </div>
+      
+        <!-- Mobile menu button -->
+        <div class="md:hidden flex p-4 flex-wrap">
+          <button class="mobile-menu-button">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden md:hidden p-4">
+      <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-700">Projects</a>
+      <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="text-center py-20">
+    <h1 class="text-4xl font-bold mb-2">Stewart - Product Designer</h1>
+    <p class="text-xl">Crafting beautiful web experiences</p>
+  </header>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 parallax bg-fixed bg-center">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-10 text-center">Featured Projects</h2>
+
+      <div class="flex flex-wrap justify-center gap-8">
+
+        <!-- Project 1 - Recipe book -->
+        <div
+          class="w-full max-w-sm transform hover:scale-105 transition duration-300 ease-in-out bg-gray-800 p-6 rounded-lg shadow-lg mb-4">
+          <a href="https://nordic-roast.github.io/recipe-site-bootcamp/" target="_blank" class="w-full max-w-sm">
+            <img class="w-full rounded-t-lg mb-4 transition-opacity hover:opacity-75" src="img/recipe-book.webp"
+              alt="Project Thumbnail">
+            <h3 class="text-xl font-semibold mb-2">All Oven Recipe Book</h3>
+            <p class="text-gray-400">Discover and create delectable dishes with Savory, your go-to digital recipe
+              organizer</p>
+          </a>
+        </div>
+
+        <!-- Project 2 - World clock -->
+        <div
+          class="w-full max-w-sm transform hover:scale-105 transition duration-300 ease-in-out bg-gray-800 p-6 rounded-lg shadow-lg mb-4">
+          <a href="https://nordic-roast.github.io/world-clock/" target="_blank" class="w-full max-w-sm">
+            <img class="w-full rounded-t-lg mb-4 transition-opacity hover:opacity-75" src="img/clock.webp"
+              alt="Project Thumbnail">
+            <h3 class="text-xl font-semibold mb-2">World Clock</h3>
+            <p class="text-gray-400">Stay globally synced with World Clock, interactive world-clock app</p>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-10">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold mb-6 text-center">Contact Me</h2>
+      <form action="#" method="POST" id="contactForm" class="max-w-lg mx-auto space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 rounded bg-gray-700 text-white" required>
+        <input type="email" placeholder="Your Email" class="w-full p-3 rounded bg-gray-700 text-white" required>
+        <textarea placeholder="Your Message" class="w-full p-3 rounded bg-gray-700 text-white" required></textarea>
+        <button type="submit" class="w-full p-3 rounded bg-blue-500 transition-colors hover:bg-blue-600">Send
+          Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Popup confirmation message-->
+  <div id="confirmationMessage"
+    class="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-75 hidden">
+    <div class="bg-gray-700 rounded-lg p-8">
+      <h2 class="text-2xl font-bold mb-4 text-white">Message Sent</h2>
+      <p class="text-gray-300">Thank you for your message, we'll be in touch shortly!</p>
+      <button id="closeConfirmation"
+        class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring focus:border-blue-300">Close</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-6">
+    <div class="container mx-auto px-4 text-center">
+      <p>Developed using TailwindCSS</p>
+      <a href="https://github.com/nordic-roast" target="_blank" class="transition-colors hover:text-gray-300 m-3"> <i
+          class="fab fa-github mr-1"></i>Github</a>
+    </div>
+  </footer>
+
+</body>
+
 </html>
