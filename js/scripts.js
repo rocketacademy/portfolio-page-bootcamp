@@ -27,3 +27,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       });
     });
   });
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the form from submitting normally
+    document.getElementById('confirmationMessage').classList.remove('hidden'); // Show the confirmation message
+  });
+  
+  document.getElementById('closeConfirmation').addEventListener('click', function() {
+    document.getElementById('confirmationMessage').classList.add('hidden'); // Hide the confirmation message
+  });
+
+
+  // Mobile menu toggle script
+  const btn = document.querySelector('.mobile-menu-button');
+  const menu = document.querySelector('.mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
