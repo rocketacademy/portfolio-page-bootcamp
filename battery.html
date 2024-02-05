@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <span class="sidebar-item" id="sidebar-title">Hello!<br /><br />👋🏻</span>
+      <a class="sidebar-item" href="index.html">About me</a>
+      <a class="sidebar-item" href="projects.html">Projects</a>
+      <a class="sidebar-item" href="battery.html"
+        >Life as battery, visualised</a
+      >
+    </div>
+    <div class="main">
+      <div class="contentBox">
+        <p>
+          I thought it would be cool to include in a portfolio page some
+          emotionally meaningful content. In this page, I introduce you the
+          concept of:
+        </p>
+        <p class="tooltip">
+          <em>Memento mori</em>
+          <span class="tooltiptext"
+            >Latin for 'remember that you [have to] die'</span
+          >
+        </p>
+        <p>
+          So come, tell me your name and your birthday below and click
+          <b>Send</b>:
+        </p>
+        <form>
+          <label for="name">First name:</label>
+          <input type="text" id="name" name="name" /> <br /><br />
+          <label for="birthday">Birth date:</label>
+          <input type="date" id="birthday" name="birthday" />
+          <input type="button" id="birthday-send" value="Send" />
+        </form>
+      </div>
+      <div class="contentBox" id="timeLeft"></div>
+      <div id="batteryBackground" class="contentBox">
+        <p id="batteryDescription">
+          If life were a battery, this is how much juice you have left.
+        </p>
+        <div class="batteryFrame" id="batteryFrameOne">
+          <div class="batteryHorizontal" id="batteryHorizontalTop"></div>
+          <div class="batteryHorizontal" id="batteryHorizontalBottom"></div>
+        </div>
+        <div id="batteryLevel"></div>
+        <div class="batteryFrame" id="batteryFrameTwo">
+          <div class="batteryVertical"></div>
+          <div class="batteryVertical"></div>
+          <div class="batteryVertical"></div>
+          <div class="batteryVertical"></div>
+          <div class="batteryVertical"></div>
+          <div class="batteryVertical"></div>
+          <div class="batteryVertical"></div>
+          <div class="batteryVertical"></div>
+        </div>
+        <div id="batteryKnob"></div>
+      </div>
+      <div class="contentBox">
+        <p>
+          So remember, as you hustle, build and <code>$(verb)</code>, remember
+          to always choose joy and do things that make you happy. Because you've
+          only got this one life!
+        </p>
+      </div>
+      <div class="contentBox">
+        <em>*Assuming life expectancy of 83 years in Singapore</em> (<a
+          href="https://www.singstat.gov.sg/find-data/search-by-theme/population/death-and-life-expectancy/latest-data"
+          >Singstat, 2022</a
+        >)
+      </div>
+    </div>
+  </body>
+  <script src="js/script.js" defer></script>
+  <script src="js/battery.js" defer></script>
+</html>
